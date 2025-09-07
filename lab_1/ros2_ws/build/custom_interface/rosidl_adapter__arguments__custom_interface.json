@@ -1,0 +1,8 @@
+{
+  "package_name": "custom_interface",
+  "non_idl_tuples": [
+    "/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/src/custom_interface:msg/Person.msg",
+    "/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/src/custom_interface:srv/CalculateDistance.srv",
+    "/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/src/custom_interface:action/Countdown.action"
+  ]
+}

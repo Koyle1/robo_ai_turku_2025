@@ -1,0 +1,4 @@
+[console_scripts]
+client = task3.distance_client:main
+server = task3.distance_server:main
+

@@ -1,0 +1,130 @@
+[0.000000] (-) TimerEvent: {}
+[0.000164] (-) JobUnselected: {'identifier': 'task1'}
+[0.000196] (-) JobUnselected: {'identifier': 'task2'}
+[0.000211] (-) JobUnselected: {'identifier': 'task3'}
+[0.000224] (custom_interface) JobQueued: {'identifier': 'custom_interface', 'dependencies': OrderedDict()}
+[0.000246] (custom_interface) JobStarted: {'identifier': 'custom_interface'}
+[0.005421] (custom_interface) JobProgress: {'identifier': 'custom_interface', 'progress': 'cmake'}
+[0.006001] (custom_interface) JobProgress: {'identifier': 'custom_interface', 'progress': 'build'}
+[0.006635] (custom_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface', '--', '-j3', '-l3'], 'cwd': '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'michael'), ('SSH_CLIENT', '192.168.64.1 49784 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/michael/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/custom_interface/lib:/home/michael/robo_ai_turku_2025/lab_1/task2/install/custom_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/michael/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/michael'), ('OLDPWD', '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-08fa4ced-78e5-4806-b091-147be81ee6e1.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/michael/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/michael/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install:/home/michael/robo_ai_turku_2025/lab_1/task2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'michael'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/michael/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-923d6ee819.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '13'), ('AMENT_PREFIX_PATH', '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task2:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/custom_interface:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task1:/home/michael/robo_ai_turku_2025/lab_1/task2/install/custom_interface:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/lap:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.64.1 49784 192.168.64.6 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task2/lib/python3.10/site-packages:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/custom_interface/local/lib/python3.10/dist-packages:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task1/lib/python3.10/site-packages:/home/michael/robo_ai_turku_2025/lab_1/task2/install/custom_interface/local/lib/python3.10/dist-packages:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/lap/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/custom_interface:/home/michael/robo_ai_turku_2025/lab_1/task2/install/custom_interface:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task2:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task1:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/lap:/opt/ros/humble')]), 'shell': False}
+[0.025478] (custom_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099467] (-) TimerEvent: {}
+[0.118286] (custom_interface) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.137921] (custom_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.139732] (custom_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.143857] (custom_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.150621] (custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.159222] (custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.182009] (custom_interface) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.183012] (custom_interface) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199755] (-) TimerEvent: {}
+[0.251510] (custom_interface) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.289963] (custom_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.295093] (custom_interface) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.300131] (-) TimerEvent: {}
+[0.307802] (custom_interface) StdoutLine: {'line': b'-- Found action_msgs: 1.2.2 (/opt/ros/humble/share/action_msgs/cmake)\n'}
+[0.400588] (-) TimerEvent: {}
+[0.501457] (-) TimerEvent: {}
+[0.532722] (custom_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.602291] (-) TimerEvent: {}
+[0.702922] (-) TimerEvent: {}
+[0.762829] (custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.803055] (-) TimerEvent: {}
+[0.852709] (custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.869004] (custom_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.885064] (custom_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.885160] (custom_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.885205] (custom_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[0.899782] (custom_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.903290] (-) TimerEvent: {}
+[0.905951] (custom_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.906842] (custom_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.907970] (custom_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.935143] (custom_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[0.944489] (custom_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface\n'}
+[0.962799] (custom_interface) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.969182] (custom_interface) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.995438] (custom_interface) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_custom_interface\n'}
+[1.003523] (-) TimerEvent: {}
+[1.104388] (-) TimerEvent: {}
+[1.158166] (custom_interface) StdoutLine: {'line': b'running egg_info\n'}
+[1.163799] (custom_interface) StdoutLine: {'line': b'writing custom_interface.egg-info/PKG-INFO\n'}
+[1.164353] (custom_interface) StdoutLine: {'line': b'writing dependency_links to custom_interface.egg-info/dependency_links.txt\n'}
+[1.165136] (custom_interface) StdoutLine: {'line': b'writing top-level names to custom_interface.egg-info/top_level.txt\n'}
+[1.167517] (custom_interface) StdoutLine: {'line': b"reading manifest file 'custom_interface.egg-info/SOURCES.txt'\n"}
+[1.168300] (custom_interface) StdoutLine: {'line': b"writing manifest file 'custom_interface.egg-info/SOURCES.txt'\n"}
+[1.189686] (custom_interface) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_custom_interface_egg\n'}
+[1.204885] (-) TimerEvent: {}
+[1.305726] (-) TimerEvent: {}
+[1.404753] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_generator_c\x1b[0m\n'}
+[1.405914] (-) TimerEvent: {}
+[1.415412] (custom_interface) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/msg/detail/person__functions.c.o\x1b[0m\n'}
+[1.427733] (custom_interface) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__functions.c.o\x1b[0m\n'}
+[1.429238] (custom_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/msg/detail/person__functions.h:19\x1b[m\x1b[K,\n'}
+[1.429447] (custom_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/msg/detail/person__functions.c:4\x1b[m\x1b[K:\n'}
+[1.429498] (custom_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/msg/detail/person__struct.h:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kstd_msgs/msg/detail/header__struct.h: No such file or directory\n'}
+[1.429551] (custom_interface) StderrLine: {'line': b'   22 | #include \x1b[01;31m\x1b[K"std_msgs/msg/detail/header__struct.h"\x1b[m\x1b[K\n'}
+[1.429625] (custom_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.429664] (custom_interface) StderrLine: {'line': b'compilation terminated.\n'}
+[1.430694] (custom_interface) StdoutLine: {'line': b'[  8%] Built target custom_interface__cpp\n'}
+[1.431724] (custom_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/custom_interface__rosidl_generator_c.dir/build.make:144: CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/msg/detail/person__functions.c.o] Error 1\n'}
+[1.431792] (custom_interface) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[1.436374] (custom_interface) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.437799] (custom_interface) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.439667] (custom_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__functions.h:19\x1b[m\x1b[K,\n'}
+[1.439823] (custom_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__functions.c:4\x1b[m\x1b[K:\n'}
+[1.439953] (custom_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__struct.h:23:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kgeometry_msgs/msg/detail/point__struct.h: No such file or directory\n'}
+[1.440068] (custom_interface) StderrLine: {'line': b'   23 | #include \x1b[01;31m\x1b[K"geometry_msgs/msg/detail/point__struct.h"\x1b[m\x1b[K\n'}
+[1.440175] (custom_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.440291] (custom_interface) StderrLine: {'line': b'compilation terminated.\n'}
+[1.441031] (custom_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/custom_interface__rosidl_generator_c.dir/build.make:158: CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__functions.c.o] Error 1\n'}
+[1.441333] (custom_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/custom_interface__rosidl_generator_c.dir/all] Error 2\n'}
+[1.441457] (custom_interface) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[1.506859] (-) TimerEvent: {}
+[1.607393] (-) TimerEvent: {}
+[1.707762] (-) TimerEvent: {}
+[1.718890] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.733936] (custom_interface) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/srv/calculate_distance__type_support.cpp.o\x1b[0m\n'}
+[1.735237] (custom_interface) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/msg/person__type_support.cpp.o\x1b[0m\n'}
+[1.777818] (custom_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_typesupport_cpp/custom_interface/srv/calculate_distance__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[1.778335] (custom_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__struct.hpp:21:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kgeometry_msgs/msg/detail/point__struct.hpp: No such file or directory\n'}
+[1.778667] (custom_interface) StderrLine: {'line': b'   21 | #include \x1b[01;31m\x1b[K"geometry_msgs/msg/detail/point__struct.hpp"\x1b[m\x1b[K\n'}
+[1.778977] (custom_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.779438] (custom_interface) StderrLine: {'line': b'compilation terminated.\n'}
+[1.780614] (custom_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_typesupport_cpp/custom_interface/msg/person__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[1.780704] (custom_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_generator_cpp/custom_interface/msg/detail/person__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kstd_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[1.780752] (custom_interface) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"std_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[1.780964] (custom_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.781009] (custom_interface) StderrLine: {'line': b'compilation terminated.\n'}
+[1.781470] (custom_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/build.make:115: CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/srv/calculate_distance__type_support.cpp.o] Error 1\n'}
+[1.781514] (custom_interface) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[1.781601] (custom_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/build.make:101: CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/msg/person__type_support.cpp.o] Error 1\n'}
+[1.783187] (custom_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/all] Error 2\n'}
+[1.808115] (-) TimerEvent: {}
+[1.821737] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.831241] (custom_interface) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp.o\x1b[0m\n'}
+[1.831400] (custom_interface) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/person__type_support.cpp.o\x1b[0m\n'}
+[1.831855] (custom_interface) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.o\x1b[0m\n'}
+[1.875937] (custom_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/person__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[1.876099] (custom_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/person__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[1.876145] (custom_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_generator_cpp/custom_interface/msg/detail/person__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kstd_msgs/msg/detail/header__struct.hpp: No such file or directory\n'}
+[1.876186] (custom_interface) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"std_msgs/msg/detail/header__struct.hpp"\x1b[m\x1b[K\n'}
+[1.876224] (custom_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.876260] (custom_interface) StderrLine: {'line': b'compilation terminated.\n'}
+[1.876885] (custom_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[1.876927] (custom_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[1.876963] (custom_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/custom_interface/rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__struct.hpp:21:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kgeometry_msgs/msg/detail/point__struct.hpp: No such file or directory\n'}
+[1.876999] (custom_interface) StderrLine: {'line': b'   21 | #include \x1b[01;31m\x1b[K"geometry_msgs/msg/detail/point__struct.hpp"\x1b[m\x1b[K\n'}
+[1.877033] (custom_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.877067] (custom_interface) StderrLine: {'line': b'compilation terminated.\n'}
+[1.877100] (custom_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/build.make:112: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/person__type_support.cpp.o] Error 1\n'}
+[1.877135] (custom_interface) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[1.879381] (custom_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/build.make:126: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp.o] Error 1\n'}
+[1.908568] (-) TimerEvent: {}
+[2.009520] (-) TimerEvent: {}
+[2.110021] (-) TimerEvent: {}
+[2.176072] (custom_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2\n'}
+[2.176281] (custom_interface) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.177935] (custom_interface) CommandEnded: {'returncode': 2}
+[2.186211] (custom_interface) JobEnded: {'identifier': 'custom_interface', 'rc': 2}
+[2.196617] (-) EventReactorShutdown: {}

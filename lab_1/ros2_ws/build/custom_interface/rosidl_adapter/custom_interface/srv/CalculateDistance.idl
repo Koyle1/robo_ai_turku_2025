@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_interface/srv/CalculateDistance.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module custom_interface {
+  module srv {
+    struct CalculateDistance_Request {
+      geometry_msgs::msg::Point p1;
+
+      geometry_msgs::msg::Point p2;
+    };
+    struct CalculateDistance_Response {
+      double distance;
+
+      boolean success;
+
+      string message;
+    };
+  };
+};

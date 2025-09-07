@@ -1,0 +1,44 @@
+[0.225s] Invoking command in '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/src/task3': PYTHONPATH=/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task3 build --build-base /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build install --record /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/install.log --single-version-externally-managed install_data
+[0.310s] running egg_info
+[0.310s] creating ../../build/task3/task3.egg-info
+[0.310s] writing ../../build/task3/task3.egg-info/PKG-INFO
+[0.310s] writing dependency_links to ../../build/task3/task3.egg-info/dependency_links.txt
+[0.310s] writing entry points to ../../build/task3/task3.egg-info/entry_points.txt
+[0.310s] writing requirements to ../../build/task3/task3.egg-info/requires.txt
+[0.310s] writing top-level names to ../../build/task3/task3.egg-info/top_level.txt
+[0.310s] writing manifest file '../../build/task3/task3.egg-info/SOURCES.txt'
+[0.311s] reading manifest file '../../build/task3/task3.egg-info/SOURCES.txt'
+[0.311s] adding license file 'LICENSE'
+[0.311s] writing manifest file '../../build/task3/task3.egg-info/SOURCES.txt'
+[0.311s] running build
+[0.311s] running build_py
+[0.311s] creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build
+[0.312s] creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib
+[0.312s] creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3
+[0.312s] copying task3/distance_client.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3
+[0.312s] copying task3/__init__.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3
+[0.312s] copying task3/distance_server.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3
+[0.312s] running install
+[0.312s] running install_lib
+[0.312s] creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3
+[0.312s] copying /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3/distance_client.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3
+[0.312s] copying /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3/__init__.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3
+[0.312s] copying /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3/distance_server.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3
+[0.312s] byte-compiling /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3/distance_client.py to distance_client.cpython-310.pyc
+[0.312s] byte-compiling /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3/__init__.py to __init__.cpython-310.pyc
+[0.312s] byte-compiling /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3/distance_server.py to distance_server.cpython-310.pyc
+[0.313s] running install_data
+[0.313s] creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/ament_index
+[0.313s] creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/ament_index/resource_index
+[0.313s] creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/ament_index/resource_index/packages
+[0.313s] copying resource/task3 -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/ament_index/resource_index/packages
+[0.313s] copying package.xml -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/task3
+[0.313s] creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/task3/config
+[0.313s] copying config/params.yaml -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/task3/config
+[0.313s] running install_egg_info
+[0.313s] Copying ../../build/task3/task3.egg-info to /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3-0.0.0-py3.10.egg-info
+[0.314s] running install_scripts
+[0.322s] Installing client script to /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/task3
+[0.322s] Installing server script to /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/task3
+[0.322s] writing list of installed files to '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/install.log'
+[0.332s] Invoked command in '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/src/task3' returned '0': PYTHONPATH=/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task3 build --build-base /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build install --record /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/install.log --single-version-externally-managed install_data

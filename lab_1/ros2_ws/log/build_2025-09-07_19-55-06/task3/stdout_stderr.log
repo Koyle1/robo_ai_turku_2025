@@ -1,0 +1,42 @@
+running egg_info
+creating ../../build/task3/task3.egg-info
+writing ../../build/task3/task3.egg-info/PKG-INFO
+writing dependency_links to ../../build/task3/task3.egg-info/dependency_links.txt
+writing entry points to ../../build/task3/task3.egg-info/entry_points.txt
+writing requirements to ../../build/task3/task3.egg-info/requires.txt
+writing top-level names to ../../build/task3/task3.egg-info/top_level.txt
+writing manifest file '../../build/task3/task3.egg-info/SOURCES.txt'
+reading manifest file '../../build/task3/task3.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/task3/task3.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build
+creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib
+creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3
+copying task3/distance_client.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3
+copying task3/__init__.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3
+copying task3/distance_server.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3
+running install
+running install_lib
+creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3
+copying /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3/distance_client.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3
+copying /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3/__init__.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3
+copying /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/build/lib/task3/distance_server.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3
+byte-compiling /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3/distance_client.py to distance_client.cpython-310.pyc
+byte-compiling /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3/distance_server.py to distance_server.cpython-310.pyc
+running install_data
+creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/ament_index
+creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/ament_index/resource_index
+creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/ament_index/resource_index/packages
+copying resource/task3 -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/ament_index/resource_index/packages
+copying package.xml -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/task3
+creating /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/task3/config
+copying config/params.yaml -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/share/task3/config
+running install_egg_info
+Copying ../../build/task3/task3.egg-info to /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/python3.10/site-packages/task3-0.0.0-py3.10.egg-info
+running install_scripts
+Installing client script to /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/task3
+Installing server script to /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task3/lib/task3
+writing list of installed files to '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task3/install.log'

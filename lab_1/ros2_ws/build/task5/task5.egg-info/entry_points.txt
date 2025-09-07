@@ -1,0 +1,5 @@
+[console_scripts]
+cancel_client = task5.countdown_cancel_client:main
+client = task5.countdown_client:main
+server = task5.countdown_server:main
+

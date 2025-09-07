@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_interface/msg/Person.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module custom_interface {
+  module msg {
+    struct Person {
+      std_msgs::msg::Header header;
+
+      string name;
+
+      int32 age;
+
+      boolean is_student;
+    };
+  };
+};
