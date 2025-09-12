@@ -1,0 +1,27 @@
+[0.413s] Invoking command in '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/src/task5': AMENT_PREFIX_PATH=/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/custom_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/custom_interface LD_LIBRARY_PATH=/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/custom_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task5/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task5/lib/python3.10/site-packages:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/custom_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task5 build --build-base /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task5/build install --record /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task5/install.log --single-version-externally-managed install_data
+[0.568s] running egg_info
+[0.568s] writing ../../build/task5/task5.egg-info/PKG-INFO
+[0.569s] writing dependency_links to ../../build/task5/task5.egg-info/dependency_links.txt
+[0.569s] writing entry points to ../../build/task5/task5.egg-info/entry_points.txt
+[0.569s] writing requirements to ../../build/task5/task5.egg-info/requires.txt
+[0.569s] writing top-level names to ../../build/task5/task5.egg-info/top_level.txt
+[0.570s] reading manifest file '../../build/task5/task5.egg-info/SOURCES.txt'
+[0.570s] adding license file 'LICENSE'
+[0.571s] writing manifest file '../../build/task5/task5.egg-info/SOURCES.txt'
+[0.571s] running build
+[0.571s] running build_py
+[0.571s] copying task5/countdown_server.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task5/build/lib/task5
+[0.572s] running install
+[0.572s] running install_lib
+[0.573s] copying /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task5/build/lib/task5/countdown_server.py -> /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task5/lib/python3.10/site-packages/task5
+[0.573s] byte-compiling /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task5/lib/python3.10/site-packages/task5/countdown_server.py to countdown_server.cpython-310.pyc
+[0.573s] running install_data
+[0.574s] running install_egg_info
+[0.575s] removing '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task5/lib/python3.10/site-packages/task5-0.0.0-py3.10.egg-info' (and everything under it)
+[0.575s] Copying ../../build/task5/task5.egg-info to /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task5/lib/python3.10/site-packages/task5-0.0.0-py3.10.egg-info
+[0.576s] running install_scripts
+[0.590s] Installing cancel_client script to /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task5/lib/task5
+[0.590s] Installing client script to /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task5/lib/task5
+[0.590s] Installing server script to /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task5/lib/task5
+[0.590s] writing list of installed files to '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task5/install.log'
+[0.608s] Invoked command in '/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/src/task5' returned '0': AMENT_PREFIX_PATH=/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/custom_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/custom_interface LD_LIBRARY_PATH=/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/custom_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task5/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/task5/lib/python3.10/site-packages:/home/michael/robo_ai_turku_2025/lab_1/ros2_ws/install/custom_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task5 build --build-base /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task5/build install --record /home/michael/robo_ai_turku_2025/lab_1/ros2_ws/build/task5/install.log --single-version-externally-managed install_data

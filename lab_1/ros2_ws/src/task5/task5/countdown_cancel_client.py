@@ -8,9 +8,8 @@ class CountdownCancelClient(Node):
         super().__init__('countdown_cancel_client')
         self.cli = ActionClient(self, Countdown, 'countdown_action')
 
-        # parameters
         self.declare_parameter('start_from', 10)
-        self.declare_parameter('cancel_after', 3.0)   # seconds
+        self.declare_parameter('cancel_after', 3.0) 
         self.start_from = int(self.get_parameter('start_from').value)
         self.cancel_after = float(self.get_parameter('cancel_after').value)
 

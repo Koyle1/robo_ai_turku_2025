@@ -7,7 +7,6 @@ class DistanceServerNode(Node):
 
     def __init__(self):
         super().__init__("distance_server")
-        # service name kept simple and explicit
         self.server_ = self.create_service(
             CalculateDistance,
             "/calculate_distance",
@@ -16,7 +15,6 @@ class DistanceServerNode(Node):
         self.get_logger().info("Distance Service server has been created")
 
     def distance_service_callback(self, request, response):
-        # request.p1 and request.p2 are geometry_msgs/Point
         dx = request.p2.x - request.p1.x
         dy = request.p2.y - request.p1.y
         dist = math.hypot(dx, dy)

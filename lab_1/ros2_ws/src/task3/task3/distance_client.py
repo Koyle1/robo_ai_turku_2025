@@ -10,8 +10,6 @@ class DistanceClientNode(Node):
         super().__init__('distance_client')
         self.get_logger().info('Distance Client Python node has been created')
 
-        # declare parameters analogous to your example (was a_, b_)
-        # use four params for two 2D points
         self.declare_parameter('x1', 0.0)
         self.declare_parameter('y1', 0.0)
         self.declare_parameter('x2', 3.0)
@@ -28,16 +26,14 @@ class DistanceClientNode(Node):
         self.call_distance_server(p1, p2)
 
     def call_distance_server(self, p1: Point, p2: Point):
-        client = self.create_client(CalculateDistance, '/calculate_distance')  # service name
+        client = self.create_client(CalculateDistance, '/calculate_distance')
         while not client.wait_for_service(1.0):
             self.get_logger().info('Waiting for the /calculate_distance service...')
 
-        # create request
         request = CalculateDistance.Request()
         request.p1 = p1
         request.p2 = p2
 
-        # send request asynchronously (keep your partial callback pattern)
         future = client.call_async(request)
         future.add_done_callback(partial(self.distance_service_callback, p1=p1, p2=p2))
 

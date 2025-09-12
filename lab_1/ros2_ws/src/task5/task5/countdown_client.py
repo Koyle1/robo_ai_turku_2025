@@ -8,7 +8,6 @@ class CountdownClient(Node):
         super().__init__('countdown_client')
         self.cli = ActionClient(self, Countdown, 'countdown_action')
 
-        # parameter for the goal (default 5)
         self.declare_parameter('start_from', 5)
         self.start_from = int(self.get_parameter('start_from').value)
 

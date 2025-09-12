@@ -22,14 +22,14 @@ class MinimalPublisher(Node):
             self.qos_profile
         )
 
-        timer_period = 0.1  # seconds → 10 Hz
+        timer_period = 0.1 
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
         # straight-line motion state
         self.x = 0.0
         self.y = 0.0
-        self.vx = 0.1  # m/s along x
-        self.vy = 0.1  # m/s along y
+        self.vx = 0.1  
+        self.vy = 0.1  
         self.last_time = self.get_clock().now()
 
     def timer_callback(self):
@@ -47,7 +47,7 @@ class MinimalPublisher(Node):
         msg.pose.position.x = self.x
         msg.pose.position.y = self.y
         msg.pose.position.z = 0.0
-        msg.pose.orientation.w = 1.0  # identity quaternion
+        msg.pose.orientation.w = 1.0 
 
         self.publisher_.publish(msg)
         self.get_logger().info(f'Publishing Pose: x={self.x:.3f}, y={self.y:.3f}')
