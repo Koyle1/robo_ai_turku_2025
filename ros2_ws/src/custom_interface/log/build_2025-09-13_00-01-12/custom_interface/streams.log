@@ -1,0 +1,74 @@
+[0.021s] Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/build/custom_interface': CMAKE_PREFIX_PATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface -DCMAKE_INSTALL_PREFIX=/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/install/custom_interface
+[0.391s] -- The C compiler identification is GNU 11.4.0
+[1.038s] -- The CXX compiler identification is GNU 11.4.0
+[1.339s] -- Detecting C compiler ABI info
+[1.494s] -- Detecting C compiler ABI info - done
+[1.503s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.505s] -- Detecting C compile features
+[1.507s] -- Detecting C compile features - done
+[1.512s] -- Detecting CXX compiler ABI info
+[1.683s] -- Detecting CXX compiler ABI info - done
+[1.688s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.689s] -- Detecting CXX compile features
+[1.691s] -- Detecting CXX compile features - done
+[1.708s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.906s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.067s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[2.351s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.362s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.380s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.403s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.436s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.522s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.528s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.247s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.136s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.607s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.627s] -- Looking for pthread.h
+[6.777s] -- Looking for pthread.h - found
+[6.777s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.903s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.903s] -- Found Threads: TRUE  
+[7.012s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[7.298s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[7.298s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[7.298s]   custom_interface --arguments-file
+[7.298s]   /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/build/custom_interface/rosidl_adapter__arguments__custom_interface.json
+[7.298s]   --output-dir
+[7.298s]   /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/build/custom_interface/rosidl_adapter/custom_interface
+[7.298s]   --output-file
+[7.298s]   /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/build/custom_interface/rosidl_adapter/custom_interface.idls)
+[7.298s]   returned error code 1:
+[7.298s] 
+[7.298s]   Traceback (most recent call last):
+[7.298s] 
+[7.298s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[7.298s]       return _run_code(code, main_globals, None,
+[7.298s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[7.299s]       exec(code, run_globals)
+[7.299s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[7.299s]       sys.exit(main())
+[7.299s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[7.299s]       abs_idl_file = convert_to_idl(
+[7.299s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[7.299s]       return convert_msg_to_idl(
+[7.299s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[7.299s]       msg = parse_message_string(package_name, input_file.stem, content)
+[7.299s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 544, in parse_message_string
+[7.299s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[7.299s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 388, in __init__
+[7.306s]       self.base_type = BaseType(
+[7.306s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 205, in __init__
+[7.306s]       raise InvalidResourceName(
+[7.306s] 
+[7.306s]   rosidl_adapter.parser.InvalidResourceName: 'lab01_task02_msg' is an invalid
+[7.306s]   message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[7.306s] 
+[7.306s] Call Stack (most recent call first):
+[7.306s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[7.306s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[7.306s] 
+[7.307s] [0m
+[7.307s] -- Configuring incomplete, errors occurred!
+[7.307s] See also "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/build/custom_interface/CMakeFiles/CMakeOutput.log".
+[7.317s] Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/build/custom_interface' returned '1': CMAKE_PREFIX_PATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface -DCMAKE_INSTALL_PREFIX=/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/install/custom_interface

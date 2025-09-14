@@ -1,0 +1,58 @@
+[0.054s] Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake --build /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface -- -j22 -l22
+[0.918s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.919s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.919s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.919s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.919s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.919s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.919s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.919s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.919s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.401s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.454s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.470s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[4.704s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[4.704s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[4.704s]   custom_interface --arguments-file
+[4.704s]   /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_adapter__arguments__custom_interface.json
+[4.704s]   --output-dir
+[4.704s]   /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_adapter/custom_interface
+[4.704s]   --output-file
+[4.705s]   /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_adapter/custom_interface.idls)
+[4.705s]   returned error code 1:
+[4.705s] 
+[4.705s]   Traceback (most recent call last):
+[4.705s] 
+[4.705s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[4.705s]       return _run_code(code, main_globals, None,
+[4.705s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[4.706s]       exec(code, run_globals)
+[4.706s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[4.706s]       sys.exit(main())
+[4.706s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[4.706s]       abs_idl_file = convert_to_idl(
+[4.706s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl
+[4.706s]       return convert_srv_to_idl(
+[4.706s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl
+[4.706s]       srv = parse_service_string(package_name, input_file.stem, content)
+[4.706s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 859, in parse_service_string
+[4.706s]       request_message = parse_message_string(
+[4.706s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 544, in parse_message_string
+[4.707s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[4.707s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 388, in __init__
+[4.707s]       self.base_type = BaseType(
+[4.707s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 205, in __init__
+[4.707s]       raise InvalidResourceName(
+[4.707s] 
+[4.707s]   rosidl_adapter.parser.InvalidResourceName: 'Calculate_distance_Request' is
+[4.707s]   an invalid message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[4.707s] 
+[4.707s] Call Stack (most recent call first):
+[4.707s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[4.708s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[4.708s] 
+[4.708s] [0m
+[4.709s] -- Configuring incomplete, errors occurred!
+[4.709s] See also "/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/CMakeFiles/CMakeOutput.log".
+[4.720s] gmake: *** [Makefile:747: cmake_check_build_system] Error 1
+[4.725s] Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake --build /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface -- -j22 -l22

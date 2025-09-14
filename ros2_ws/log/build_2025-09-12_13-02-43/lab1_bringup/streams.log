@@ -1,0 +1,21 @@
+[0.831s] Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab1_bringup': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab1_bringup build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup/install.log --single-version-externally-managed install_data
+[0.977s] running egg_info
+[0.977s] writing ../../build/lab1_bringup/lab1_bringup.egg-info/PKG-INFO
+[0.979s] writing dependency_links to ../../build/lab1_bringup/lab1_bringup.egg-info/dependency_links.txt
+[0.979s] writing entry points to ../../build/lab1_bringup/lab1_bringup.egg-info/entry_points.txt
+[0.979s] writing requirements to ../../build/lab1_bringup/lab1_bringup.egg-info/requires.txt
+[0.979s] writing top-level names to ../../build/lab1_bringup/lab1_bringup.egg-info/top_level.txt
+[0.980s] reading manifest file '../../build/lab1_bringup/lab1_bringup.egg-info/SOURCES.txt'
+[0.982s] adding license file 'LICENSE'
+[0.982s] writing manifest file '../../build/lab1_bringup/lab1_bringup.egg-info/SOURCES.txt'
+[0.983s] running build
+[0.983s] running build_py
+[0.983s] running install
+[0.983s] running install_lib
+[0.984s] running install_data
+[0.984s] running install_egg_info
+[0.985s] removing '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/lib/python3.10/site-packages/lab1_bringup-0.0.0-py3.10.egg-info' (and everything under it)
+[0.985s] Copying ../../build/lab1_bringup/lab1_bringup.egg-info to /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/lib/python3.10/site-packages/lab1_bringup-0.0.0-py3.10.egg-info
+[0.987s] running install_scripts
+[1.003s] writing list of installed files to '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup/install.log'
+[1.029s] Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab1_bringup' returned '0': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab1_bringup build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup/install.log --single-version-externally-managed install_data

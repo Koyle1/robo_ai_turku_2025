@@ -1,0 +1,40 @@
+[0.985s] Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task01': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab01_task01 build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/install.log --single-version-externally-managed install_data
+[1.126s] running egg_info
+[1.126s] creating ../../build/lab01_task01/lab01_task01.egg-info
+[1.127s] writing ../../build/lab01_task01/lab01_task01.egg-info/PKG-INFO
+[1.127s] writing dependency_links to ../../build/lab01_task01/lab01_task01.egg-info/dependency_links.txt
+[1.127s] writing entry points to ../../build/lab01_task01/lab01_task01.egg-info/entry_points.txt
+[1.127s] writing requirements to ../../build/lab01_task01/lab01_task01.egg-info/requires.txt
+[1.127s] writing top-level names to ../../build/lab01_task01/lab01_task01.egg-info/top_level.txt
+[1.128s] writing manifest file '../../build/lab01_task01/lab01_task01.egg-info/SOURCES.txt'
+[1.129s] reading manifest file '../../build/lab01_task01/lab01_task01.egg-info/SOURCES.txt'
+[1.129s] adding license file 'LICENSE'
+[1.129s] writing manifest file '../../build/lab01_task01/lab01_task01.egg-info/SOURCES.txt'
+[1.130s] running build
+[1.130s] running build_py
+[1.130s] creating /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/build
+[1.131s] creating /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/build/lib
+[1.131s] creating /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/build/lib/lab01_task01
+[1.131s] copying lab01_task01/publisher.py -> /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/build/lib/lab01_task01
+[1.131s] copying lab01_task01/__init__.py -> /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/build/lib/lab01_task01
+[1.132s] copying lab01_task01/subscriber.py -> /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/build/lib/lab01_task01
+[1.132s] running install
+[1.132s] running install_lib
+[1.133s] creating /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/python3.10/site-packages/lab01_task01
+[1.133s] copying /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/build/lib/lab01_task01/publisher.py -> /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/python3.10/site-packages/lab01_task01
+[1.133s] copying /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/build/lib/lab01_task01/__init__.py -> /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/python3.10/site-packages/lab01_task01
+[1.133s] copying /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/build/lib/lab01_task01/subscriber.py -> /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/python3.10/site-packages/lab01_task01
+[1.134s] byte-compiling /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/python3.10/site-packages/lab01_task01/publisher.py to publisher.cpython-310.pyc
+[1.134s] byte-compiling /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/python3.10/site-packages/lab01_task01/__init__.py to __init__.cpython-310.pyc
+[1.134s] byte-compiling /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/python3.10/site-packages/lab01_task01/subscriber.py to subscriber.cpython-310.pyc
+[1.134s] running install_data
+[1.135s] creating /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/ament_index
+[1.135s] creating /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/ament_index/resource_index
+[1.135s] creating /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/ament_index/resource_index/packages
+[1.135s] copying resource/lab01_task01 -> /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/ament_index/resource_index/packages
+[1.135s] copying package.xml -> /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/lab01_task01
+[1.135s] running install_egg_info
+[1.138s] Copying ../../build/lab01_task01/lab01_task01.egg-info to /home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/python3.10/site-packages/lab01_task01-0.0.0-py3.10.egg-info
+[1.139s] running install_scripts
+[1.155s] writing list of installed files to '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/install.log'
+[1.178s] Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task01' returned '0': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab01_task01 build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/install.log --single-version-externally-managed install_data

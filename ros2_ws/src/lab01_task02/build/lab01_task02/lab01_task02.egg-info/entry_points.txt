@@ -1,0 +1,3 @@
+[console_scripts]
+publisher = lab01_task02.publisher:main
+

@@ -1,0 +1,43 @@
+[0.058s] Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface': CMAKE_PREFIX_PATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface -DCMAKE_INSTALL_PREFIX=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface
+[0.617s] -- The C compiler identification is GNU 11.4.0
+[0.912s] -- The CXX compiler identification is GNU 11.4.0
+[1.147s] -- Detecting C compiler ABI info
+[1.304s] -- Detecting C compiler ABI info - done
+[1.312s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.313s] -- Detecting C compile features
+[1.314s] -- Detecting C compile features - done
+[1.319s] -- Detecting CXX compiler ABI info
+[1.461s] -- Detecting CXX compiler ABI info - done
+[1.468s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.469s] -- Detecting CXX compile features
+[1.469s] -- Detecting CXX compile features - done
+[1.490s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.685s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.844s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[2.116s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.127s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.148s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.181s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.228s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.343s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.353s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.959s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.835s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.841s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.871s] -- Looking for pthread.h
+[7.058s] -- Looking for pthread.h - found
+[7.058s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.257s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[7.257s] -- Found Threads: TRUE  
+[7.417s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[7.433s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[7.433s]   rosidl_generate_interfaces() the passed file 'msg/Person.msg' doesn't exist
+[7.433s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[7.433s]   '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface'
+[7.433s] Call Stack (most recent call first):
+[7.433s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[7.433s] 
+[7.433s] [0m
+[7.437s] -- Configuring incomplete, errors occurred!
+[7.437s] See also "/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/CMakeFiles/CMakeOutput.log".
+[7.446s] Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface' returned '1': CMAKE_PREFIX_PATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface -DCMAKE_INSTALL_PREFIX=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface

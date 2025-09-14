@@ -1,0 +1,62 @@
+In file included from [01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/msg/detail/request_distance_msg__functions.h:19[m[K,
+                 from [01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/msg/detail/request_distance_msg__functions.c:4[m[K:
+[01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/msg/detail/request_distance_msg__struct.h:23:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msg/msg/detail/point__struct.h: No such file or directory
+   23 | #include [01;31m[K"geometry_msg/msg/detail/point__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__functions.h:19[m[K,
+                 from [01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__functions.c:4[m[K:
+[01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__struct.h:23:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msg/msg/detail/point__struct.h: No such file or directory
+   23 | #include [01;31m[K"geometry_msg/msg/detail/point__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/custom_interface__rosidl_generator_c.dir/build.make:231: CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/msg/detail/request_distance_msg__functions.c.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/custom_interface__rosidl_generator_c.dir/build.make:259: CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__functions.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/custom_interface__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_cpp/custom_interface/srv/calculate_distance__type_support.cpp:7[m[K:
+[01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msg/msg/detail/point__struct.hpp: No such file or directory
+   21 | #include [01;31m[K"geometry_msg/msg/detail/point__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_cpp/custom_interface/msg/request_distance_msg__type_support.cpp:7[m[K:
+[01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_cpp/custom_interface/msg/detail/request_distance_msg__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msg/msg/detail/point__struct.hpp: No such file or directory
+   21 | #include [01;31m[K"geometry_msg/msg/detail/point__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/build.make:204: CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/srv/calculate_distance__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/build.make:176: CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/msg/request_distance_msg__type_support.cpp.o] Error 1
+In file included from [01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp:4[m[K:
+[01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msg/msg/detail/point__struct.hpp: No such file or directory
+   21 | #include [01;31m[K"geometry_msg/msg/detail/point__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/request_distance_msg__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/request_distance_msg__type_support.cpp:4[m[K:
+[01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_cpp/custom_interface/msg/detail/request_distance_msg__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msg/msg/detail/point__struct.hpp: No such file or directory
+   21 | #include [01;31m[K"geometry_msg/msg/detail/point__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_introspection_cpp/custom_interface/msg/detail/request_distance_msg__type_support.cpp:12[m[K:
+[01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_cpp/custom_interface/msg/detail/request_distance_msg__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msg/msg/detail/point__struct.hpp: No such file or directory
+   21 | #include [01;31m[K"geometry_msg/msg/detail/point__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/build.make:190: CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/msg/detail/request_distance_msg__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_introspection_cpp/custom_interface/srv/detail/calculate_distance__type_support.cpp:12[m[K:
+[01m[K/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msg/msg/detail/point__struct.hpp: No such file or directory
+   21 | #include [01;31m[K"geometry_msg/msg/detail/point__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/build.make:190: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/request_distance_msg__type_support.cpp.o] Error 1
+compilation terminated.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/build.make:218: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/build.make:218: CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/srv/detail/calculate_distance__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

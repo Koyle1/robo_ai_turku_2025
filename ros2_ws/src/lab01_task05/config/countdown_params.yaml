@@ -1,0 +1,20 @@
+countdown_action_client:
+  ros__parameters:
+    start_from: 12
+    use_sim_time: false
+
+countdown_cancel_client:
+  ros__parameters:
+    start_from: 20
+    cancel_after_seconds: 6
+    use_sim_time: false
+
+countdown_action_server:
+  ros__parameters:
+    use_sim_time: false
+    feedback_rate: 1.0  
+
+/**:
+  ros__parameters:
+    default_countdown_start: 10
+    default_cancel_time: 5
