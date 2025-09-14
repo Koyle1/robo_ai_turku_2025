@@ -1,0 +1,4 @@
+[console_scripts]
+publisher = lab01_task01.publisher:main
+subscriber = lab01_task01.subscriber:main
+

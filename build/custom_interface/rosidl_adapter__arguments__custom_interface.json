@@ -1,0 +1,11 @@
+{
+  "package_name": "custom_interface",
+  "non_idl_tuples": [
+    "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface:msg/TaskMsg.msg",
+    "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface:msg/RequestDistanceMsg.msg",
+    "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface:msg/ResponseDistanceMsg.msg",
+    "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface:srv/CalculateDistance.srv",
+    "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface:action/Countdown.action",
+    "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface:msg/Count.msg"
+  ]
+}
