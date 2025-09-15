@@ -1,7 +1,0 @@
-/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_adapter/custom_interface:msg/TaskMsg.idl
-/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_adapter/custom_interface:msg/RequestDistanceMsg.idl
-/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_adapter/custom_interface:msg/ResponseDistanceMsg.idl
-/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_adapter/custom_interface:srv/CalculateDistance.idl
-/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_adapter/custom_interface:srv/CancelRequest.idl
-/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_adapter/custom_interface:action/Countdown.idl
-/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_adapter/custom_interface:msg/Count.idl

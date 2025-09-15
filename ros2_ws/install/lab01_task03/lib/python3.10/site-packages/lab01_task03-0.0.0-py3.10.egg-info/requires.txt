@@ -1,4 +1,0 @@
-custom_interface
-numpy
-rclpy
-setuptools

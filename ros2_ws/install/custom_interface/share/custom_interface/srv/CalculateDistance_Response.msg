@@ -1,4 +1,0 @@
-
-float32 distance 
-bool success
-string message

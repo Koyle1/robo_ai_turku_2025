@@ -1,8 +1,0 @@
-/**:
-  ros__parameters:
-    start_point.x: 1.0
-    start_point.y: 2.0
-    start_point.z: 3.0
-    end_point.x: 4.0
-    end_point.y: 5.0
-    end_point.z: 6.0

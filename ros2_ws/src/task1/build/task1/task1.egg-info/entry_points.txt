@@ -1,3 +1,0 @@
-[console_scripts]
-publisher = task1.publisher:main
-

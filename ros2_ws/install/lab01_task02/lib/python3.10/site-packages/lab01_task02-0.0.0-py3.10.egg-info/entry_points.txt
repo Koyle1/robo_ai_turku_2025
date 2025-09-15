@@ -1,4 +1,0 @@
-[console_scripts]
-publisher = lab01_task02.publisher:main
-subscriber = lab01_task02.subscriber:main
-

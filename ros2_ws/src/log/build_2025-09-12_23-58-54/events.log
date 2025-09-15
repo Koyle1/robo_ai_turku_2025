@@ -1,6 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000173] (-) JobUnselected: {'identifier': 'custom_interface'}
-[0.000199] (-) JobUnselected: {'identifier': 'lab01_task01'}
-[0.000215] (-) JobUnselected: {'identifier': 'lab1_bringup'}
-[0.000227] (-) JobUnselected: {'identifier': 'task1'}
-[0.000465] (-) EventReactorShutdown: {}
