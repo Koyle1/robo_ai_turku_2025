@@ -1,6 +1,0 @@
-geometry_msg/Point start_point
-geometry_msg/Point end_point
----
-double distance 
-bool success
-string message

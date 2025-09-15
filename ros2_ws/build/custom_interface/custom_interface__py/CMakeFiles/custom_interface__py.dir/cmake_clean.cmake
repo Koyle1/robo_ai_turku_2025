@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/custom_interface/srv/__init__.py"
   "../rosidl_generator_py/custom_interface/srv/_calculate_distance.py"
   "../rosidl_generator_py/custom_interface/srv/_calculate_distance_s.c"
+  "../rosidl_generator_py/custom_interface/srv/_cancel_request.py"
+  "../rosidl_generator_py/custom_interface/srv/_cancel_request_s.c"
   "CMakeFiles/custom_interface__py"
 )
 

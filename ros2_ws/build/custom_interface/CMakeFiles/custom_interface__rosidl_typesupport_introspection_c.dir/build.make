@@ -81,6 +81,7 @@ rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_
 rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_interface/msg/RequestDistanceMsg.idl
 rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_interface/msg/ResponseDistanceMsg.idl
 rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_interface/srv/CalculateDistance.idl
+rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_interface/srv/CancelRequest.idl
 rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_interface/action/Countdown.idl
 rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_interface/msg/Count.idl
 rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -164,6 +165,9 @@ rosidl_typesupport_introspection_c/custom_interface/msg/detail/response_distance
 rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__rosidl_typesupport_introspection_c.h
 
@@ -181,6 +185,9 @@ rosidl_typesupport_introspection_c/custom_interface/msg/detail/response_distance
 
 rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__type_support.c: rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__type_support.c
+
+rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c: rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c
 
 rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c: rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c
@@ -244,10 +251,24 @@ CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_types
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__type_support.c -o CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__type_support.c.s
 
+CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.o: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.o: rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c
+CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.o: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.o -MF CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.o.d -o CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.o -c /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c
+
+CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c > CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.i
+
+CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c -o CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.s
+
 CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c.o: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c.o: rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c
 CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c.o: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c.o -MF CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c.o.d -o CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c.o -c /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c
 
 CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c.i: cmake_force
@@ -261,7 +282,7 @@ CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_types
 CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c.o: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c.o: rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c
 CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c.o: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c.o -MF CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c.o.d -o CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c.o -c /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c
 
 CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c.i: cmake_force
@@ -278,6 +299,7 @@ custom_interface__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/request_distance_msg__type_support.c.o" \
 "CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/response_distance_msg__type_support.c.o" \
 "CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__type_support.c.o" \
+"CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.o" \
 "CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c.o" \
 "CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c.o"
 
@@ -288,6 +310,7 @@ libcustom_interface__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_in
 libcustom_interface__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/request_distance_msg__type_support.c.o
 libcustom_interface__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/response_distance_msg__type_support.c.o
 libcustom_interface__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__type_support.c.o
+libcustom_interface__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.o
 libcustom_interface__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c.o
 libcustom_interface__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c.o
 libcustom_interface__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/build.make
@@ -306,7 +329,7 @@ libcustom_interface__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/
 libcustom_interface__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcustom_interface__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libcustom_interface__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C shared library libcustom_interface__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C shared library libcustom_interface__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -329,6 +352,8 @@ CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/depend: rosi
 CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__type_support.c
 CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_introspection_c.h
 CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__type_support.c
+CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__rosidl_typesupport_introspection_c.h
+CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c
 	cd /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/depend
 

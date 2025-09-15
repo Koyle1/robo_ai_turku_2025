@@ -1,0 +1,24 @@
+/**:
+  ros__parameters:
+    # Global defaults can go here if you want
+    use_sim_time: false
+
+/cancel_service_server:
+  ros__parameters:
+    min_cancel_delay: 1.0    
+    max_cancel_delay: 3.0       
+    cancel_probability: 0.8     
+
+/cancel_service_client:
+  ros__parameters:
+    start_from: 15             
+    cancel_after: 5            
+    countdown_id: 1             
+
+/countdown_action_server:
+  ros__parameters:
+    countdown_interval: 1.0     
+
+/countdown_action_client:
+  ros__parameters:
+    start_from: 10             

@@ -9,6 +9,7 @@ setup.py
 ../../build/lab01_task03/lab01_task03.egg-info/requires.txt
 ../../build/lab01_task03/lab01_task03.egg-info/top_level.txt
 ../../build/lab01_task03/lab01_task03.egg-info/zip-safe
+config/params.yaml
 lab01_task03/__init__.py
 lab01_task03/client.py
 lab01_task03/server.py

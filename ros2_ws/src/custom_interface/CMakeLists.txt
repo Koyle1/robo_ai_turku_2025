@@ -18,9 +18,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/RequestDistanceMsg.msg"
   "msg/ResponseDistanceMsg.msg"
   "srv/CalculateDistance.srv"
+  "srv/CancelRequest.srv"
   "action/Countdown.action"
   "msg/Count.msg"
-  DEPENDENCIES std_msgs geometry_msgs action_msgs
+  DEPENDENCIES std_msgs geometry_msgs action_msgs builtin_interfaces
 )
 
 if(BUILD_TESTING)

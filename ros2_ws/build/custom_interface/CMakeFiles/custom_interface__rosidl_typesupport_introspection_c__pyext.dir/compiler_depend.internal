@@ -264,6 +264,9 @@ CMakeFiles/custom_interface__rosidl_typesupport_introspection_c__pyext.dir/rosid
  /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__type_support.h
  /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__struct.h
  /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__functions.h
+ /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/srv/detail/cancel_request__type_support.h
+ /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/srv/detail/cancel_request__struct.h
+ /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/srv/detail/cancel_request__functions.h
  /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/action/detail/countdown__type_support.h
  /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_c/custom_interface/action/detail/countdown__struct.h
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h

@@ -81,6 +81,7 @@ rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_ms
 rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp: rosidl_adapter/custom_interface/msg/RequestDistanceMsg.idl
 rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp: rosidl_adapter/custom_interface/msg/ResponseDistanceMsg.idl
 rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp: rosidl_adapter/custom_interface/srv/CalculateDistance.idl
+rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp: rosidl_adapter/custom_interface/srv/CancelRequest.idl
 rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp: rosidl_adapter/custom_interface/action/Countdown.idl
 rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp: rosidl_adapter/custom_interface/msg/Count.idl
 rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -176,6 +177,12 @@ rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calcula
 rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_fastrtps_cpp.hpp
 
+rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp: rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp
+
+rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/cancel_request__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/cancel_request__rosidl_typesupport_fastrtps_cpp.hpp
+
 rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp: rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp
 
@@ -244,10 +251,24 @@ CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/felix/robo/robo_ai_turku_2025/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp -o CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp.s
 
+CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.o: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/flags.make
+CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp
+CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.o: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/felix/robo/robo_ai_turku_2025/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.o -MF CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.o.d -o CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.o -c /home/felix/robo/robo_ai_turku_2025/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp
+
+CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/felix/robo/robo_ai_turku_2025/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp > CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.i
+
+CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/felix/robo/robo_ai_turku_2025/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp -o CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.s
+
 CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.o: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/flags.make
 CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp
 CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.o: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/felix/robo/robo_ai_turku_2025/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/felix/robo/robo_ai_turku_2025/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.o -MF CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.o.d -o CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.o -c /home/felix/robo/robo_ai_turku_2025/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp
 
 CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.i: cmake_force
@@ -261,7 +282,7 @@ CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupp
 CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp.o: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/flags.make
 CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp
 CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp.o: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/felix/robo/robo_ai_turku_2025/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/felix/robo/robo_ai_turku_2025/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp.o -MF CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp.o.d -o CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp.o -c /home/felix/robo/robo_ai_turku_2025/build/custom_interface/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp
 
 CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp.i: cmake_force
@@ -278,6 +299,7 @@ custom_interface__rosidl_typesupport_fastrtps_cpp_OBJECTS = \
 "CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/request_distance_msg__type_support.cpp.o" \
 "CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/response_distance_msg__type_support.cpp.o" \
 "CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp.o" \
+"CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.o" \
 "CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.o" \
 "CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp.o"
 
@@ -288,6 +310,7 @@ libcustom_interface__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_inter
 libcustom_interface__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/request_distance_msg__type_support.cpp.o
 libcustom_interface__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/response_distance_msg__type_support.cpp.o
 libcustom_interface__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp.o
+libcustom_interface__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.o
 libcustom_interface__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.o
 libcustom_interface__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp.o
 libcustom_interface__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/build.make
@@ -302,7 +325,7 @@ libcustom_interface__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/lib
 libcustom_interface__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcustom_interface__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librcutils.so
 libcustom_interface__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/felix/robo/robo_ai_turku_2025/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library libcustom_interface__rosidl_typesupport_fastrtps_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/felix/robo/robo_ai_turku_2025/build/custom_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library libcustom_interface__rosidl_typesupport_fastrtps_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -324,7 +347,9 @@ CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_
 CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/response_distance_msg__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/task_msg__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_fastrtps_cpp.hpp
+CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/cancel_request__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp
+CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp
 	cd /home/felix/robo/robo_ai_turku_2025/build/custom_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface /home/felix/robo/robo_ai_turku_2025/build/custom_interface /home/felix/robo/robo_ai_turku_2025/build/custom_interface /home/felix/robo/robo_ai_turku_2025/build/custom_interface/CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/depend
 

@@ -26,8 +26,13 @@
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__functions.h
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__struct.h
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/calculate_distance.h
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/cancel_request.h
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__functions.c
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__type_support.h
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__functions.c
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__struct.h
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__type_support.h
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__functions.h
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__functions.h
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__struct.h
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/library_path.sh
@@ -39,6 +44,7 @@
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__rosidl_typesupport_fastrtps_c.h
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__rosidl_typesupport_fastrtps_c.h
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__rosidl_typesupport_fastrtps_c.h
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_fastrtps_c.h
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_c.so
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/request_distance_msg.hpp
@@ -68,9 +74,14 @@
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__struct.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__traits.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/calculate_distance.hpp
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/cancel_request.hpp
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__struct.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__type_support.hpp
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__type_support.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__builder.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__traits.hpp
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__traits.hpp
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__builder.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__struct.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__rosidl_typesupport_fastrtps_cpp.hpp
@@ -78,6 +89,7 @@
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__rosidl_typesupport_fastrtps_cpp.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__rosidl_typesupport_fastrtps_cpp.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__rosidl_typesupport_fastrtps_cpp.hpp
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__rosidl_typesupport_fastrtps_cpp.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_fastrtps_cpp.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_cpp.so
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
@@ -91,6 +103,8 @@
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__type_support.c
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__type_support.c
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__rosidl_typesupport_introspection_c.h
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__rosidl_typesupport_introspection_c.h
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__type_support.c
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__type_support.c
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_introspection_c.h
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_c.so
@@ -105,8 +119,10 @@
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__type_support.cpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__rosidl_typesupport_introspection_cpp.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__type_support.cpp
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__rosidl_typesupport_introspection_cpp.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_introspection_cpp.hpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__type_support.cpp
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__type_support.cpp
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_cpp.so
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_cpp.so
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/pythonpath.sh
@@ -130,7 +146,9 @@
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action/_countdown.py
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action/_countdown_s.c
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/__init__.py
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_cancel_request.py
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_calculate_distance.py
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_cancel_request_s.c
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_calculate_distance_s.c
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/libcustom_interface__rosidl_generator_py.so
@@ -146,6 +164,7 @@
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/RequestDistanceMsg.idl
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/ResponseDistanceMsg.idl
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CalculateDistance.idl
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CancelRequest.idl
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/action/Countdown.idl
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/Count.idl
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/TaskMsg.msg
@@ -154,6 +173,9 @@
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CalculateDistance.srv
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CalculateDistance_Request.msg
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CalculateDistance_Response.msg
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CancelRequest.srv
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CancelRequest_Request.msg
+/home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CancelRequest_Response.msg
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/action/Countdown.action
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/Count.msg
 /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/ament_index/resource_index/package_run_dependencies/custom_interface

@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/msg/_task_msg_s.c.o.d"
   "CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/srv/_calculate_distance_s.c.o"
   "CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/srv/_calculate_distance_s.c.o.d"
+  "CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/srv/_cancel_request_s.c.o"
+  "CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/srv/_cancel_request_s.c.o.d"
   "rosidl_generator_py/custom_interface/libcustom_interface__rosidl_generator_py.pdb"
   "rosidl_generator_py/custom_interface/libcustom_interface__rosidl_generator_py.so"
 )

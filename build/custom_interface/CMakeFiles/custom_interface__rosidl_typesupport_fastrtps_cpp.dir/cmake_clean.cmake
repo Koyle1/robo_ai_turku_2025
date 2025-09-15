@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp.o.d"
   "CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp.o"
   "CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp.o.d"
+  "CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.o"
+  "CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.o.d"
   "libcustom_interface__rosidl_typesupport_fastrtps_cpp.pdb"
   "libcustom_interface__rosidl_typesupport_fastrtps_cpp.so"
   "rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/countdown__rosidl_typesupport_fastrtps_cpp.hpp"
@@ -24,7 +26,9 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/response_distance_msg__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/task_msg__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/cancel_request__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

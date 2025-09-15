@@ -29,6 +29,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_py/custom_interface/srv/__init__.py" "/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_py/custom_interface/srv/_calculate_distance.py" "/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_py/custom_interface/srv/_calculate_distance_s.c" "/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_py/custom_interface/srv/_cancel_request.py" "/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_py/custom_interface/srv/_cancel_request_s.c" "/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

@@ -372,6 +372,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interface/srv" TYPE FILE FILES "/home/felix/robo/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface/srv/CancelRequest.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interface/action" TYPE FILE FILES "/home/felix/robo/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface/action/Countdown.idl")
 endif()
 
@@ -401,6 +405,18 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interface/srv" TYPE FILE FILES "/home/felix/robo/robo_ai_turku_2025/build/custom_interface/rosidl_cmake/srv/CalculateDistance_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interface/srv" TYPE FILE FILES "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/srv/CancelRequest.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interface/srv" TYPE FILE FILES "/home/felix/robo/robo_ai_turku_2025/build/custom_interface/rosidl_cmake/srv/CancelRequest_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_interface/srv" TYPE FILE FILES "/home/felix/robo/robo_ai_turku_2025/build/custom_interface/rosidl_cmake/srv/CancelRequest_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

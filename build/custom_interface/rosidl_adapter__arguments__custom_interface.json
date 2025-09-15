@@ -5,6 +5,7 @@
     "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface:msg/RequestDistanceMsg.msg",
     "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface:msg/ResponseDistanceMsg.msg",
     "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface:srv/CalculateDistance.srv",
+    "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface:srv/CancelRequest.srv",
     "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface:action/Countdown.action",
     "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface:msg/Count.msg"
   ]

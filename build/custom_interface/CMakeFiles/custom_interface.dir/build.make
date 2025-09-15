@@ -72,6 +72,9 @@ CMakeFiles/custom_interface: /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/cus
 CMakeFiles/custom_interface: /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/srv/CalculateDistance.srv
 CMakeFiles/custom_interface: rosidl_cmake/srv/CalculateDistance_Request.msg
 CMakeFiles/custom_interface: rosidl_cmake/srv/CalculateDistance_Response.msg
+CMakeFiles/custom_interface: /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/srv/CancelRequest.srv
+CMakeFiles/custom_interface: rosidl_cmake/srv/CancelRequest_Request.msg
+CMakeFiles/custom_interface: rosidl_cmake/srv/CancelRequest_Response.msg
 CMakeFiles/custom_interface: /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/action/Countdown.action
 CMakeFiles/custom_interface: /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/msg/Count.msg
 CMakeFiles/custom_interface: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -140,6 +143,8 @@ CMakeFiles/custom_interface: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 CMakeFiles/custom_interface: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 CMakeFiles/custom_interface: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
 CMakeFiles/custom_interface: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
+CMakeFiles/custom_interface: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+CMakeFiles/custom_interface: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 
 custom_interface: CMakeFiles/custom_interface
 custom_interface: CMakeFiles/custom_interface.dir/build.make

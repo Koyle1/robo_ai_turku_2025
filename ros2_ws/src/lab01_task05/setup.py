@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+from glob import glob
+import os
 
 package_name = 'lab01_task05'
 
@@ -10,6 +12,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
     ],
     install_requires=['setuptools', 'custom_interface', 'rclpy'],
     zip_safe=True,
@@ -20,9 +23,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'countdown_server = lab01_task05.countdown_server:main',
-            'countdown_client = lab01_task05.countdown_client:main',
-            'countdown_cancel_client = lab01_task05.countdown_cancel_client:main',
+            'countdown_action_server = lab01_task05.countdown_action_server:main',
+            'countdown_action_client = lab01_task05.countdown_action_client:main',
+            'cancel_service_server = lab01_task05.cancel_service_server:main',
+            'cancel_service_client = lab01_task05.cancel_service_client:main',
         ],
     },
 )

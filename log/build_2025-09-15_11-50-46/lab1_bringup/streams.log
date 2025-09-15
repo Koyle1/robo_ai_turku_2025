@@ -1,0 +1,39 @@
+[2.215s] Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab1_bringup': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/build/lab1_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/install/lab1_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab1_bringup build --build-base /home/felix/robo/robo_ai_turku_2025/build/lab1_bringup/build install --record /home/felix/robo/robo_ai_turku_2025/build/lab1_bringup/install.log --single-version-externally-managed install_data
+[2.543s] Traceback (most recent call last):
+[2.543s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2866, in get_entry_map
+[2.546s]     ep_map = self._ep_map
+[2.546s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2828, in __getattr__
+[2.546s]     raise AttributeError(attr)
+[2.546s] AttributeError: _ep_map. Did you mean: '_dep_map'?
+[2.546s] 
+[2.546s] During handling of the above exception, another exception occurred:
+[2.546s] 
+[2.546s] Traceback (most recent call last):
+[2.546s]   File "/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab1_bringup/setup.py", line 7, in <module>
+[2.546s]     setup(
+[2.546s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 152, in setup
+[2.547s]     _install_setup_requires(attrs)
+[2.547s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 142, in _install_setup_requires
+[2.547s]     dist = MinimalDistribution(attrs)
+[2.547s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 134, in __init__
+[2.547s]     distutils.core.Distribution.__init__(self, filtered)
+[2.547s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 457, in __init__
+[2.548s]     for ep in pkg_resources.iter_entry_points('distutils.setup_keywords'):
+[2.549s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 646, in <genexpr>
+[2.549s]     for entry in dist.get_entry_map(group).values()
+[2.549s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2868, in get_entry_map
+[2.549s]     ep_map = self._ep_map = EntryPoint.parse_map(
+[2.549s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2549, in parse_map
+[2.549s]     for group, lines in data:
+[2.550s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3205, in split_sections
+[2.550s]     for line in yield_lines(s):
+[2.550s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2780, in _get_metadata
+[2.550s]     for line in self.get_metadata_lines(name):
+[2.550s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1422, in get_metadata_lines
+[2.550s]     return yield_lines(self.get_metadata(name))
+[2.550s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1412, in get_metadata
+[2.550s]     value = self._get(path)
+[2.550s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1616, in _get
+[2.550s]     with open(path, 'rb') as stream:
+[2.550s] FileNotFoundError: [Errno 2] No such file or directory: '/home/felix/robo/robo_ai_turku_2025/install/task1/lib/python3.10/site-packages/task1-0.0.0-py3.10.egg-info/entry_points.txt'
+[2.575s] Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab1_bringup' returned '1': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/build/lab1_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/install/lab1_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab1_bringup build --build-base /home/felix/robo/robo_ai_turku_2025/build/lab1_bringup/build install --record /home/felix/robo/robo_ai_turku_2025/build/lab1_bringup/install.log --single-version-externally-managed install_data

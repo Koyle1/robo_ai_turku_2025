@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__type_support.c.o.d"
   "CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__type_support.c.o"
   "CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__type_support.c.o.d"
+  "CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.o"
+  "CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.o.d"
   "libcustom_interface__rosidl_typesupport_introspection_c.pdb"
   "libcustom_interface__rosidl_typesupport_introspection_c.so"
   "rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__rosidl_typesupport_introspection_c.h"
@@ -25,6 +27,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__type_support.c"
   "rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__type_support.c"
+  "rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c"
 )
 
 # Per-language clean rules from dependency scanning.

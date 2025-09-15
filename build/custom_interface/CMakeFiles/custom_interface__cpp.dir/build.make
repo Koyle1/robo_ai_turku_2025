@@ -86,6 +86,11 @@ CMakeFiles/custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/deta
 CMakeFiles/custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__struct.hpp
 CMakeFiles/custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__traits.hpp
 CMakeFiles/custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__type_support.hpp
+CMakeFiles/custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/cancel_request.hpp
+CMakeFiles/custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__builder.hpp
+CMakeFiles/custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__struct.hpp
+CMakeFiles/custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__traits.hpp
+CMakeFiles/custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__type_support.hpp
 CMakeFiles/custom_interface__cpp: rosidl_generator_cpp/custom_interface/action/countdown.hpp
 CMakeFiles/custom_interface__cpp: rosidl_generator_cpp/custom_interface/action/detail/countdown__builder.hpp
 CMakeFiles/custom_interface__cpp: rosidl_generator_cpp/custom_interface/action/detail/countdown__struct.hpp
@@ -117,6 +122,7 @@ rosidl_generator_cpp/custom_interface/msg/task_msg.hpp: rosidl_adapter/custom_in
 rosidl_generator_cpp/custom_interface/msg/task_msg.hpp: rosidl_adapter/custom_interface/msg/RequestDistanceMsg.idl
 rosidl_generator_cpp/custom_interface/msg/task_msg.hpp: rosidl_adapter/custom_interface/msg/ResponseDistanceMsg.idl
 rosidl_generator_cpp/custom_interface/msg/task_msg.hpp: rosidl_adapter/custom_interface/srv/CalculateDistance.idl
+rosidl_generator_cpp/custom_interface/msg/task_msg.hpp: rosidl_adapter/custom_interface/srv/CancelRequest.idl
 rosidl_generator_cpp/custom_interface/msg/task_msg.hpp: rosidl_adapter/custom_interface/action/Countdown.idl
 rosidl_generator_cpp/custom_interface/msg/task_msg.hpp: rosidl_adapter/custom_interface/msg/Count.idl
 rosidl_generator_cpp/custom_interface/msg/task_msg.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -248,6 +254,21 @@ rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__traits.hpp:
 rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__type_support.hpp: rosidl_generator_cpp/custom_interface/msg/task_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__type_support.hpp
 
+rosidl_generator_cpp/custom_interface/srv/cancel_request.hpp: rosidl_generator_cpp/custom_interface/msg/task_msg.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interface/srv/cancel_request.hpp
+
+rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__builder.hpp: rosidl_generator_cpp/custom_interface/msg/task_msg.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__builder.hpp
+
+rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__struct.hpp: rosidl_generator_cpp/custom_interface/msg/task_msg.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__struct.hpp
+
+rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__traits.hpp: rosidl_generator_cpp/custom_interface/msg/task_msg.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__traits.hpp
+
+rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__type_support.hpp: rosidl_generator_cpp/custom_interface/msg/task_msg.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__type_support.hpp
+
 rosidl_generator_cpp/custom_interface/action/countdown.hpp: rosidl_generator_cpp/custom_interface/msg/task_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interface/action/countdown.hpp
 
@@ -305,10 +326,15 @@ custom_interface__cpp: rosidl_generator_cpp/custom_interface/msg/request_distanc
 custom_interface__cpp: rosidl_generator_cpp/custom_interface/msg/response_distance_msg.hpp
 custom_interface__cpp: rosidl_generator_cpp/custom_interface/msg/task_msg.hpp
 custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/calculate_distance.hpp
+custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/cancel_request.hpp
 custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__builder.hpp
 custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__struct.hpp
 custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__traits.hpp
 custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__type_support.hpp
+custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__builder.hpp
+custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__struct.hpp
+custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__traits.hpp
+custom_interface__cpp: rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__type_support.hpp
 custom_interface__cpp: CMakeFiles/custom_interface__cpp.dir/build.make
 .PHONY : custom_interface__cpp
 

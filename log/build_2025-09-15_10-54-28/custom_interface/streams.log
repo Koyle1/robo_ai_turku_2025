@@ -1,0 +1,444 @@
+[0.071s] Invoking command in '/home/felix/robo/robo_ai_turku_2025/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/robo/robo_ai_turku_2025/install/task1:/home/felix/robo/robo_ai_turku_2025/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake --build /home/felix/robo/robo_ai_turku_2025/build/custom_interface -- -j22 -l22
+[1.264s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.264s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[1.264s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.264s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.265s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.265s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.265s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.266s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.266s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.433s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.525s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[6.547s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[7.050s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[7.662s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.900s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.936s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[7.977s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.977s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[7.977s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[8.061s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.265s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.266s] -- Configured cppcheck include dirs: 
+[8.266s] -- Configured cppcheck exclude dirs and/or files: 
+[8.271s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.279s] -- Added test 'lint_cmake' to check CMake code style
+[8.283s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.309s] -- Added test 'uncrustify' to check C / C++ code style
+[8.310s] -- Configured uncrustify additional arguments: 
+[8.316s] -- Added test 'xmllint' to check XML markup files
+[8.324s] -- Configuring done
+[8.442s] -- Generating done
+[8.463s] -- Build files have been written to: /home/felix/robo/robo_ai_turku_2025/build/custom_interface
+[8.513s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[8.525s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[8.564s] [  2%] Built target ament_cmake_python_copy_custom_interface
+[8.848s] running egg_info
+[8.849s] writing custom_interface.egg-info/PKG-INFO
+[8.849s] writing dependency_links to custom_interface.egg-info/dependency_links.txt
+[8.849s] writing top-level names to custom_interface.egg-info/top_level.txt
+[8.852s] reading manifest file 'custom_interface.egg-info/SOURCES.txt'
+[8.854s] writing manifest file 'custom_interface.egg-info/SOURCES.txt'
+[8.883s] [  2%] Built target ament_cmake_python_build_custom_interface_egg
+[9.420s] [  2%] Built target custom_interface__cpp
+[9.430s] [35m[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_generator_c[0m
+[9.432s] [  3%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[9.434s] [  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[9.434s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[9.445s] [  7%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/msg/detail/request_distance_msg__functions.c.o[0m
+[9.445s] [  8%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/msg/detail/response_distance_msg__functions.c.o[0m
+[9.449s] [ 12%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/msg/detail/count__functions.c.o[0m
+[9.450s] [ 12%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/msg/detail/task_msg__functions.c.o[0m
+[9.450s] [ 12%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/srv/detail/cancel_request__functions.c.o[0m
+[9.452s] [ 13%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__functions.c.o[0m
+[9.456s] [ 15%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/action/detail/countdown__functions.c.o[0m
+[9.735s] [ 16%] [32m[1mLinking C shared library libcustom_interface__rosidl_generator_c.so[0m
+[9.850s] [ 16%] Built target custom_interface__rosidl_generator_c
+[9.863s] [ 17%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[9.865s] [ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[9.868s] [ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[9.992s] [35m[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_typesupport_cpp[0m
+[10.013s] [ 22%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/msg/request_distance_msg__type_support.cpp.o[0m
+[10.013s] [ 22%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/msg/response_distance_msg__type_support.cpp.o[0m
+[10.018s] [ 24%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/srv/cancel_request__type_support.cpp.o[0m
+[10.019s] [ 25%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/msg/task_msg__type_support.cpp.o[0m
+[10.019s] [ 26%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/srv/calculate_distance__type_support.cpp.o[0m
+[10.021s] [ 27%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/msg/count__type_support.cpp.o[0m
+[10.026s] [ 29%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/action/countdown__type_support.cpp.o[0m
+[10.173s] [35m[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_typesupport_introspection_cpp[0m
+[10.196s] [ 30%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/msg/detail/task_msg__type_support.cpp.o[0m
+[10.205s] [ 31%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/msg/detail/response_distance_msg__type_support.cpp.o[0m
+[10.205s] [ 32%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/msg/detail/request_distance_msg__type_support.cpp.o[0m
+[10.205s] [ 35%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/srv/detail/calculate_distance__type_support.cpp.o[0m
+[10.205s] [ 35%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/srv/detail/cancel_request__type_support.cpp.o[0m
+[10.205s] [ 36%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/action/detail/countdown__type_support.cpp.o[0m
+[10.205s] [ 37%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/msg/detail/count__type_support.cpp.o[0m
+[10.346s] [35m[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_typesupport_fastrtps_cpp[0m
+[10.382s] [ 39%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/response_distance_msg__type_support.cpp.o[0m
+[10.384s] [ 40%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/request_distance_msg__type_support.cpp.o[0m
+[10.384s] [ 41%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp.o[0m
+[10.407s] [ 44%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.o[0m
+[10.409s] [ 44%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp.o[0m
+[10.881s] [ 45%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.o[0m
+[10.932s] [35m[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_typesupport_c[0m
+[10.961s] [ 46%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/msg/task_msg__type_support.cpp.o[0m
+[10.988s] [ 48%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp.o[0m
+[11.047s] [ 49%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/msg/request_distance_msg__type_support.cpp.o[0m
+[11.062s] [ 50%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/msg/response_distance_msg__type_support.cpp.o[0m
+[11.084s] [ 53%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/srv/calculate_distance__type_support.cpp.o[0m
+[11.084s] [ 53%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/srv/cancel_request__type_support.cpp.o[0m
+[11.113s] [ 54%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/action/countdown__type_support.cpp.o[0m
+[11.162s] [ 55%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/msg/count__type_support.cpp.o[0m
+[11.228s] [35m[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_typesupport_introspection_c[0m
+[11.264s] [ 56%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c.o[0m
+[11.265s] [ 59%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/request_distance_msg__type_support.c.o[0m
+[11.268s] [ 59%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.o[0m
+[11.274s] [ 62%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/response_distance_msg__type_support.c.o[0m
+[11.275s] [ 62%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__type_support.c.o[0m
+[11.280s] [ 63%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__type_support.c.o[0m
+[11.303s] [ 64%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_c.so[0m
+[11.370s] [ 65%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c.o[0m
+[11.462s] [ 67%] [32m[1mLinking C shared library libcustom_interface__rosidl_typesupport_introspection_c.so[0m
+[11.468s] [35m[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_typesupport_fastrtps_c[0m
+[11.508s] [ 68%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/msg/detail/task_msg__type_support_c.cpp.o[0m
+[11.516s] [ 69%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/action/detail/countdown__type_support_c.cpp.o[0m
+[11.516s] [ 70%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/msg/detail/response_distance_msg__type_support_c.cpp.o[0m
+[11.518s] [ 72%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/msg/detail/count__type_support_c.cpp.o[0m
+[11.519s] [ 74%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/srv/detail/calculate_distance__type_support_c.cpp.o[0m
+[11.521s] [ 75%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/msg/detail/request_distance_msg__type_support_c.cpp.o[0m
+[11.521s] [ 74%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/srv/detail/cancel_request__type_support_c.cpp.o[0m
+[11.580s] [ 75%] Built target custom_interface__rosidl_typesupport_c
+[11.592s] [ 77%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_cpp.so[0m
+[11.666s] [ 77%] Built target custom_interface__rosidl_typesupport_introspection_c
+[11.776s] [ 77%] Built target custom_interface__rosidl_typesupport_cpp
+[11.924s] [ 78%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_introspection_cpp.so[0m
+[12.130s] [ 78%] Built target custom_interface__rosidl_typesupport_introspection_cpp
+[12.163s] [ 79%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[12.246s] [ 81%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_fastrtps_c.so[0m
+[12.327s] [ 81%] Built target custom_interface__rosidl_typesupport_fastrtps_cpp
+[12.419s] [ 81%] Built target custom_interface__rosidl_typesupport_fastrtps_c
+[12.447s] [ 81%] Built target custom_interface
+[12.478s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[14.092s] [ 82%] Built target custom_interface__py
+[14.112s] [35m[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_generator_py[0m
+[14.133s] [ 83%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/msg/_request_distance_msg_s.c.o[0m
+[14.133s] [ 84%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/msg/_task_msg_s.c.o[0m
+[14.135s] [ 86%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/msg/_response_distance_msg_s.c.o[0m
+[14.135s] [ 87%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/action/_countdown_s.c.o[0m
+[14.138s] [ 88%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/srv/_calculate_distance_s.c.o[0m
+[14.138s] [ 89%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/srv/_cancel_request_s.c.o[0m
+[14.144s] [ 91%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/msg/_count_s.c.o[0m
+[14.395s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/custom_interface/libcustom_interface__rosidl_generator_py.so[0m
+[14.515s] [ 92%] Built target custom_interface__rosidl_generator_py
+[14.532s] [35m[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_typesupport_fastrtps_c__pyext[0m
+[14.532s] [35m[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_typesupport_c__pyext[0m
+[14.532s] [35m[1mConsolidate compiler generated dependencies of target custom_interface__rosidl_typesupport_introspection_c__pyext[0m
+[14.549s] [ 93%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[14.550s] [ 94%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[14.552s] [ 96%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[14.715s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.721s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.743s] [100%] [32m[1mLinking C shared library rosidl_generator_py/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.808s] [100%] Built target custom_interface__rosidl_typesupport_introspection_c__pyext
+[14.809s] [100%] Built target custom_interface__rosidl_typesupport_fastrtps_c__pyext
+[14.838s] [100%] Built target custom_interface__rosidl_typesupport_c__pyext
+[14.856s] Invoked command in '/home/felix/robo/robo_ai_turku_2025/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/robo/robo_ai_turku_2025/install/task1:/home/felix/robo/robo_ai_turku_2025/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake --build /home/felix/robo/robo_ai_turku_2025/build/custom_interface -- -j22 -l22
+[14.872s] Invoking command in '/home/felix/robo/robo_ai_turku_2025/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/robo/robo_ai_turku_2025/install/task1:/home/felix/robo/robo_ai_turku_2025/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake --install /home/felix/robo/robo_ai_turku_2025/build/custom_interface
+[14.881s] -- Install configuration: ""
+[14.882s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/ament_index/resource_index/rosidl_interfaces/custom_interface
+[14.883s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface
+[14.883s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg
+[14.884s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/count.h
+[14.885s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/task_msg.h
+[14.885s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/request_distance_msg.h
+[14.885s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_generator_c__visibility_control.h
+[14.886s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/response_distance_msg.h
+[14.886s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[14.886s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__functions.c
+[14.886s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__type_support.h
+[14.886s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__struct.h
+[14.886s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__functions.h
+[14.887s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__struct.h
+[14.887s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__functions.h
+[14.887s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__struct.h
+[14.887s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__functions.h
+[14.887s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__functions.c
+[14.887s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__functions.c
+[14.888s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__functions.h
+[14.888s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__type_support.h
+[14.888s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__struct.h
+[14.888s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__functions.c
+[14.889s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__type_support.h
+[14.889s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__type_support.h
+[14.889s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action
+[14.889s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/countdown.h
+[14.890s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail
+[14.890s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__type_support.h
+[14.891s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__functions.c
+[14.891s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__functions.h
+[14.892s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__struct.h
+[14.892s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv
+[14.892s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/calculate_distance.h
+[14.892s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/cancel_request.h
+[14.893s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[14.893s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__functions.c
+[14.893s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__type_support.h
+[14.893s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__functions.c
+[14.893s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__struct.h
+[14.894s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__type_support.h
+[14.894s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__functions.h
+[14.894s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__functions.h
+[14.894s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__struct.h
+[14.894s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/library_path.sh
+[14.894s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/library_path.dsv
+[14.896s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_generator_c.so
+[14.896s] -- Set runtime path of "/home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_generator_c.so" to ""
+[14.896s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface
+[14.897s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg
+[14.897s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[14.897s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__rosidl_typesupport_fastrtps_c.h
+[14.897s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__rosidl_typesupport_fastrtps_c.h
+[14.897s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__rosidl_typesupport_fastrtps_c.h
+[14.897s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__rosidl_typesupport_fastrtps_c.h
+[14.897s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[14.897s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action
+[14.898s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail
+[14.898s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__rosidl_typesupport_fastrtps_c.h
+[14.899s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv
+[14.899s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[14.899s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__rosidl_typesupport_fastrtps_c.h
+[14.899s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_fastrtps_c.h
+[14.900s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_c.so
+[14.900s] -- Set runtime path of "/home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[14.901s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface
+[14.901s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg
+[14.901s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/request_distance_msg.hpp
+[14.901s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/count.hpp
+[14.902s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/response_distance_msg.hpp
+[14.902s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[14.902s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/task_msg.hpp
+[14.902s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[14.902s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__builder.hpp
+[14.902s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__traits.hpp
+[14.903s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__builder.hpp
+[14.903s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__traits.hpp
+[14.903s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__struct.hpp
+[14.903s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__traits.hpp
+[14.904s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__type_support.hpp
+[14.904s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__struct.hpp
+[14.904s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__traits.hpp
+[14.904s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__builder.hpp
+[14.904s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__struct.hpp
+[14.904s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__type_support.hpp
+[14.905s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__struct.hpp
+[14.905s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__builder.hpp
+[14.905s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__type_support.hpp
+[14.905s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__type_support.hpp
+[14.905s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action
+[14.905s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/countdown.hpp
+[14.905s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail
+[14.906s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__type_support.hpp
+[14.906s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__builder.hpp
+[14.907s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__struct.hpp
+[14.907s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__traits.hpp
+[14.907s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv
+[14.907s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/calculate_distance.hpp
+[14.908s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/cancel_request.hpp
+[14.908s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[14.908s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__struct.hpp
+[14.908s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__type_support.hpp
+[14.908s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__type_support.hpp
+[14.908s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__builder.hpp
+[14.909s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__traits.hpp
+[14.909s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__traits.hpp
+[14.909s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__builder.hpp
+[14.909s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__struct.hpp
+[14.909s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface
+[14.910s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg
+[14.910s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[14.910s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[14.911s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[14.911s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[14.912s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[14.912s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__rosidl_typesupport_fastrtps_cpp.hpp
+[14.912s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/dds_fastrtps
+[14.912s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action
+[14.912s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail
+[14.912s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/dds_fastrtps
+[14.914s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__rosidl_typesupport_fastrtps_cpp.hpp
+[14.914s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv
+[14.914s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[14.914s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__rosidl_typesupport_fastrtps_cpp.hpp
+[14.914s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_fastrtps_cpp.hpp
+[14.915s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/dds_fastrtps
+[14.916s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_cpp.so
+[14.917s] -- Set runtime path of "/home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[14.917s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface
+[14.917s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg
+[14.917s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[14.917s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[14.917s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__rosidl_typesupport_introspection_c.h
+[14.918s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__rosidl_typesupport_introspection_c.h
+[14.918s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__type_support.c
+[14.918s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__rosidl_typesupport_introspection_c.h
+[14.918s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__type_support.c
+[14.918s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h
+[14.918s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__type_support.c
+[14.919s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__type_support.c
+[14.919s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action
+[14.919s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail
+[14.920s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__type_support.c
+[14.920s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__rosidl_typesupport_introspection_c.h
+[14.920s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv
+[14.920s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[14.921s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__rosidl_typesupport_introspection_c.h
+[14.921s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__type_support.c
+[14.921s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__type_support.c
+[14.921s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_introspection_c.h
+[14.922s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_c.so
+[14.923s] -- Set runtime path of "/home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_c.so" to ""
+[14.924s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_c.so
+[14.924s] -- Set runtime path of "/home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_c.so" to ""
+[14.924s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface
+[14.925s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg
+[14.925s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[14.925s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__rosidl_typesupport_introspection_cpp.hpp
+[14.926s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__rosidl_typesupport_introspection_cpp.hpp
+[14.926s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_cpp.hpp
+[14.926s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__type_support.cpp
+[14.926s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__type_support.cpp
+[14.926s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__type_support.cpp
+[14.927s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__rosidl_typesupport_introspection_cpp.hpp
+[14.927s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__type_support.cpp
+[14.927s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action
+[14.927s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail
+[14.928s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__rosidl_typesupport_introspection_cpp.hpp
+[14.928s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__type_support.cpp
+[14.928s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv
+[14.928s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[14.929s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__rosidl_typesupport_introspection_cpp.hpp
+[14.929s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_introspection_cpp.hpp
+[14.929s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__type_support.cpp
+[14.929s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__type_support.cpp
+[14.930s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_cpp.so
+[14.931s] -- Set runtime path of "/home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[14.932s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_cpp.so
+[14.933s] -- Set runtime path of "/home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_cpp.so" to ""
+[14.933s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/pythonpath.sh
+[14.934s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/pythonpath.dsv
+[14.934s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface-0.0.0-py3.10.egg-info
+[14.934s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[14.934s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[14.934s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[14.934s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface-0.0.0-py3.10.egg-info/top_level.txt
+[14.934s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface
+[14.935s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[14.935s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/__init__.py
+[14.935s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg
+[14.935s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_response_distance_msg.py
+[14.936s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_response_distance_msg_s.c
+[14.936s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_request_distance_msg.py
+[14.936s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/__init__.py
+[14.937s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_count_s.c
+[14.937s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_count.py
+[14.937s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_task_msg_s.c
+[14.938s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_request_distance_msg_s.c
+[14.938s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_task_msg.py
+[14.938s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action
+[14.938s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action/__init__.py
+[14.938s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action/_countdown.py
+[14.938s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action/_countdown_s.c
+[14.939s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv
+[14.939s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/__init__.py
+[14.940s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_cancel_request.py
+[14.940s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_calculate_distance.py
+[14.941s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_cancel_request_s.c
+[14.941s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_calculate_distance_s.c
+[14.941s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[14.941s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/libcustom_interface__rosidl_generator_py.so
+[14.941s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[14.941s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[14.942s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/_custom_interface_s.ep.rosidl_typesupport_introspection_c.c
+[14.942s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/_custom_interface_s.ep.rosidl_typesupport_c.c
+[15.023s] Listing '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface'...
+[15.023s] Compiling '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/__init__.py'...
+[15.023s] Listing '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action'...
+[15.023s] Compiling '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action/__init__.py'...
+[15.023s] Compiling '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action/_countdown.py'...
+[15.023s] Listing '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg'...
+[15.023s] Compiling '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/__init__.py'...
+[15.023s] Compiling '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_count.py'...
+[15.023s] Compiling '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_request_distance_msg.py'...
+[15.024s] Compiling '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_response_distance_msg.py'...
+[15.024s] Compiling '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_task_msg.py'...
+[15.024s] Listing '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv'...
+[15.024s] Compiling '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/__init__.py'...
+[15.024s] Compiling '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_calculate_distance.py'...
+[15.024s] Compiling '/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_cancel_request.py'...
+[15.029s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[15.029s] -- Set runtime path of "/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[15.029s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[15.030s] -- Set runtime path of "/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[15.031s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[15.031s] -- Set runtime path of "/home/felix/robo/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[15.032s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_generator_py.so
+[15.032s] -- Set runtime path of "/home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_generator_py.so" to ""
+[15.032s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/TaskMsg.idl
+[15.033s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/RequestDistanceMsg.idl
+[15.033s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/ResponseDistanceMsg.idl
+[15.033s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CalculateDistance.idl
+[15.034s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CancelRequest.idl
+[15.034s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/action/Countdown.idl
+[15.034s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/Count.idl
+[15.035s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/TaskMsg.msg
+[15.035s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/RequestDistanceMsg.msg
+[15.035s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/ResponseDistanceMsg.msg
+[15.035s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CalculateDistance.srv
+[15.035s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CalculateDistance_Request.msg
+[15.035s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CalculateDistance_Response.msg
+[15.035s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CancelRequest.srv
+[15.035s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CancelRequest_Request.msg
+[15.035s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CancelRequest_Response.msg
+[15.035s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/action/Countdown.action
+[15.035s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/Count.msg
+[15.035s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/ament_index/resource_index/package_run_dependencies/custom_interface
+[15.035s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/ament_index/resource_index/parent_prefix_path/custom_interface
+[15.036s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/ament_prefix_path.sh
+[15.036s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/ament_prefix_path.dsv
+[15.036s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/path.sh
+[15.036s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/path.dsv
+[15.037s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/local_setup.bash
+[15.037s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/local_setup.sh
+[15.037s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/local_setup.zsh
+[15.037s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/local_setup.dsv
+[15.038s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.dsv
+[15.038s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/ament_index/resource_index/packages/custom_interface
+[15.039s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_cExport.cmake
+[15.040s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_cExport-noconfig.cmake
+[15.040s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[15.040s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[15.041s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_cppExport.cmake
+[15.041s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[15.041s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[15.042s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cExport.cmake
+[15.042s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[15.042s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cExport.cmake
+[15.043s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cExport-noconfig.cmake
+[15.043s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cppExport.cmake
+[15.043s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[15.044s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cppExport.cmake
+[15.044s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[15.045s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_pyExport.cmake
+[15.045s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_pyExport-noconfig.cmake
+[15.046s] -- Installing: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/rosidl_cmake-extras.cmake
+[15.046s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.046s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.046s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[15.046s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_targets-extras.cmake
+[15.047s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[15.048s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[15.048s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interfaceConfig.cmake
+[15.048s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interfaceConfig-version.cmake
+[15.048s] -- Up-to-date: /home/felix/robo/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.xml
+[15.053s] Invoked command in '/home/felix/robo/robo_ai_turku_2025/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/robo/robo_ai_turku_2025/install/task1:/home/felix/robo/robo_ai_turku_2025/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake --install /home/felix/robo/robo_ai_turku_2025/build/custom_interface

@@ -73,6 +73,7 @@ custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom
 custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom_interface/msg/_request_distance_msg.py
 custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom_interface/msg/_response_distance_msg.py
 custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom_interface/srv/_calculate_distance.py
+custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom_interface/srv/_cancel_request.py
 custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom_interface/action/_countdown.py
 custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom_interface/msg/_count.py
 custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom_interface/msg/__init__.py
@@ -82,6 +83,7 @@ custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom
 custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom_interface/msg/_request_distance_msg_s.c
 custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom_interface/msg/_response_distance_msg_s.c
 custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom_interface/srv/_calculate_distance_s.c
+custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom_interface/srv/_cancel_request_s.c
 custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom_interface/action/_countdown_s.c
 custom_interface__py/CMakeFiles/custom_interface__py: rosidl_generator_py/custom_interface/msg/_count_s.c
 
@@ -102,6 +104,7 @@ rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_f
 rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interface/msg/RequestDistanceMsg.idl
 rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interface/msg/ResponseDistanceMsg.idl
 rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interface/srv/CalculateDistance.idl
+rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interface/srv/CancelRequest.idl
 rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interface/action/Countdown.idl
 rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_interface/msg/Count.idl
 rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -194,6 +197,9 @@ rosidl_generator_py/custom_interface/msg/_response_distance_msg.py: rosidl_gener
 rosidl_generator_py/custom_interface/srv/_calculate_distance.py: rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interface/srv/_calculate_distance.py
 
+rosidl_generator_py/custom_interface/srv/_cancel_request.py: rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interface/srv/_cancel_request.py
+
 rosidl_generator_py/custom_interface/action/_countdown.py: rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interface/action/_countdown.py
 
@@ -221,6 +227,9 @@ rosidl_generator_py/custom_interface/msg/_response_distance_msg_s.c: rosidl_gene
 rosidl_generator_py/custom_interface/srv/_calculate_distance_s.c: rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interface/srv/_calculate_distance_s.c
 
+rosidl_generator_py/custom_interface/srv/_cancel_request_s.c: rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interface/srv/_cancel_request_s.c
+
 rosidl_generator_py/custom_interface/action/_countdown_s.c: rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_interface/action/_countdown_s.c
 
@@ -246,6 +255,8 @@ custom_interface__py: rosidl_generator_py/custom_interface/msg/_task_msg_s.c
 custom_interface__py: rosidl_generator_py/custom_interface/srv/__init__.py
 custom_interface__py: rosidl_generator_py/custom_interface/srv/_calculate_distance.py
 custom_interface__py: rosidl_generator_py/custom_interface/srv/_calculate_distance_s.c
+custom_interface__py: rosidl_generator_py/custom_interface/srv/_cancel_request.py
+custom_interface__py: rosidl_generator_py/custom_interface/srv/_cancel_request_s.c
 custom_interface__py: custom_interface__py/CMakeFiles/custom_interface__py.dir/build.make
 .PHONY : custom_interface__py
 

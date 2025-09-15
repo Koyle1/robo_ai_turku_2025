@@ -13,3 +13,4 @@ custom_interface/msg/_response_distance_msg.py
 custom_interface/msg/_task_msg.py
 custom_interface/srv/__init__.py
 custom_interface/srv/_calculate_distance.py
+custom_interface/srv/_cancel_request.py

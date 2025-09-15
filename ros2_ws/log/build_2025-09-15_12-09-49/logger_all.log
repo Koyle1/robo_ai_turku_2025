@@ -1,0 +1,463 @@
+[0.604s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.604s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=22, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7a06d0605e70>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a06d07bf5e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a06d07bf5e0>>)
+[1.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.285s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/felix/robo/robo_ai_turku_2025/ros2_ws'
+[1.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.319s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.319s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.319s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.319s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.319s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.320s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.321s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.321s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.321s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.322s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.322s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.322s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.322s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.322s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.322s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[1.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[1.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[1.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['ignore', 'ignore_ament_install']
+[1.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'ignore'
+[1.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'ignore_ament_install'
+[1.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['colcon_pkg']
+[1.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'colcon_pkg'
+[1.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['colcon_meta']
+[1.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'colcon_meta'
+[1.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extensions ['ros']
+[1.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interface) by extension 'ros'
+[1.334s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_interface' with type 'ros.ament_cmake' and name 'custom_interface'
+[1.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[1.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[1.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[1.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task01) by extensions ['ignore', 'ignore_ament_install']
+[1.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task01) by extension 'ignore'
+[1.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task01) by extension 'ignore_ament_install'
+[1.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task01) by extensions ['colcon_pkg']
+[1.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task01) by extension 'colcon_pkg'
+[1.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task01) by extensions ['colcon_meta']
+[1.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task01) by extension 'colcon_meta'
+[1.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task01) by extensions ['ros']
+[1.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task01) by extension 'ros'
+[1.338s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab01_task01' with type 'ros.ament_python' and name 'lab01_task01'
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task02) by extensions ['ignore', 'ignore_ament_install']
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task02) by extension 'ignore'
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task02) by extension 'ignore_ament_install'
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task02) by extensions ['colcon_pkg']
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task02) by extension 'colcon_pkg'
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task02) by extensions ['colcon_meta']
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task02) by extension 'colcon_meta'
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task02) by extensions ['ros']
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task02) by extension 'ros'
+[1.344s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab01_task02' with type 'ros.ament_python' and name 'lab01_task02'
+[1.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task03) by extensions ['ignore', 'ignore_ament_install']
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task03) by extension 'ignore'
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task03) by extension 'ignore_ament_install'
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task03) by extensions ['colcon_pkg']
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task03) by extension 'colcon_pkg'
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task03) by extensions ['colcon_meta']
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task03) by extension 'colcon_meta'
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task03) by extensions ['ros']
+[1.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task03) by extension 'ros'
+[1.348s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab01_task03' with type 'ros.ament_python' and name 'lab01_task03'
+[1.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task05) by extensions ['ignore', 'ignore_ament_install']
+[1.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task05) by extension 'ignore'
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task05) by extension 'ignore_ament_install'
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task05) by extensions ['colcon_pkg']
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task05) by extension 'colcon_pkg'
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task05) by extensions ['colcon_meta']
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task05) by extension 'colcon_meta'
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task05) by extensions ['ros']
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab01_task05) by extension 'ros'
+[1.350s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab01_task05' with type 'ros.ament_python' and name 'lab01_task05'
+[1.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_bringup) by extension 'ignore'
+[1.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_bringup) by extension 'ignore_ament_install'
+[1.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_bringup) by extensions ['colcon_pkg']
+[1.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_bringup) by extension 'colcon_pkg'
+[1.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_bringup) by extensions ['colcon_meta']
+[1.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_bringup) by extension 'colcon_meta'
+[1.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_bringup) by extensions ['ros']
+[1.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_bringup) by extension 'ros'
+[1.352s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab1_bringup' with type 'ros.ament_python' and name 'lab1_bringup'
+[1.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[1.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extensions ['ignore', 'ignore_ament_install']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extension 'ignore'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extension 'ignore_ament_install'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extensions ['colcon_pkg']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extension 'colcon_pkg'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extensions ['colcon_meta']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extension 'colcon_meta'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extensions ['ros']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extension 'ros'
+[1.357s] DEBUG:colcon.colcon_core.package_identification:Package 'src/task1' with type 'ros.ament_python' and name 'task1'
+[1.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.428s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/felix/robo/robo_ai_turku_2025/ros2_ws/install
+[1.429s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/felix/robo/robo_ai_turku_2025/install
+[1.430s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/install
+[1.431s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/install
+[1.433s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[1.446s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.597s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_args' from command line to 'None'
+[1.597s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_target' from command line to 'None'
+[1.597s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.597s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[1.597s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_clean_first' from command line to 'False'
+[1.597s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_force_configure' from command line to 'False'
+[1.597s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'ament_cmake_args' from command line to 'None'
+[1.597s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[1.597s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.597s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface', 'merge_install': False, 'path': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface', 'symlink_install': False, 'test_result_base': None}
+[1.598s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'cmake_args' from command line to 'None'
+[1.598s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'cmake_target' from command line to 'None'
+[1.598s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.598s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'cmake_clean_cache' from command line to 'False'
+[1.598s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'cmake_clean_first' from command line to 'False'
+[1.598s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'cmake_force_configure' from command line to 'False'
+[1.598s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'ament_cmake_args' from command line to 'None'
+[1.598s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'catkin_cmake_args' from command line to 'None'
+[1.598s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.598s] DEBUG:colcon.colcon_core.verb:Building package 'lab01_task01' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01', 'merge_install': False, 'path': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task01', 'symlink_install': False, 'test_result_base': None}
+[1.598s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'cmake_args' from command line to 'None'
+[1.598s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'cmake_target' from command line to 'None'
+[1.598s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.598s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'cmake_clean_cache' from command line to 'False'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'cmake_clean_first' from command line to 'False'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'cmake_force_configure' from command line to 'False'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'ament_cmake_args' from command line to 'None'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'catkin_cmake_args' from command line to 'None'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.599s] DEBUG:colcon.colcon_core.verb:Building package 'lab01_task02' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task02', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02', 'merge_install': False, 'path': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task02', 'symlink_install': False, 'test_result_base': None}
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'cmake_args' from command line to 'None'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'cmake_target' from command line to 'None'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.599s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.599s] DEBUG:colcon.colcon_core.verb:Building package 'lab1_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup', 'merge_install': False, 'path': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab1_bringup', 'symlink_install': False, 'test_result_base': None}
+[1.600s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_args' from command line to 'None'
+[1.600s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_target' from command line to 'None'
+[1.600s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.600s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_clean_cache' from command line to 'False'
+[1.600s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_clean_first' from command line to 'False'
+[1.600s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_force_configure' from command line to 'False'
+[1.600s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'ament_cmake_args' from command line to 'None'
+[1.600s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'catkin_cmake_args' from command line to 'None'
+[1.600s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.600s] DEBUG:colcon.colcon_core.verb:Building package 'task1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/task1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1', 'merge_install': False, 'path': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/task1', 'symlink_install': False, 'test_result_base': None}
+[1.602s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'cmake_args' from command line to 'None'
+[1.602s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'cmake_target' from command line to 'None'
+[1.602s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.602s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'cmake_clean_cache' from command line to 'False'
+[1.603s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'cmake_clean_first' from command line to 'False'
+[1.603s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'cmake_force_configure' from command line to 'False'
+[1.603s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'ament_cmake_args' from command line to 'None'
+[1.603s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'catkin_cmake_args' from command line to 'None'
+[1.603s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.604s] DEBUG:colcon.colcon_core.verb:Building package 'lab01_task03' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task03', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03', 'merge_install': False, 'path': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task03', 'symlink_install': False, 'test_result_base': None}
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'cmake_args' from command line to 'None'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'cmake_target' from command line to 'None'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'cmake_clean_cache' from command line to 'False'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'cmake_clean_first' from command line to 'False'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'cmake_force_configure' from command line to 'False'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'ament_cmake_args' from command line to 'None'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'catkin_cmake_args' from command line to 'None'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.604s] DEBUG:colcon.colcon_core.verb:Building package 'lab01_task05' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task05', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05', 'merge_install': False, 'path': '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task05', 'symlink_install': False, 'test_result_base': None}
+[1.604s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.606s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.607s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface' with build type 'ament_cmake'
+[1.607s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface'
+[1.623s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.623s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.623s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.630s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task01' with build type 'ament_python'
+[1.631s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task01', 'ament_prefix_path')
+[1.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/lab01_task01/hook/ament_prefix_path.ps1'
+[1.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/lab01_task01/hook/ament_prefix_path.dsv'
+[1.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/lab01_task01/hook/ament_prefix_path.sh'
+[1.636s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.636s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.644s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task02' with build type 'ament_python'
+[1.646s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task02', 'ament_prefix_path')
+[1.646s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/share/lab01_task02/hook/ament_prefix_path.ps1'
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/share/lab01_task02/hook/ament_prefix_path.dsv'
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/share/lab01_task02/hook/ament_prefix_path.sh'
+[1.649s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.649s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.656s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab1_bringup' with build type 'ament_python'
+[1.657s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_bringup', 'ament_prefix_path')
+[1.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/share/lab1_bringup/hook/ament_prefix_path.ps1'
+[1.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/share/lab1_bringup/hook/ament_prefix_path.dsv'
+[1.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/share/lab1_bringup/hook/ament_prefix_path.sh'
+[1.659s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.659s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.666s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/task1' with build type 'ament_python'
+[1.666s] Level 1:colcon.colcon_core.shell:create_environment_hook('task1', 'ament_prefix_path')
+[1.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/share/task1/hook/ament_prefix_path.ps1'
+[1.669s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/share/task1/hook/ament_prefix_path.dsv'
+[1.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/share/task1/hook/ament_prefix_path.sh'
+[1.670s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.670s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/robo/robo_ai_turku_2025/install/task1:/home/felix/robo/robo_ai_turku_2025/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake --build /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface -- -j22 -l22
+[2.066s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task01'
+[2.066s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.066s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.377s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task02'
+[2.378s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.378s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.699s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab1_bringup'
+[2.699s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.699s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/robo/robo_ai_turku_2025/install/task1:/home/felix/robo/robo_ai_turku_2025/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake --build /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface -- -j22 -l22
+[2.730s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/robo/robo_ai_turku_2025/install/task1:/home/felix/robo/robo_ai_turku_2025/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake --install /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface
+[3.033s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/task1'
+[3.034s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.034s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.194s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interface)
+[3.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/felix/robo/robo_ai_turku_2025/install/task1:/home/felix/robo/robo_ai_turku_2025/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1:/opt/ros/humble /usr/bin/cmake --install /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/custom_interface
+[3.212s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface' for CMake module files
+[3.213s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface' for CMake config files
+[3.227s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'cmake_prefix_path')
+[3.227s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.ps1'
+[3.228s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.dsv'
+[3.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.sh'
+[3.230s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/lib'
+[3.231s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'ld_library_path_lib')
+[3.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.ps1'
+[3.232s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.dsv'
+[3.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.sh'
+[3.233s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/bin'
+[3.233s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/lib/pkgconfig/custom_interface.pc'
+[3.233s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/lib/python3.10/site-packages'
+[3.233s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/bin'
+[3.234s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/package.ps1'
+[3.236s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/package.dsv'
+[3.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/package.sh'
+[3.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/package.bash'
+[3.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/package.zsh'
+[3.243s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/colcon-core/packages/custom_interface)
+[3.244s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interface)
+[3.244s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface' for CMake module files
+[3.245s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface' for CMake config files
+[3.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'cmake_prefix_path')
+[3.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.ps1'
+[3.247s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.dsv'
+[3.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.sh'
+[3.250s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/lib'
+[3.250s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'ld_library_path_lib')
+[3.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.ps1'
+[3.251s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.dsv'
+[3.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.sh'
+[3.253s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/bin'
+[3.253s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/lib/pkgconfig/custom_interface.pc'
+[3.254s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/lib/python3.10/site-packages'
+[3.254s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/bin'
+[3.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/package.ps1'
+[3.255s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/package.dsv'
+[3.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/package.sh'
+[3.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/package.bash'
+[3.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/custom_interface/package.zsh'
+[3.259s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/share/colcon-core/packages/custom_interface)
+[3.259s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task03' with build type 'ament_python'
+[3.260s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task03', 'ament_prefix_path')
+[3.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/share/lab01_task03/hook/ament_prefix_path.ps1'
+[3.261s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/share/lab01_task03/hook/ament_prefix_path.dsv'
+[3.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/share/lab01_task03/hook/ament_prefix_path.sh'
+[3.266s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.266s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.274s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task05' with build type 'ament_python'
+[3.275s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task05', 'ament_prefix_path')
+[3.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/share/lab01_task05/hook/ament_prefix_path.ps1'
+[3.276s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/share/lab01_task05/hook/ament_prefix_path.dsv'
+[3.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/share/lab01_task05/hook/ament_prefix_path.sh'
+[3.277s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.277s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.684s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task05'
+[3.684s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.684s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.006s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task03'
+[4.007s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.007s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.017s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task02': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task02/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab01_task02 build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task02/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task02/install.log --single-version-externally-managed install_data
+[4.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task01': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab01_task01 build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/install.log --single-version-externally-managed install_data
+[4.041s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/task1': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/task1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task1 build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/task1/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/task1/install.log --single-version-externally-managed install_data
+[4.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab1_bringup': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab1_bringup build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup/install.log --single-version-externally-managed install_data
+[4.420s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1' for CMake module files
+[4.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/task1' returned '0': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/task1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task1 build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/task1/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/task1/install.log --single-version-externally-managed install_data
+[4.423s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1' for CMake config files
+[4.432s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/lib'
+[4.433s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/bin'
+[4.433s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/lib/pkgconfig/task1.pc'
+[4.433s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/lib/python3.10/site-packages'
+[4.434s] Level 1:colcon.colcon_core.shell:create_environment_hook('task1', 'pythonpath')
+[4.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/share/task1/hook/pythonpath.ps1'
+[4.435s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/share/task1/hook/pythonpath.dsv'
+[4.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/share/task1/hook/pythonpath.sh'
+[4.437s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/bin'
+[4.437s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task1)
+[4.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/share/task1/package.ps1'
+[4.439s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/share/task1/package.dsv'
+[4.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/share/task1/package.sh'
+[4.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/share/task1/package.bash'
+[4.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/share/task1/package.zsh'
+[4.442s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/task1/share/colcon-core/packages/task1)
+[4.446s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02' for CMake module files
+[4.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task02' returned '0': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task02/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab01_task02 build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task02/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task02/install.log --single-version-externally-managed install_data
+[4.449s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02' for CMake config files
+[4.455s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/lib'
+[4.455s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/bin'
+[4.455s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/lib/pkgconfig/lab01_task02.pc'
+[4.455s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/lib/python3.10/site-packages'
+[4.455s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task02', 'pythonpath')
+[4.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/share/lab01_task02/hook/pythonpath.ps1'
+[4.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/share/lab01_task02/hook/pythonpath.dsv'
+[4.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/share/lab01_task02/hook/pythonpath.sh'
+[4.457s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/bin'
+[4.457s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab01_task02)
+[4.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/share/lab01_task02/package.ps1'
+[4.458s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/share/lab01_task02/package.dsv'
+[4.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/share/lab01_task02/package.sh'
+[4.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/share/lab01_task02/package.bash'
+[4.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/share/lab01_task02/package.zsh'
+[4.460s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task02/share/colcon-core/packages/lab01_task02)
+[4.461s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01' for CMake module files
+[4.462s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task01' returned '0': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab01_task01 build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task01/install.log --single-version-externally-managed install_data
+[4.463s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01' for CMake config files
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib'
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/bin'
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/pkgconfig/lab01_task01.pc'
+[4.471s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/lib/python3.10/site-packages'
+[4.471s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task01', 'pythonpath')
+[4.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/lab01_task01/hook/pythonpath.ps1'
+[4.472s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/lab01_task01/hook/pythonpath.dsv'
+[4.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/lab01_task01/hook/pythonpath.sh'
+[4.473s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/bin'
+[4.473s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab01_task01)
+[4.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/lab01_task01/package.ps1'
+[4.474s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/lab01_task01/package.dsv'
+[4.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/lab01_task01/package.sh'
+[4.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/lab01_task01/package.bash'
+[4.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/lab01_task01/package.zsh'
+[4.476s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task01/share/colcon-core/packages/lab01_task01)
+[4.479s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup' for CMake module files
+[4.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab1_bringup' returned '0': PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab1_bringup build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab1_bringup/install.log --single-version-externally-managed install_data
+[4.480s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup' for CMake config files
+[4.485s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/lib'
+[4.485s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/bin'
+[4.485s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/lib/pkgconfig/lab1_bringup.pc'
+[4.486s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/lib/python3.10/site-packages'
+[4.486s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_bringup', 'pythonpath')
+[4.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/share/lab1_bringup/hook/pythonpath.ps1'
+[4.487s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/share/lab1_bringup/hook/pythonpath.dsv'
+[4.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/share/lab1_bringup/hook/pythonpath.sh'
+[4.488s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/bin'
+[4.488s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab1_bringup)
+[4.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/share/lab1_bringup/package.ps1'
+[4.489s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/share/lab1_bringup/package.dsv'
+[4.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/share/lab1_bringup/package.sh'
+[4.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/share/lab1_bringup/package.bash'
+[4.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/share/lab1_bringup/package.zsh'
+[4.491s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab1_bringup/share/colcon-core/packages/lab1_bringup)
+[4.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task05': CMAKE_PREFIX_PATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface:/home/felix/robo/robo_ai_turku_2025/install/custom_interface:/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/install/custom_interface LD_LIBRARY_PATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/lib:/home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib:/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/install/custom_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task05/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab01_task05 build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task05/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task05/install.log --single-version-externally-managed install_data
+[4.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task03': CMAKE_PREFIX_PATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface:/home/felix/robo/robo_ai_turku_2025/install/custom_interface:/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/install/custom_interface LD_LIBRARY_PATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/lib:/home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib:/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/install/custom_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task03/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab01_task03 build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task03/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task03/install.log --single-version-externally-managed install_data
+[4.890s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05' for CMake module files
+[4.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task05' returned '0': CMAKE_PREFIX_PATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface:/home/felix/robo/robo_ai_turku_2025/install/custom_interface:/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/install/custom_interface LD_LIBRARY_PATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/lib:/home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib:/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/install/custom_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task05/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab01_task05 build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task05/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task05/install.log --single-version-externally-managed install_data
+[4.892s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05' for CMake config files
+[4.902s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/lib'
+[4.903s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/bin'
+[4.903s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/lib/pkgconfig/lab01_task05.pc'
+[4.903s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/lib/python3.10/site-packages'
+[4.903s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task05', 'pythonpath')
+[4.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/share/lab01_task05/hook/pythonpath.ps1'
+[4.906s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/share/lab01_task05/hook/pythonpath.dsv'
+[4.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/share/lab01_task05/hook/pythonpath.sh'
+[4.909s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/bin'
+[4.909s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab01_task05)
+[4.910s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/share/lab01_task05/package.ps1'
+[4.911s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/share/lab01_task05/package.dsv'
+[4.911s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/share/lab01_task05/package.sh'
+[4.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/share/lab01_task05/package.bash'
+[4.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/share/lab01_task05/package.zsh'
+[4.914s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task05/share/colcon-core/packages/lab01_task05)
+[4.964s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03' for CMake module files
+[4.966s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/lab01_task03' returned '0': CMAKE_PREFIX_PATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface:/home/felix/robo/robo_ai_turku_2025/install/custom_interface:/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/install/custom_interface LD_LIBRARY_PATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/custom_interface/lib:/home/felix/robo/robo_ai_turku_2025/install/custom_interface/lib:/home/felix/robo/robo_ai_turku_2025/ros2_ws/src/custom_interface/install/custom_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task03/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab01_task03 build --build-base /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task03/build install --record /home/felix/robo/robo_ai_turku_2025/ros2_ws/build/lab01_task03/install.log --single-version-externally-managed install_data
+[4.967s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03' for CMake config files
+[4.974s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/lib'
+[4.975s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/bin'
+[4.975s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/lib/pkgconfig/lab01_task03.pc'
+[4.975s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/lib/python3.10/site-packages'
+[4.976s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task03', 'pythonpath')
+[4.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/share/lab01_task03/hook/pythonpath.ps1'
+[4.977s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/share/lab01_task03/hook/pythonpath.dsv'
+[4.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/share/lab01_task03/hook/pythonpath.sh'
+[4.978s] Level 1:colcon.colcon_core.environment:checking '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/bin'
+[4.978s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab01_task03)
+[4.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/share/lab01_task03/package.ps1'
+[4.979s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/share/lab01_task03/package.dsv'
+[4.980s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/share/lab01_task03/package.sh'
+[4.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/share/lab01_task03/package.bash'
+[4.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/share/lab01_task03/package.zsh'
+[4.982s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/lab01_task03/share/colcon-core/packages/lab01_task03)
+[4.982s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.985s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.986s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.986s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.066s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[5.066s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.066s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.066s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.067s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[5.067s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.067s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/local_setup.ps1'
+[5.070s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/_local_setup_util_ps1.py'
+[5.073s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/setup.ps1'
+[5.075s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/local_setup.sh'
+[5.077s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/_local_setup_util_sh.py'
+[5.078s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/setup.sh'
+[5.080s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/local_setup.bash'
+[5.082s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/setup.bash'
+[5.084s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/local_setup.zsh'
+[5.086s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/felix/robo/robo_ai_turku_2025/ros2_ws/install/setup.zsh'

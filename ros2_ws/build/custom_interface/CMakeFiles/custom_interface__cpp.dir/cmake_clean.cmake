@@ -26,10 +26,15 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/custom_interface/msg/response_distance_msg.hpp"
   "rosidl_generator_cpp/custom_interface/msg/task_msg.hpp"
   "rosidl_generator_cpp/custom_interface/srv/calculate_distance.hpp"
+  "rosidl_generator_cpp/custom_interface/srv/cancel_request.hpp"
   "rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__builder.hpp"
   "rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__struct.hpp"
   "rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__traits.hpp"
   "rosidl_generator_cpp/custom_interface/srv/detail/calculate_distance__type_support.hpp"
+  "rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__builder.hpp"
+  "rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__struct.hpp"
+  "rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__traits.hpp"
+  "rosidl_generator_cpp/custom_interface/srv/detail/cancel_request__type_support.hpp"
 )
 
 # Per-language clean rules from dependency scanning.
