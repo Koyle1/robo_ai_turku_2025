@@ -1,0 +1,6 @@
+[console_scripts]
+cancel_service_client = lab01_task05.cancel_service_client:main
+cancel_service_server = lab01_task05.cancel_service_server:main
+countdown_action_client = lab01_task05.countdown_action_client:main
+countdown_action_server = lab01_task05.countdown_action_server:main
+

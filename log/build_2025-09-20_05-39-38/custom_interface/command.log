@@ -1,0 +1,6 @@
+Invoking command in '/home/michael/robo_ai_turku_2025/build/custom_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/michael/robo_ai_turku_2025/ros2_ws/src/custom_interface -DCMAKE_INSTALL_PREFIX=/home/michael/robo_ai_turku_2025/install/custom_interface
+Invoked command in '/home/michael/robo_ai_turku_2025/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/michael/robo_ai_turku_2025/ros2_ws/src/custom_interface -DCMAKE_INSTALL_PREFIX=/home/michael/robo_ai_turku_2025/install/custom_interface
+Invoking command in '/home/michael/robo_ai_turku_2025/build/custom_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/michael/robo_ai_turku_2025/build/custom_interface -- -j3 -l3
+Invoked command in '/home/michael/robo_ai_turku_2025/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/michael/robo_ai_turku_2025/build/custom_interface -- -j3 -l3
+Invoking command in '/home/michael/robo_ai_turku_2025/build/custom_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/michael/robo_ai_turku_2025/build/custom_interface
+Invoked command in '/home/michael/robo_ai_turku_2025/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/michael/robo_ai_turku_2025/build/custom_interface

@@ -1,0 +1,51 @@
+[0.623s] Invoking command in '/home/michael/robo_ai_turku_2025/ros2_ws/src/lab01_task05': AMENT_PREFIX_PATH=/home/michael/robo_ai_turku_2025/install/custom_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/michael/robo_ai_turku_2025/install/custom_interface LD_LIBRARY_PATH=/home/michael/robo_ai_turku_2025/install/custom_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/michael/robo_ai_turku_2025/build/lab01_task05/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages:/home/michael/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab01_task05 build --build-base /home/michael/robo_ai_turku_2025/build/lab01_task05/build install --record /home/michael/robo_ai_turku_2025/build/lab01_task05/install.log --single-version-externally-managed install_data
+[0.784s] running egg_info
+[0.785s] creating ../../../build/lab01_task05/lab01_task05.egg-info
+[0.787s] writing ../../../build/lab01_task05/lab01_task05.egg-info/PKG-INFO
+[0.787s] writing dependency_links to ../../../build/lab01_task05/lab01_task05.egg-info/dependency_links.txt
+[0.787s] writing entry points to ../../../build/lab01_task05/lab01_task05.egg-info/entry_points.txt
+[0.787s] writing requirements to ../../../build/lab01_task05/lab01_task05.egg-info/requires.txt
+[0.787s] writing top-level names to ../../../build/lab01_task05/lab01_task05.egg-info/top_level.txt
+[0.787s] writing manifest file '../../../build/lab01_task05/lab01_task05.egg-info/SOURCES.txt'
+[0.787s] reading manifest file '../../../build/lab01_task05/lab01_task05.egg-info/SOURCES.txt'
+[0.788s] writing manifest file '../../../build/lab01_task05/lab01_task05.egg-info/SOURCES.txt'
+[0.788s] running build
+[0.788s] running build_py
+[0.789s] creating /home/michael/robo_ai_turku_2025/build/lab01_task05/build
+[0.789s] creating /home/michael/robo_ai_turku_2025/build/lab01_task05/build/lib
+[0.789s] creating /home/michael/robo_ai_turku_2025/build/lab01_task05/build/lib/lab01_task05
+[0.789s] copying lab01_task05/countdown_action_server.py -> /home/michael/robo_ai_turku_2025/build/lab01_task05/build/lib/lab01_task05
+[0.789s] copying lab01_task05/cancel_service_server.py -> /home/michael/robo_ai_turku_2025/build/lab01_task05/build/lib/lab01_task05
+[0.789s] copying lab01_task05/countdown_action_client.py -> /home/michael/robo_ai_turku_2025/build/lab01_task05/build/lib/lab01_task05
+[0.789s] copying lab01_task05/__init__.py -> /home/michael/robo_ai_turku_2025/build/lab01_task05/build/lib/lab01_task05
+[0.789s] copying lab01_task05/cancel_service_client.py -> /home/michael/robo_ai_turku_2025/build/lab01_task05/build/lib/lab01_task05
+[0.790s] running install
+[0.790s] running install_lib
+[0.790s] creating /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages/lab01_task05
+[0.791s] copying /home/michael/robo_ai_turku_2025/build/lab01_task05/build/lib/lab01_task05/countdown_action_server.py -> /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages/lab01_task05
+[0.791s] copying /home/michael/robo_ai_turku_2025/build/lab01_task05/build/lib/lab01_task05/cancel_service_server.py -> /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages/lab01_task05
+[0.791s] copying /home/michael/robo_ai_turku_2025/build/lab01_task05/build/lib/lab01_task05/countdown_action_client.py -> /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages/lab01_task05
+[0.791s] copying /home/michael/robo_ai_turku_2025/build/lab01_task05/build/lib/lab01_task05/__init__.py -> /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages/lab01_task05
+[0.791s] copying /home/michael/robo_ai_turku_2025/build/lab01_task05/build/lib/lab01_task05/cancel_service_client.py -> /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages/lab01_task05
+[0.791s] byte-compiling /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages/lab01_task05/countdown_action_server.py to countdown_action_server.cpython-310.pyc
+[0.792s] byte-compiling /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages/lab01_task05/cancel_service_server.py to cancel_service_server.cpython-310.pyc
+[0.792s] byte-compiling /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages/lab01_task05/countdown_action_client.py to countdown_action_client.cpython-310.pyc
+[0.793s] byte-compiling /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages/lab01_task05/__init__.py to __init__.cpython-310.pyc
+[0.793s] byte-compiling /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages/lab01_task05/cancel_service_client.py to cancel_service_client.cpython-310.pyc
+[0.793s] running install_data
+[0.793s] creating /home/michael/robo_ai_turku_2025/install/lab01_task05/share/ament_index
+[0.793s] creating /home/michael/robo_ai_turku_2025/install/lab01_task05/share/ament_index/resource_index
+[0.793s] creating /home/michael/robo_ai_turku_2025/install/lab01_task05/share/ament_index/resource_index/packages
+[0.793s] copying resource/lab01_task05 -> /home/michael/robo_ai_turku_2025/install/lab01_task05/share/ament_index/resource_index/packages
+[0.794s] copying package.xml -> /home/michael/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05
+[0.794s] creating /home/michael/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05/config
+[0.794s] copying config/params.yaml -> /home/michael/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05/config
+[0.794s] running install_egg_info
+[0.796s] Copying ../../../build/lab01_task05/lab01_task05.egg-info to /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages/lab01_task05-0.0.0-py3.10.egg-info
+[0.796s] running install_scripts
+[0.811s] Installing cancel_service_client script to /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/lab01_task05
+[0.811s] Installing cancel_service_server script to /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/lab01_task05
+[0.811s] Installing countdown_action_client script to /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/lab01_task05
+[0.811s] Installing countdown_action_server script to /home/michael/robo_ai_turku_2025/install/lab01_task05/lib/lab01_task05
+[0.811s] writing list of installed files to '/home/michael/robo_ai_turku_2025/build/lab01_task05/install.log'
+[0.834s] Invoked command in '/home/michael/robo_ai_turku_2025/ros2_ws/src/lab01_task05' returned '0': AMENT_PREFIX_PATH=/home/michael/robo_ai_turku_2025/install/custom_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/michael/robo_ai_turku_2025/install/custom_interface LD_LIBRARY_PATH=/home/michael/robo_ai_turku_2025/install/custom_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/michael/robo_ai_turku_2025/build/lab01_task05/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/michael/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages:/home/michael/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab01_task05 build --build-base /home/michael/robo_ai_turku_2025/build/lab01_task05/build install --record /home/michael/robo_ai_turku_2025/build/lab01_task05/install.log --single-version-externally-managed install_data

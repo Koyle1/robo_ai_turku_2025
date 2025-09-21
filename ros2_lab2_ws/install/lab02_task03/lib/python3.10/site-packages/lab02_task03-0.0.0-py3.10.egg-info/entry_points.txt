@@ -1,0 +1,4 @@
+[console_scripts]
+scanner = lab02_task03.scanner:main
+static_broadcaster = lab02_task03.static_broadcaster:main
+
