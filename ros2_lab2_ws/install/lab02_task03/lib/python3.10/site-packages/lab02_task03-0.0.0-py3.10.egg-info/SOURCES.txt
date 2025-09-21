@@ -9,8 +9,11 @@ setup.py
 ../../build/lab02_task03/lab02_task03.egg-info/top_level.txt
 ../../build/lab02_task03/lab02_task03.egg-info/zip-safe
 lab02_task03/__init__.py
-lab02_task03/scanner.py
-lab02_task03/static_broadcaster.py
+lab02_task03/tf_broadcaster.py
+lab02_task03/tf_listener.py
+lab02_task03/tf_listener_rev.py
+lab02_task03/tf_scanner.py
+lab02_task03/tf_static_broadcaster.py
 resource/lab02_task03
 test/test_copyright.py
 test/test_flake8.py

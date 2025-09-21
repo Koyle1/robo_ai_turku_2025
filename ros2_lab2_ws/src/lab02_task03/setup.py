@@ -20,8 +20,11 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'static_broadcaster = lab02_task03.static_broadcaster:main',
-            'scanner = lab02_task03.scanner:main',
+            'tf_broadcaster = lab02_task03.tf_broadcaster:main',
+            'tf_static_broadcaster = lab02_task03.tf_static_broadcaster:main',
+            'tf_scanner = lab02_task03.tf_scanner:main',
+            'tf_listener = lab02_task03.tf_listener:main',
+            'tf_listener_rev = lab02_task03.tf_listener_rev:main',
         ],
     },
 )
