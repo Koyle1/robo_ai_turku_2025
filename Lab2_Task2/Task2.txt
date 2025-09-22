@@ -1,0 +1,66 @@
+# RViz Visualization Summary - Task 2
+
+## Toggle Views and Parameters
+
+### **Odometry**
+- **What it shows**: Estimated position and orientation of the robot based on wheel encoder data
+- **Parameters**:
+  - **Covariance**: Visualizes uncertainty of the position estimate (deactivated for clearer view)
+  - **Shape**: Display format (axes or arrows)
+  - **Color**: Color of the odometry markers
+
+### **LaserScan**
+- **What it shows**: Point cloud of obstacles detected by the Lidar sensor
+- **Parameters**:
+  - **Size**: Diameter of individual points
+  - **Decay Time**: Duration points remain visible after detection
+  - **Color Scheme**: Color coding based on distance or intensity
+
+### **TF (Transformation Frames)**
+- **What it shows**: Spatial relationships between all robot coordinate frames
+- **Parameters**:
+  - **Frame Rate**: Refresh rate for TF visualization
+  - **Marker Scale**: Size of the coordinate axes
+
+### **Camera**
+- **What it shows**: Real-time camera feed (if TurtleBot3 has a camera)
+- **Parameters**:
+  - **Image Topic**: ROS topic subscribing to image data (`/camera/image_raw`)
+  - **Transport Hint**: Compression method for image transmission
+
+## Necessary Parameter Changes
+
+**Topic configurations required:**
+- Odometry: `/odom`
+- LaserScan: `/scan` 
+- Camera: `/camera/image_raw`
+
+**Global settings:**
+- Fixed Frame: `odom` or `base_link`
+
+## Model Differences
+
+### **Burger Model**
+- Simple box geometry in visualization
+- No camera frames in TF tree
+- Camera display remains empty (no camera hardware)
+
+### **Waffle & Waffle Pi Models** 
+- Complex shape with visible camera component
+- Additional camera frames in TF tree (`camera_link`, `camera_rgb_optical_frame`)
+- Functional camera display with live video feed
+- Waffle Pi includes onboard Raspberry Pi for additional processing
+
+## Observations
+- All models share identical Lidar, IMU, and odometry functionality
+- TF tree structure varies based on available sensors
+- Robot model geometry differs significantly between Burger and Waffle variants
+- Moving the robot updates all visualizations in real-time across all sensor Displays
+
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+
+ros2 run rviz2 rviz2
+
+export TURTLEBOT3_MODEL=burger
+ros2 run turtlebot3_teleop teleop_keyboard
