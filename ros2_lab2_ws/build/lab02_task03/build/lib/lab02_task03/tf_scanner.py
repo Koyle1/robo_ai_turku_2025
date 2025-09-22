@@ -11,20 +11,12 @@ class TFScanner(Node):
         super().__init__('tf_scanner')
         self.br = TransformBroadcaster(self)
 
-        # fixed setup (no parameters)
-        self.parent_frame = 'robot'
-        self.child_frame  = 'scanner'
-        self.x_offset = 0.80    # forward
-        self.z_offset = 0.35    # up
-        self.roll = 0.0         # rad
-        self.pitch = 0.0        # rad
-        self.yaw = 0.0          # rad
-        self.y_amplitude = 0.30 # ±30 cm
+        self.y_amplitude = 0.30
         self.frequency_hz = 0.5
         self.publish_rate_hz = 30.0
 
-        # precompute static rotation once
-        self.qx, self.qy, self.qz, self.qw = quaternion_from_euler(self.roll, self.pitch, self.yaw)
+        # precompute static rotation once for the x and z movement abouve the robot
+        self.qx, self.qy, self.qz, self.qw = quaternion_from_euler(0,0,0)
 
         self.t0 = self.get_clock().now()
         self.timer = self.create_timer(1.0 / self.publish_rate_hz, self._tick)
@@ -35,12 +27,12 @@ class TFScanner(Node):
 
         tf = TransformStamped()
         tf.header.stamp = self.get_clock().now().to_msg()
-        tf.header.frame_id = self.parent_frame
-        tf.child_frame_id  = self.child_frame
+        tf.header.frame_id = 'robot'
+        tf.child_frame_id  = 'scanner'
 
-        tf.transform.translation.x = self.x_offset
+        tf.transform.translation.x = 0.80
         tf.transform.translation.y = y
-        tf.transform.translation.z = self.z_offset
+        tf.transform.translation.z = 0.35  
 
         tf.transform.rotation.x = self.qx
         tf.transform.rotation.y = self.qy

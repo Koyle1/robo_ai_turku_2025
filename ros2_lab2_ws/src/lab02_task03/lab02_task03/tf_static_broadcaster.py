@@ -12,27 +12,17 @@ class TFStaticBroadcaster(Node):
         self.br = StaticTransformBroadcaster(self)
         self.timer = self.create_timer(0.01, self._once)
 
-        # fixed setup (same style: no parameters)
-        self.parent_frame = 'robot'
-        self.child_frame  = 'lidar'
-        self.x = 0.30   # forward
-        self.y = 0.00   # left
-        self.z = 0.15   # up
-        self.roll_deg  = 0.0
-        self.pitch_deg = 0.0
-        self.yaw_deg   = 0.0
-
     def _once(self):
         tf = TransformStamped()
         tf.header.stamp = self.get_clock().now().to_msg()
-        tf.header.frame_id = self.parent_frame
-        tf.child_frame_id  = self.child_frame
-        tf.transform.translation.x = self.x
-        tf.transform.translation.y = self.y
-        tf.transform.translation.z = self.z
+        tf.header.frame_id = 'robot'
+        tf.child_frame_id  = 'lidar'
+        tf.transform.translation.x = 0.30
+        tf.transform.translation.y = 0.0
+        tf.transform.translation.z = 0.15
 
         qx, qy, qz, qw = quaternion_from_euler(
-            radians(self.roll_deg), radians(self.pitch_deg), radians(self.yaw_deg)
+            radians(0.0), radians(0.0), radians(0.0)
         )
         tf.transform.rotation.x = qx
         tf.transform.rotation.y = qy
@@ -40,7 +30,7 @@ class TFStaticBroadcaster(Node):
         tf.transform.rotation.w = qw
 
         self.br.sendTransform(tf)
-        self.timer.cancel()  # publish once
+        self.timer.cancel()
 
 def main(args=None):
     rclpy.init(args=args)
