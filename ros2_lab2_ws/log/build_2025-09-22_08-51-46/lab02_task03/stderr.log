@@ -1,5 +1,0 @@
-  File "/home/michael/robo_ai_turku_2025/ros2_lab2_ws/install/lab02_task03/lib/python3.10/site-packages/lab02_task03/tf_listener_rev.py", line 23
-    tr = self.tf_buffer.lookup_transform('map', s'robot', rclpy.time.Time())
-                                                 ^^^^^^^
-SyntaxError: invalid syntax
-
