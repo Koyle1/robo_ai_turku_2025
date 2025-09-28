@@ -1,0 +1,9 @@
+How does the kernel size affect the blur intensity and why?
+
+The kernel size directly affects the blur intensity. A larger kernel results in stronger blur because it averages pixel values over a wider area. This incorporates more distant pixel information, leading to greater smoothing and loss of fine detail.
+
+How do box blur and Gaussian blur differ in visual quality? Point to examples in your results
+
+Gaussian Blur produces a smoother, more natural blur due to its weighted kernel, which applies greater influence to central pixels, resulting in smoother transitions.
+
+Box Blur uses uniform averaging, which can lead to harsher transitions and potentially a less smooth appearance compared to Gaussian blur.

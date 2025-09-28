@@ -1,0 +1,14 @@
+1. Terminal 1:
+   source /opt/ros/humble/setup.bash
+   ros2 bag play lab3_2 --loop
+
+2. Terminal 2:
+   source /opt/ros/humble/setup.bash
+   python3 task7.py
+
+3. Results:
+   - 2×2 grid showing: Original, Sobel Magnitude, Sobel X, Sobel Y
+   - Sobel X detects vertical edges
+   - Sobel Y detects horizontal edges
+   - Magnitude shows combined edge strength
+   - Limited VM performance but functionally correct

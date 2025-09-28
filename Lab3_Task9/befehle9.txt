@@ -1,0 +1,14 @@
+1. Terminal 1:
+   source /opt/ros/humble/setup.bash
+   ros2 bag play lab3_3 --loop
+
+2. Terminal 2:
+   source /opt/ros/humble/setup.bash
+   python3 task9.py
+
+3. Results:
+   - 2×2 grid showing: Original, Grayscale, Harris Heatmap, Corners Detected
+   - Harris corner detection identifies intersection points
+   - Heatmap shows corner response strengt
+   - Parameters: blockSize=2, ksize=3, k=0.04
+   - Green markers indicate detected corner locations
