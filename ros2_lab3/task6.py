@@ -36,7 +36,7 @@ def convolve(image, kernel):
     return output  
 
 def main():
-    image_path = "images/flower.png"
+    image_path = "images/classroom.png"
     # Read image in grayscale
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     if image is None:

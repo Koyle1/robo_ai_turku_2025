@@ -8,7 +8,9 @@ def apply_rgb_filters(image):
     ranges = {
         'red': ([0, 0, 100], [100, 100, 255]), 
         'green': ([0, 100, 0], [100, 255, 100]), 
-        'blue': ([100, 0, 0], [255, 100, 100])
+        'blue': ([100, 0, 0], [255, 100, 100]),
+        'yellow': ([  0,170,170], [ 70,255,255]), 
+        'cyan':   ([170,170,  0], [255,255, 70])
     }
 
     results = {}
@@ -36,7 +38,9 @@ def apply_hsv_filters(image):
         'red': [[np.array([0, 100, 100]), np.array([10, 255, 255])],
                 [np.array([170, 100, 100]), np.array([180, 255, 255])]],
         'green': [[np.array([40, 50, 50]), np.array([80, 255, 255])]],
-        'blue': [[np.array([100, 150, 0]), np.array([140, 255, 255])]]
+        'blue': [[np.array([100, 150, 0]), np.array([140, 255, 255])]],
+        'yellow':[[np.array([ 20,120,120]), np.array([ 40,255,255])]],
+        'cyan':  [[np.array([ 85,120,120]), np.array([105,255,255])]]
     }
 
     results = {}
@@ -60,7 +64,7 @@ def display_results(original, rgb_results, hsv_results):
     """Display results in separate windows"""
     cv2.imshow('Original', original)
     
-    for color in ['red', 'green', 'blue']:
+    for color in ['red', 'green', 'blue', 'yellow', 'cyan']:
         # TODO: Show the filtered images for both RGB and HSV
         # Hint: use cv2.imshow()
         cv2.imshow(f'RGB Filtered - {color}', rgb_results[color]['filtered'])

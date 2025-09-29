@@ -23,39 +23,41 @@ class ImageProcessor(Node):
 
         # Define the QoS profile for best effort
         qos = QoSProfile(
-            depth=1,  # Keep a shallow history
-            reliability=QoSReliabilityPolicy.BEST_EFFORT  # Set to best effort
+            depth=1,
+            reliability=QoSReliabilityPolicy.BEST_EFFORT
         )
 
-        # TODO: Create subscribers for raw and compressed images
-        # self.create_subscription(...)
-
+        # Create subscriber for raw image
+        self.create_subscription(Image, '/image_raw', self.image_callback, qos)
+        
     # -----------------------------
     # Callbacks
     # -----------------------------
     def image_callback(self, msg):
+        print("image received")
         try:
-            # TODO: Convert ROS image to OpenCV
-            cv_image = None
+            # Convert ROS image to OpenCV
+            cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
 
             self.processed_count += 1
-            processed = self.process_cv_image(cv_image)
+            if self.processed_count % 2 == 0:  # Skip every other frame for performance reasons
+                processed = self.process_cv_image(cv_image)
 
-            # TODO: Display 2x2 grid
-            cv2.imshow("Sobel Grid", processed)
-            cv2.waitKey(1)
+                # Display 2x2 grid
+                cv2.imshow("Sobel Grid", processed)
+                cv2.waitKey(1)
         except Exception as e:
             self.get_logger().error(f"Error processing raw image: {e}")
 
     def compressed_image_callback(self, msg):
         try:
-            # TODO: Convert ROS compressed image to OpenCV
-            cv_image = None
+            # Convert ROS compressed image to OpenCV
+            cv_image = self.bridge.compressed_imgmsg_to_cv2(msg, "bgr8")
 
             self.compressed_count += 1
             processed = self.process_cv_image(cv_image)
 
-            # TODO: Display 2x2 grid
+            # Display 2x2 grid
             cv2.imshow("Sobel Grid", processed)
             cv2.waitKey(1)
         except Exception as e:
@@ -66,29 +68,39 @@ class ImageProcessor(Node):
     # -----------------------------
     def process_cv_image(self, image):
         """Apply Sobel filters and stack 2x2 grid"""
-        # TODO: Resize image
-        frame = image
+        # Resize image (for performance reasons)
+        frame = cv2.resize(image, (320, 240)) 
 
-        # TODO: Convert to grayscale
-        gray = None
+        # Convert to grayscale
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-        # TODO: Apply cv2.Sobel in X and Y directions
-        sobel_x = None
-        sobel_y = None
+        # Apply cv2.Sobel in X and Y directions
+        sobel_x = cv2.Sobel(gray, cv2.CV_64F, 1, 0, ksize=3)
+        sobel_y = cv2.Sobel(gray, cv2.CV_64F, 0, 1, ksize=3)
 
-        # TODO: Compute Sobel magnitude
-        sobel_mag = None
+        # Compute Sobel magnitude
+        sobel_mag = cv2.magnitude(sobel_x, sobel_y)
 
-        # TODO: Convert grayscale images to BGR for stacking
-        sobel_x_bgr = None
-        sobel_y_bgr = None
-        sobel_mag_bgr = None
+        # Convert to uint8 for display
+        sobel_x = cv2.convertScaleAbs(sobel_x)
+        sobel_y = cv2.convertScaleAbs(sobel_y)
+        sobel_mag = cv2.convertScaleAbs(sobel_mag)
 
-        # TODO: Annotate each image with cv2.putText
-        # frame -> "Original", sobel_mag_bgr -> "Sobel Mag", sobel_x_bgr -> "Sobel X", sobel_y_bgr -> "Sobel Y"
+        # Convert grayscale images to BGR for stacking
+        sobel_x_bgr = cv2.cvtColor(sobel_x, cv2.COLOR_GRAY2BGR)
+        sobel_y_bgr = cv2.cvtColor(sobel_y, cv2.COLOR_GRAY2BGR)
+        sobel_mag_bgr = cv2.cvtColor(sobel_mag, cv2.COLOR_GRAY2BGR)
 
-        # TODO: Stack in 2x2 grid
-        grid = frame
+        # Annotate each image
+        cv2.putText(frame, "Original", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+        cv2.putText(sobel_mag_bgr, "Sobel Mag", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+        cv2.putText(sobel_x_bgr, "Sobel X", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+        cv2.putText(sobel_y_bgr, "Sobel Y", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+
+        # Stack in 2x2 grid
+        top_row = np.hstack((frame, sobel_mag_bgr))
+        bottom_row = np.hstack((sobel_x_bgr, sobel_y_bgr))
+        grid = np.vstack((top_row, bottom_row))
 
         return grid
 

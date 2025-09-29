@@ -7,10 +7,11 @@ Read images from a ROS bag, annotate them, save, and display in real-time
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile, QoSReliabilityPolicy
-from sensor_msgs.msg import Image
+from sensor_msgs.msg import CompressedImage
 from cv_bridge import CvBridge
 import cv2
 import os
+
 
 class ImageBagProcessor(Node):
     def __init__(self):
@@ -24,9 +25,9 @@ class ImageBagProcessor(Node):
         )
 
         # Subscribe to uncompressed images
-        subscriber_topic = 'image_raw'
+        subscriber_topic = 'camera/image_raw/compressed'
         self.subscription = self.create_subscription(
-            Image,
+            CompressedImage,
             subscriber_topic,
             self.image_callback,
             qos
@@ -44,7 +45,7 @@ class ImageBagProcessor(Node):
         """Process uncompressed image messages"""
         try:
             # Convert ROS Image to OpenCV image
-            img = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+            img = self.bridge.compressed_imgmsg_to_cv2(msg, desired_encoding='bgr8')
             
             # Process the image (add shapes and text)
             processed_image = self.process_cv_image(img)

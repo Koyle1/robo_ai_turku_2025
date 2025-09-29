@@ -10,57 +10,85 @@ import numpy as np
 
 def convolve(image, kernel):
     """Perform convolution on a grayscale image with a given kernel."""
-    # TODO: Get image and kernel dimensions
-    # Hint: .shape
-    img_h, img_w = 0, 0
-    k_h, k_w = 0, 0
+    # Get image and kernel dimensions
+    img_h, img_w = image.shape
+    k_h, k_w = kernel.shape
 
-    # TODO: Pad the image with zeros around the border
-    # Hint: use np.pad(image, ((pad_h, pad_h), (pad_w, pad_w)), mode='')
-    # Choose the type of padding to work with using the mode parameter
+    # Pad the image with zeros around the border (zero padding)
     pad_h = k_h // 2
     pad_w = k_w // 2
-    padded = None
+    padded = np.pad(image, ((pad_h, pad_h), (pad_w, pad_w)), mode='constant', constant_values=0)
 
-    # TODO: Create an empty output image
-    # Hint: matrix the same size of the current image
-    output = None
+    # Create an empty output image
+    output = np.zeros_like(image, dtype=np.float32)
 
-    # TODO: Loop over each pixel (y, x)
-    # Extract the region of interest (ROI) from padded image
-    # Multiply by kernel and sum up values
-    # Assign to output[y, x]
-    # Hint: np.sum(region * kernel)
+    # Loop over each pixel (y, x)
+    for y in range(img_h):
+        for x in range(img_w):
+            # Extract the region of interest (ROI) from padded image
+            roi = padded[y:y+k_h, x:x+k_w]
+            # Multiply by kernel and sum up values
+            output[y, x] = np.sum(roi * kernel)
 
     # Clip values to 0–255
     output = np.clip(output, 0, 255).astype(np.uint8)
 
     return output  
 
+def create_gaussian_kernel(size, sigma=1.0):
+    """Create a Gaussian kernel of given size and sigma."""
+    kernel = np.zeros((size, size))
+    center = size // 2
+    
+    # Calculate Gaussian values
+    for i in range(size):
+        for j in range(size):
+            x = i - center
+            y = j - center
+            kernel[i, j] = np.exp(-(x**2 + y**2) / (2 * sigma**2))
+    
+    # Normalize the kernel so it sums to 1
+    kernel = kernel / np.sum(kernel)
+    return kernel
+
 def main():
-    image_path = "flower.png"
+    image_path = "images/flower.png"
     # Read image in grayscale
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     if image is None:
-        raise FileNotFoundError("Image file not found. Place 'sample.jpg' in the same folder.")
+        raise FileNotFoundError("Image file not found. Place 'flower.png' in the same folder.")
     
-    # TODO: Define a simple 5x5 averaging kernel (all ones / 9)
-    kernel = None
+    # Define a simple 5x5 averaging kernel (all ones / 25)
+    box_kernel_5x5 = np.ones((5, 5)) / 25
+    
+    # Test different kernel sizes
+    box_kernel_3x3 = np.ones((3, 3)) / 9
+    box_kernel_7x7 = np.ones((7, 7)) / 49
 
-    # TODO: Apply convolution
-    # (IN REALITY IS CROSS CORRELATION, we are not flipping the kernel)
-    blurred = convolve(image, kernel)
+    # Apply convolution with different kernel sizes
+    blurred_3x3 = convolve(image, box_kernel_3x3)
+    blurred_5x5 = convolve(image, box_kernel_5x5)
+    blurred_7x7 = convolve(image, box_kernel_7x7)
 
-    # TODO: Create gasussian kernel and apply to image
-    gaussian_kernel = None
-    gaussina_blur = convolve(image, gaussian_kernel)
+    # Create Gaussian kernel and apply to image
+    gaussian_kernel_5x5 = create_gaussian_kernel(5, sigma=1.0)
+    gaussian_blur = convolve(image, gaussian_kernel_5x5)
 
-    # TODO: Display results (original and blurred)
+    # Display results
     cv2.imshow("Original", image)
-    cv2.imshow("Box Blur (Manual Convolution)", blurred)
-    cv2.imshow("Gaussian Blur (Manual Convolution)", gaussina_blur)
+    cv2.imshow("Box Blur 3x3", blurred_3x3)
+    cv2.imshow("Box Blur 5x5", blurred_5x5)
+    cv2.imshow("Box Blur 7x7", blurred_7x7)
+    cv2.imshow("Gaussian Blur 5x5", gaussian_blur)
+    
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
+    # Save results for comparison
+    cv2.imwrite("processed_images/task5/box_blur_3x3.jpg", blurred_3x3)
+    cv2.imwrite("processed_images/task5/box_blur_5x5.jpg", blurred_5x5)
+    cv2.imwrite("processed_images/task5/box_blur_7x7.jpg", blurred_7x7)
+    cv2.imwrite("processed_images/task5/gaussian_blur_5x5.jpg", gaussian_blur)
 
 if __name__ == "__main__":
     main()
