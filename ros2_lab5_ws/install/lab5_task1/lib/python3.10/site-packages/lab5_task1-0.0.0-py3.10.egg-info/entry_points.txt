@@ -1,0 +1,5 @@
+[console_scripts]
+feature_detector = lab5_task1.feature_detector:main
+lidar_plot = lab5_task1.lidar_plot:main
+line_detector = lab5_task1.line_detector:main
+
