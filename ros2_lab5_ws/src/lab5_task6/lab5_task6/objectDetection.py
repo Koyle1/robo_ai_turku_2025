@@ -6,6 +6,7 @@ from rclpy.node import Node
 import numpy as np
 from math import sin, cos, atan2, sqrt
 from scipy.ndimage import label, center_of_mass
+from scipy.signal import convolve2d
 from scipy.spatial.distance import euclidean
 
 from sensor_msgs.msg import LaserScan
@@ -16,6 +17,7 @@ from skimage.feature import canny
 from skimage.transform import probabilistic_hough_line
 
 import matplotlib
+# Optionally disable GUI backend if plots cause crashes
 # matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
@@ -27,6 +29,7 @@ def quat_to_yaw(q):
 
 
 def fit_circle(xs, ys):
+    """Fit circle (xc, yc, r) to points and return mse of residuals."""
     x = xs[:, np.newaxis]
     y = ys[:, np.newaxis]
     A = np.hstack((2 * x, 2 * y, np.ones_like(x)))
@@ -40,6 +43,7 @@ def fit_circle(xs, ys):
 
 
 def fit_line(xs, ys):
+    """Fit linear model y = m x + b and return mse."""
     A = np.vstack([xs, np.ones_like(xs)]).T
     m, b = np.linalg.lstsq(A, ys, rcond=None)[0]
     y_fit = m * xs + b
@@ -58,9 +62,10 @@ class ShapeMapper(Node):
         )
 
         self.map_size = 100
-        self.grid_resolution = 0.1
+        self.grid_resolution = 0.1  # meters per grid cell
         self.map_center = np.array([self.map_size // 2, self.map_size // 2], dtype=int)
 
+        # occupancy codes: -1 = unknown, 0 = free, 1 = occupied, 2 = cube, 3 = cylinder
         self.occupancy_map = -1 * np.ones((self.map_size, self.map_size), dtype=int)
 
         self.create_subscription(Odometry, "/odom", self.odom_cb, qos)
@@ -70,6 +75,7 @@ class ShapeMapper(Node):
         self.scan = LaserScan()
         self.have_odom = False
 
+        # Live plotting
         plt.ion()
         self.fig, self.ax = plt.subplots(figsize=(6, 6))
         self.img = self.ax.imshow((self.occupancy_map + 1).T,
@@ -119,16 +125,19 @@ class ShapeMapper(Node):
         om = self.world_to_map(robot_xy + obs_rel)
         path = self.bresenham(rm[0], rm[1], om[0], om[1])
 
+        # free path
         for (ix, iy) in path[:-1]:
             if 0 <= ix < self.map_size and 0 <= iy < self.map_size:
                 if self.occupancy_map[ix, iy] == -1:
                     self.occupancy_map[ix, iy] = 0
 
+        # endpoint
         ox, oy = path[-1]
         if 0 <= ox < self.map_size and 0 <= oy < self.map_size:
             self.occupancy_map[ox, oy] = 1
 
     def merge_blobs(self, labeled, num):
+        """Merge neighboring / overlapping blobs into bigger clusters."""
         blobs = []
         for i in range(1, num + 1):
             coords = np.argwhere(labeled == i)
@@ -153,6 +162,7 @@ class ShapeMapper(Node):
                 if used[j]:
                     continue
                 (u0, u1, v0, v1) = bbox(b2)
+                # if bounding boxes overlap or are within margin
                 margin = 2
                 if not (u0 > x1 + margin or u1 < x0 - margin or v0 > y1 + margin or v1 < y0 - margin):
                     group.append(b2)
@@ -173,20 +183,13 @@ class ShapeMapper(Node):
         merged_blobs = self.merge_blobs(labeled, n)
         self.get_logger().info(f"Merged into {len(merged_blobs)} objects")
 
+        # Reset prior shape labels (2,3) back to 1 (occupied) to reclassify
         mask = (self.occupancy_map == 2) | (self.occupancy_map == 3)
         self.occupancy_map[mask] = 1
 
-        MIN_BLOB_SIZE_FOR_CLASS = 20
-        LINE_MSE_THRESHOLD = 2.0
-        CIRC_MSE_THRESHOLD = 2.0
-        RATIO_THRESHOLD_CYL = 3.0
-        RATIO_THRESHOLD_CUBE = 0.8
-        RADIUS_MIN = 2.0
-        RADIUS_MAX = 20.0
-
         for blob in merged_blobs:
-            size = blob.shape[0]
-            if size < MIN_BLOB_SIZE_FOR_CLASS:
+            if blob.shape[0] < 10:
+                # skip very small blobs
                 continue
 
             xs = blob[:, 0].astype(float)
@@ -195,26 +198,25 @@ class ShapeMapper(Node):
             m, b, mse_line = fit_line(xs, ys)
             xc, yc, r, mse_circ = fit_circle(xs, ys)
 
-            dists = np.sqrt((xs - xc)**2 + (ys - yc)**2)
-            std_dist = np.std(dists)
-
-            ratio = mse_line / (mse_circ + 1e-8)
-
             self.get_logger().info(
-                f"Blob size={size} line_mse={mse_line:.3f}, circ_mse={mse_circ:.3f}, "
-                + f"ratio={ratio:.3f}, r={r:.3f}, std_dist={std_dist:.3f}"
+                f"Blob size={blob.shape[0]} line_mse={mse_line:.3f}, circ_mse={mse_circ:.3f}"
             )
 
-            shape_label = 1
+            # compute ratio: how much better circle is vs line
+            ratio = mse_line / (mse_circ + 1e-8)
 
-            if (mse_circ < CIRC_MSE_THRESHOLD
-                and ratio > RATIO_THRESHOLD_CYL
-                and RADIUS_MIN < r < RADIUS_MAX
-                and std_dist / (r + 1e-8) < 0.2):
-                shape_label = 3
-            elif (mse_line < LINE_MSE_THRESHOLD
-                  and ratio < RATIO_THRESHOLD_CUBE):
-                shape_label = 2
+            # classification thresholds (tunable)
+            LINE_MSE_THRESHOLD = 5.0     # Lower = better fit to a line
+            CIRC_MSE_THRESHOLD = 5.0     # Lower = better fit to a circle
+            RATIO_THRESHOLD_CYL = 1.5    # Circle must be this much better to be cylinder
+            RATIO_THRESHOLD_CUBE = 0.7   # Line must be this much better to be cube
+
+            if mse_circ < CIRC_MSE_THRESHOLD and ratio > RATIO_THRESHOLD_CYL:
+                shape_label = 3  # cylinder
+            elif mse_line < LINE_MSE_THRESHOLD and ratio < RATIO_THRESHOLD_CUBE:
+                shape_label = 2  # cube
+            else:
+                shape_label = 1  # ambiguous, leave as occupied
 
             for (xi, yi) in blob:
                 self.occupancy_map[xi, yi] = shape_label
@@ -287,4 +289,16 @@ def main(args=None):
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        node.get_logger().inf_
+        node.get_logger().info("Interrupted, shutting down")
+    finally:
+        try:
+            node.save_and_shutdown()
+        except Exception:
+            pass
+        if rclpy.ok():
+            rclpy.shutdown()
+        node.destroy_node()
+
+
+if __name__ == '__main__':
+    main()
