@@ -1,155 +1,99 @@
 #!/usr/bin/env python3
+
 import rclpy
 from rclpy.node import Node
 
 import numpy as np
-from math import sin, cos, atan2
+from math import sin, cos, atan2, sqrt
+from scipy.ndimage import label, center_of_mass, gaussian_filter
+from scipy.signal import convolve2d
 
-from pfilter import ParticleFilter, squared_error
-
-from std_msgs.msg import Float64
 from sensor_msgs.msg import LaserScan
 from nav_msgs.msg import Odometry
-
 from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy
 
-from scipy.signal import convolve2d
+from skimage.feature import canny
+from skimage.transform import probabilistic_hough_line
+
+import matplotlib
+matplotlib.use("Agg")  # Non-GUI backend for headless environments
 import matplotlib.pyplot as plt
-import time
 
 
 def quat_to_yaw(q):
-    """Convert quaternion to yaw (Euler angle)"""
-    siny_cosp = 2.0 * (q.w * q.z + q.x * q.y)
-    cosy_cosp = 1.0 - 2.0 * (q.y * q.y + q.z * q.z)
-    return atan2(siny_cosp, cosy_cosp)
+    siny = 2.0 * (q.w * q.z + q.x * q.y)
+    cosy = 1.0 - 2.0 * (q.y * q.y + q.z * q.z)
+    return atan2(siny, cosy)
 
 
-class LidarParticleFilter(Node):
+def fit_circle(xs, ys):
+    x = xs[:, np.newaxis]
+    y = ys[:, np.newaxis]
+    A = np.hstack((2 * x, 2 * y, np.ones_like(x)))
+    b = x * x + y * y
+    sol, _, _, _ = np.linalg.lstsq(A, b, rcond=None)
+    xc, yc, c = sol.flatten()
+    r = sqrt(c + xc * xc + yc * yc)
+    d2 = (xs - xc) ** 2 + (ys - yc) ** 2
+    mse = np.mean((np.sqrt(d2) - r) ** 2)
+    return xc, yc, r, mse
+
+
+def fit_line(xs, ys):
+    A = np.vstack([xs, np.ones_like(xs)]).T
+    m, b = np.linalg.lstsq(A, ys, rcond=None)[0]
+    y_fit = m * xs + b
+    mse = np.mean((ys - y_fit) ** 2)
+    return m, b, mse
+
+
+class ShapeMapper(Node):
     def __init__(self):
-        super().__init__('lidar_pf_with_map')
+        super().__init__('shape_mapper')
 
-        # QoS for subscriptions
-        self.qos = QoSProfile(
+        qos = QoSProfile(
             reliability=QoSReliabilityPolicy.RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT,
             history=QoSHistoryPolicy.RMW_QOS_POLICY_HISTORY_KEEP_LAST,
             depth=10,
         )
 
-        # Particle filter parameters
-        self.declare_parameters('', [
-            ("weights_sigma", 1.2),
-            ("num_particles", 200),
-            ("measurement_noise", 0.05),
-            ("resample_proportion", 0.01),
-        ])
-
-        self.weights_sigma = self.get_parameter('weights_sigma').value
-        self.num_particles = self.get_parameter('num_particles').value
-        self.measurement_noise = self.get_parameter('measurement_noise').value
-        self.resample_proportion = self.get_parameter('resample_proportion').value
-
-        self.get_logger().info(
-            f"PF Params: sigma={self.weights_sigma}, num={self.num_particles}, noise={self.measurement_noise}"
-        )
-
-        # Known obstacle positions (for PF)
-        self.real_obstacle_position = np.array([2.0, 1.0])
-        self.second_obstacle_position = np.array([2.0, -1.0])
-
-        # Create particle filter
-        self.prior_fn = lambda n: np.random.uniform(-5, 5, (n, 2))
-        self.pf = ParticleFilter(
-            prior_fn=self.prior_fn,
-            observe_fn=self.calc_hypothesis,
-            dynamics_fn=self.velocity,
-            n_particles=self.num_particles,
-            noise_fn=self.add_noise,
-            weight_fn=self.calc_weights,
-            resample_proportion=self.resample_proportion
-        )
-
-        # Odometry delta tracking
-        self._have_first_odom = False
-        self._last_odom_xy = np.zeros(2, dtype=float)
-        self.particle_odom = np.zeros(2, dtype=float)
-
-        # History buffers
-        self.odom_hist = []
-        self.pf_hist = []
-        self.pf_yaw_est = None
-        self.odom_yaw_hist = []
-        self.pf_yaw_hist = []
-
-        # Map parameters
-        self.map_size = 100
-        self.grid_resolution = 0.1  # meters per cell
+        self.map_size = 50
+        self.grid_resolution = 0.1
         self.map_center = np.array([self.map_size // 2, self.map_size // 2], dtype=int)
-        # Initialize map: -1 unknown, 0 free, 1 occupied
         self.occupancy_map = -1 * np.ones((self.map_size, self.map_size), dtype=int)
 
-        # Create convolution kernels for cubes and cylinders
-        self.kernel_cube = np.array([[1, 1, 1],
-                                     [1, 1, 1],
-                                     [1, 1, 1]], dtype=float)
-        self.kernel_cylinder = np.array([[0, 1, 0],
-                                         [1, 1, 1],
-                                         [0, 1, 0]], dtype=float)
-
-        # Subscribers
-        self.create_subscription(Odometry, "/odom", self.odometry_cb, qos_profile=self.qos)
-        self.create_subscription(LaserScan, "/scan", self.scan_cb, qos_profile=self.qos)
-
-        # Timer for periodic update
-        self.create_timer(0.2, self.update_filter)
-
-        # Real-time plotting setup
-        plt.ion()
-        self.fig, self.ax = plt.subplots(figsize=(7, 6))
-        (self.odom_line,) = self.ax.plot([], [], label="Odometry path")
-        (self.pf_line,) = self.ax.plot([], [], label="PF path")
-        # Quivers for headings
-        self.heading_len = 0.5
-        self.true_heading = self.ax.quiver(0, 0, 0, 0, angles='xy', scale_units='xy', scale=1, color='blue', label="True yaw")
-        self.pf_heading = self.ax.quiver(0, 0, 0, 0, angles='xy', scale_units='xy', scale=1, color='red', label="PF yaw")
-        self.ax.legend()
-        self.ax.set_xlabel("X [m]")
-        self.ax.set_ylabel("Y [m]")
-        self.ax.set_title("Localization + Mapping")
-        self.ax.grid(True)
+        self.create_subscription(Odometry, "/odom", self.odom_cb, qos)
+        self.create_subscription(LaserScan, "/scan", self.scan_cb, qos)
 
         self.odometry = Odometry()
         self.scan = LaserScan()
+        self.have_odom = False
 
-    def odometry_cb(self, msg):
+        plt.ion()
+        self.fig, self.ax = plt.subplots(figsize=(6, 6))
+        self.img = self.ax.imshow((self.occupancy_map + 1).T,
+                                  origin='lower',
+                                  cmap=plt.cm.get_cmap('tab10', 5),
+                                  vmin=0, vmax=4)
+        self.ax.set_title("Live Map")
+        self.fig.colorbar(self.img, ax=self.ax, ticks=[0, 1, 2, 3, 4])
+        self.fig.canvas.draw()
+
+        self.create_timer(0.2, self.timer_callback)
+
+    def odom_cb(self, msg):
         self.odometry = msg
+        self.have_odom = True
 
     def scan_cb(self, msg):
         self.scan = msg
 
-    def calc_hypothesis(self, x):
-        obs1 = self.real_obstacle_position - x
-        obs2 = self.second_obstacle_position - x
-        return np.hstack((obs1, obs2))
-
-    def velocity(self, x):
-        return x + self.particle_odom
-
-    def add_noise(self, x):
-        return x + np.random.normal(0, self.measurement_noise, x.shape)
-
-    def calc_weights(self, hypotheses, observations):
-        return squared_error(hypotheses, observations, sigma=self.weights_sigma)
-
     def world_to_map(self, pos):
-        """Convert world XY to map indices."""
-        # pos is [x, y]
         i = int(round(pos[0] / self.grid_resolution)) + self.map_center[0]
         j = int(round(pos[1] / self.grid_resolution)) + self.map_center[1]
         return i, j
 
     def bresenham(self, x0, y0, x1, y1):
-        """Generate cells along line from (x0, y0) to (x1, y1)."""
         points = []
         dx = abs(x1 - x0)
         dy = abs(y1 - y0)
@@ -169,169 +113,272 @@ class LidarParticleFilter(Node):
                 y0 += sy
         return points
 
-    def detect_shapes(self):
-        """Apply convolutional kernels on the occupied map to detect shapes."""
-        # Create binary map of occupied cells
-        occ = (self.occupancy_map == 1).astype(float)
+    def update_map_from_scan(self, robot_xy, obs_rel):
+        rm = self.world_to_map(robot_xy)
+        om = self.world_to_map(robot_xy + obs_rel)
+        path = self.bresenham(rm[0], rm[1], om[0], om[1])
 
-        conv_c = convolve2d(occ, self.kernel_cube, mode='same', boundary='fill', fillvalue=0)
-        conv_cyl = convolve2d(occ, self.kernel_cylinder, mode='same', boundary='fill', fillvalue=0)
-
-        # thresholds
-        cube_thresh = np.sum(self.kernel_cube) * 0.8
-        cyl_thresh = np.sum(self.kernel_cylinder) * 0.8
-
-        cube_hits = np.argwhere(conv_c >= cube_thresh)
-        cyl_hits = np.argwhere(conv_cyl >= cyl_thresh)
-
-        return cube_hits, cyl_hits
-
-    def update_map(self, robot_pos, obs_rel):
-        """Update occupancy map with ray from robot to observed obstacle."""
-        # Convert positions
-        robot_map = self.world_to_map(robot_pos)
-        obs_map = self.world_to_map(robot_pos + obs_rel)
-
-        # Raycast
-        path = self.bresenham(robot_map[0], robot_map[1], obs_map[0], obs_map[1])
-        # Mark path as free (0), except final cell
         for (ix, iy) in path[:-1]:
             if 0 <= ix < self.map_size and 0 <= iy < self.map_size:
                 if self.occupancy_map[ix, iy] == -1:
                     self.occupancy_map[ix, iy] = 0
-        # Mark obstacle
-        (ox, oy) = path[-1]
+
+        ox, oy = path[-1]
         if 0 <= ox < self.map_size and 0 <= oy < self.map_size:
             self.occupancy_map[ox, oy] = 1
 
-    def update_filter(self):
-        # 1. Compute odom delta
-        robot_xy = np.array([self.odometry.pose.pose.position.x,
-                             self.odometry.pose.pose.position.y], dtype=float)
+    def merge_blobs(self, labeled, num):
+        blobs = []
+        for i in range(1, num + 1):
+            coords = np.argwhere(labeled == i)
+            if coords.size == 0:
+                continue
+            blobs.append(coords)
 
-        if not self._have_first_odom:
-            self._last_odom_xy = robot_xy.copy()
-            self._have_first_odom = True
-            self.particle_odom = np.zeros(2, dtype=float)
-        else:
-            self.particle_odom = robot_xy - self._last_odom_xy
-            self._last_odom_xy = robot_xy.copy()
+        def bbox(bl):
+            xs = bl[:, 0]
+            ys = bl[:, 1]
+            return (xs.min(), xs.max(), ys.min(), ys.max())
 
-        # 2. Build observation from LiDAR
-        obs_rel = None
+        merged = []
+        used = [False] * len(blobs)
+        for i, b1 in enumerate(blobs):
+            if used[i]:
+                continue
+            used[i] = True
+            (x0, x1, y0, y1) = bbox(b1)
+            group = [b1]
+            for j, b2 in enumerate(blobs):
+                if used[j]:
+                    continue
+                (u0, u1, v0, v1) = bbox(b2)
+                margin = 2
+                if not (u0 > x1 + margin or u1 < x0 - margin or v0 > y1 + margin or v1 < y0 - margin):
+                    group.append(b2)
+                    used[j] = True
+            merged_coords = np.vstack(group)
+            merged.append(merged_coords)
+        return merged
+
+    def estimate_perimeter(self, blob):
+        """Estimate perimeter of a blob using boundary pixels"""
+        # Create a binary image of just this blob
+        min_x, max_x = blob[:, 0].min(), blob[:, 0].max()
+        min_y, max_y = blob[:, 1].min(), blob[:, 1].max()
+        
+        # Add padding
+        width = max_x - min_x + 3
+        height = max_y - min_y + 3
+        binary = np.zeros((width, height), dtype=bool)
+        
+        for x, y in blob:
+            binary[x - min_x + 1, y - min_y + 1] = True
+        
+        # Count boundary pixels (those with at least one empty neighbor)
+        kernel = np.ones((3, 3))
+        neighbor_count = convolve2d(binary.astype(int), kernel, mode='same')
+        boundary = binary & (neighbor_count < 9)
+        
+        return np.sum(boundary)
+
+    def detect_corners(self, xs, ys, angle_threshold=120):
+        """Detect corners by analyzing angles between consecutive points"""
+        if len(xs) < 5:
+            return False
+        
+        # Sort points by angle from centroid to get ordered boundary
+        cx, cy = np.mean(xs), np.mean(ys)
+        angles = np.arctan2(ys - cy, xs - cx)
+        sorted_idx = np.argsort(angles)
+        xs_sorted = xs[sorted_idx]
+        ys_sorted = ys[sorted_idx]
+        
+        corners = 0
+        for i in range(len(xs_sorted)):
+            # Get three consecutive points
+            p1 = np.array([xs_sorted[i-2], ys_sorted[i-2]])
+            p2 = np.array([xs_sorted[i-1], ys_sorted[i-1]])
+            p3 = np.array([xs_sorted[i], ys_sorted[i]])
+            
+            # Calculate angle
+            v1 = p1 - p2
+            v2 = p3 - p2
+            
+            norm1 = np.linalg.norm(v1)
+            norm2 = np.linalg.norm(v2)
+            
+            if norm1 > 0 and norm2 > 0:
+                cos_angle = np.dot(v1, v2) / (norm1 * norm2)
+                cos_angle = np.clip(cos_angle, -1, 1)
+                angle_deg = np.degrees(np.arccos(cos_angle))
+                
+                # Sharp angle indicates corner
+                if angle_deg < angle_threshold:
+                    corners += 1
+        
+        # Cubes should have ~4 corners
+        return corners >= 3
+
+    def detect_and_classify(self):
+        """Improved shape classification using multiple features"""
+        occ = (self.occupancy_map == 1).astype(np.float32)
+        
+        # Label connected components
+        labeled, n = label(occ)
+        merged_blobs = self.merge_blobs(labeled, n)
+        self.get_logger().info(f"Merged into {len(merged_blobs)} objects")
+        
+        # Clear previous classifications
+        mask = (self.occupancy_map == 2) | (self.occupancy_map == 3)
+        self.occupancy_map[mask] = 1
+        
+        for blob in merged_blobs:
+            if blob.shape[0] < 8:  # Minimum points for classification
+                continue
+            
+            xs = blob[:, 0].astype(float)
+            ys = blob[:, 1].astype(float)
+            
+            # Feature 1: Fit circle and line
+            xc, yc, r, mse_circ = fit_circle(xs, ys)
+            m, b, mse_line = fit_line(xs, ys)
+            
+            # Feature 2: Compute compactness (circularity)
+            area = len(blob)
+            perimeter = self.estimate_perimeter(blob)
+            compactness = (4 * np.pi * area) / (perimeter**2 + 1e-8)
+            # Circle ≈ 1.0, Square ≈ 0.785, Rectangle < 0.785
+            
+            # Feature 3: Compute eccentricity (aspect ratio)
+            cov = np.cov(xs, ys)
+            eigvals = np.linalg.eigvalsh(cov)
+            eccentricity = np.sqrt(1 - eigvals[0] / (eigvals[1] + 1e-8))
+            # Circle ≈ 0, Elongated shapes > 0.5
+            
+            # Feature 4: Angular consistency (check for corners)
+            has_corners = self.detect_corners(xs, ys)
+            
+            # Feature 5: Radius variance for cylinders
+            distances = np.sqrt((xs - xc)**2 + (ys - yc)**2)
+            radius_std = np.std(distances)
+            radius_mean = np.mean(distances)
+            radius_cv = radius_std / (radius_mean + 1e-8)  # Coefficient of variation
+            
+            # Decision logic
+            shape_label = 1  # Default: ambiguous
+            
+            # Calculate fit ratio for additional insight
+            fit_ratio = mse_line / (mse_circ + 1e-8)
+            
+            # Strong cylinder indicators:
+            # - Circle fits much better than line (high ratio)
+            # - Low radius variation
+            # - Good compactness
+            if (fit_ratio > 2.0 and radius_cv < 0.25 and compactness > 0.6):
+                shape_label = 3  # Cylinder
+                
+            # Alternative cylinder check: very low circle MSE
+            elif (mse_circ < 2.0 and radius_cv < 0.2):
+                shape_label = 3  # Cylinder
+                
+            # Strong cube indicators:
+            # - Line fits better than or similar to circle (low ratio)
+            # - Has detected corners OR low compactness
+            elif (fit_ratio < 1.2 or has_corners or compactness < 0.65):
+                shape_label = 2  # Cube
+                
+            # Medium confidence cylinder (prefer cylinder if circle fits reasonably)
+            elif (mse_circ < 4.0 and fit_ratio > 1.3 and radius_cv < 0.3):
+                shape_label = 3  # Cylinder
+                
+            # Log classification details for debugging
+            fit_ratio = mse_line / (mse_circ + 1e-8)
+            self.get_logger().info(
+                f"Blob: pts={len(blob)}, mse_c={mse_circ:.2f}, mse_l={mse_line:.2f}, "
+                f"ratio={fit_ratio:.2f}, comp={compactness:.2f}, ecc={eccentricity:.2f}, "
+                f"rcv={radius_cv:.2f}, corners={has_corners} -> {['?', '?', 'CUBE', 'CYL'][shape_label]}"
+            )
+            
+            # Assign label
+            for (xi, yi) in blob:
+                self.occupancy_map[xi, yi] = shape_label
+
+    def timer_callback(self):
+        if not self.have_odom or len(self.scan.ranges) == 0:
+            return
+
+        rx = self.odometry.pose.pose.position.x
+        ry = self.odometry.pose.pose.position.y
+        robot_xy = np.array([rx, ry], dtype=float)
+
         try:
             ranges = np.asarray(self.scan.ranges, dtype=float)
             valid = np.isfinite(ranges)
             if valid.any():
-                r = ranges.copy()
-                r[~valid] = np.inf
-                i = int(np.argmin(r))
-                if np.isfinite(r[i]):
-                    ang = self.scan.angle_min + i * self.scan.angle_increment
-                    rx = r[i] * cos(ang)
-                    ry = r[i] * sin(ang)
-                    yaw = quat_to_yaw(self.odometry.pose.pose.orientation)
+                rr = ranges.copy()
+                rr[~valid] = np.inf
+                i = int(np.argmin(rr))
+                if np.isfinite(rr[i]):
+                    angle = self.scan.angle_min + i * self.scan.angle_increment
+                    lx = rr[i] * cos(angle)
+                    ly = rr[i] * sin(angle)
+                    q = self.odometry.pose.pose.orientation
+                    yaw = quat_to_yaw(q)
                     cy, sy = cos(yaw), sin(yaw)
-                    wx = cy * rx - sy * ry
-                    wy = sy * rx + cy * ry
+                    wx = cy * lx - sy * ly
+                    wy = sy * lx + cy * ly
                     obs_rel = np.array([wx, wy])
-        except Exception:
-            pass
+                    self.update_map_from_scan(robot_xy, obs_rel)
+        except Exception as e:
+            self.get_logger().warn(f"Scan error: {e}")
 
-        if obs_rel is None:
-            obs_rel = self.real_obstacle_position - robot_xy + np.random.normal(0, 0.05, 2)
+        if np.random.rand() < 0.2:
+            self.detect_and_classify()
 
-        # 3. Update map
-        self.update_map(robot_xy, obs_rel)
+        disp = (self.occupancy_map + 1).T
+        self.img.set_data(disp)
+        self.img.set_cmap(plt.cm.get_cmap('tab10', 5))
+        self.img.set_clim(0, 4)
+        self.fig.canvas.draw_idle()
+        self.fig.canvas.flush_events()
 
-        # 4. Particle filter update
-        self.pf.update(observed=obs_rel)
+    def report_objects(self):
+        self.detect_and_classify()
+        for label_val, name in [(2, "Cube"), (3, "Cylinder")]:
+            binary = (self.occupancy_map == label_val).astype(int)
+            labeled, n = label(binary)
+            centers = center_of_mass(binary, labeled, range(1, n + 1))
+            for idx, (cy, cx) in enumerate(centers):
+                wx = (cx - self.map_center[1]) * self.grid_resolution
+                wy = (cy - self.map_center[0]) * self.grid_resolution
+                size = np.sum(labeled == (idx + 1))
+                self.get_logger().info(
+                    f"{name} #{idx+1}: Position=({wx:.2f}, {wy:.2f}), Size={size}"
+                )
 
-        est = np.array(self.pf.mean_state).reshape(-1)
-        est_xy = est[:2] if est.size >= 2 else np.array([np.nan, np.nan])
-
-        # 5. Yaw from odometry (true yaw)
-        yaw_true = quat_to_yaw(self.odometry.pose.pose.orientation)
-
-        # 6. Histories
-        self.odom_hist.append(robot_xy.tolist())
-        self.pf_hist.append(est_xy.tolist())
-        self.odom_yaw_hist.append(yaw_true)
-        if self.pf_yaw_est is None:
-            self.pf_yaw_est = yaw_true
-        self.pf_yaw_hist.append(self.pf_yaw_est)
-
-        # 7. Estimate PF yaw by motion (if movement)
-        if len(self.pf_hist) >= 2:
-            dx = self.pf_hist[-1][0] - self.pf_hist[-2][0]
-            dy = self.pf_hist[-1][1] - self.pf_hist[-2][1]
-            if abs(dx) + abs(dy) > 1e-6:
-                self.pf_yaw_est = atan2(dy, dx)
-
-        # 8. Real-time plotting
-        if len(self.odom_hist) >= 2:
-            od_np = np.array(self.odom_hist)
-            pf_np = np.array(self.pf_hist)
-
-            self.odom_line.set_data(od_np[:, 0], od_np[:, 1])
-            self.pf_line.set_data(pf_np[:, 0], pf_np[:, 1])
-
-            # update heading arrows
-            x_o, y_o = od_np[-1]
-            x_p, y_p = pf_np[-1]
-            yaw_t = yaw_true
-            yaw_p = self.pf_yaw_est
-
-            u_o = self.heading_len * cos(yaw_t)
-            v_o = self.heading_len * sin(yaw_t)
-            u_p = self.heading_len * cos(yaw_p)
-            v_p = self.heading_len * sin(yaw_p)
-
-            self.true_heading.set_offsets([x_o, y_o])
-            self.true_heading.set_UVC(u_o, v_o)
-            self.pf_heading.set_offsets([x_p, y_p])
-            self.pf_heading.set_UVC(u_p, v_p)
-
-            self.ax.relim()
-            self.ax.autoscale_view()
-            try:
-                self.ax.set_aspect('equal', adjustable='datalim')
-            except Exception:
-                pass
-            self.fig.canvas.draw_idle()
-            self.fig.canvas.flush_events()
-
-        # 9. Optionally, detect shapes periodically or on demand
-        if len(self.odom_hist) % 50 == 0:  # every 50 updates
-            cube_hits, cyl_hits = self.detect_shapes()
-            self.get_logger().info(f"Cube hits: {cube_hits.shape}, Cylinder hits: {cyl_hits.shape}")
-
-    def plot_final_map(self, save_path="map.png"):
-        plt.figure(figsize=(8, 8))
-        cmap = plt.cm.get_cmap('jet', 4)  # 4 levels: unknown, free, occupied, detections
-        plt.imshow(self.occupancy_map.T, origin='lower', cmap=cmap)
-        plt.colorbar(ticks=[-1, 0, 1, 2], label="Map cell value")
-        plt.title("Occupancy Map")
-        plt.xlabel("X grid")
-        plt.ylabel("Y grid")
-        plt.tight_layout()
-        plt.savefig(save_path)
-        self.get_logger().info(f"Saved map to {save_path}")
+    def save_and_shutdown(self):
+        np.save("occupancy_map.npy", self.occupancy_map)
+        plt.ioff()
+        plt.savefig("final_map.png")
+        self.get_logger().info("Saved final map and occupancy_map.npy")
+        self.report_objects()
 
 
 def main(args=None):
     rclpy.init(args=args)
-    node = LidarParticleFilter()
-    node.pf.init_filter()
-
+    node = ShapeMapper()
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        node.get_logger().info("Shutting down")
+        node.get_logger().info("Interrupted, shutting down")
     finally:
-        node.plot_final_map()
+        try:
+            node.save_and_shutdown()
+        except Exception as e:
+            node.get_logger().warn(f"Error during shutdown: {e}")
+        if rclpy.ok():
+            rclpy.shutdown()
         node.destroy_node()
-        rclpy.shutdown()
 
 
 if __name__ == '__main__':

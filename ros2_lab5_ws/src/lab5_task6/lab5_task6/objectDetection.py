@@ -5,9 +5,8 @@ from rclpy.node import Node
 
 import numpy as np
 from math import sin, cos, atan2, sqrt
-from scipy.ndimage import label, center_of_mass
+from scipy.ndimage import label, center_of_mass, gaussian_filter
 from scipy.signal import convolve2d
-from scipy.spatial.distance import euclidean
 
 from sensor_msgs.msg import LaserScan
 from nav_msgs.msg import Odometry
@@ -17,8 +16,7 @@ from skimage.feature import canny
 from skimage.transform import probabilistic_hough_line
 
 import matplotlib
-# Optionally disable GUI backend if plots cause crashes
-# matplotlib.use("Agg")
+matplotlib.use("Agg")  # Non-GUI backend for headless environments
 import matplotlib.pyplot as plt
 
 
@@ -29,25 +27,23 @@ def quat_to_yaw(q):
 
 
 def fit_circle(xs, ys):
-    """Fit circle (xc, yc, r) to points and return mse of residuals."""
     x = xs[:, np.newaxis]
     y = ys[:, np.newaxis]
     A = np.hstack((2 * x, 2 * y, np.ones_like(x)))
     b = x * x + y * y
     sol, _, _, _ = np.linalg.lstsq(A, b, rcond=None)
     xc, yc, c = sol.flatten()
-    r = sqrt(c + xc*xc + yc*yc)
-    d2 = (xs - xc)**2 + (ys - yc)**2
-    mse = np.mean((np.sqrt(d2) - r)**2)
+    r = sqrt(c + xc * xc + yc * yc)
+    d2 = (xs - xc) ** 2 + (ys - yc) ** 2
+    mse = np.mean((np.sqrt(d2) - r) ** 2)
     return xc, yc, r, mse
 
 
 def fit_line(xs, ys):
-    """Fit linear model y = m x + b and return mse."""
     A = np.vstack([xs, np.ones_like(xs)]).T
     m, b = np.linalg.lstsq(A, ys, rcond=None)[0]
     y_fit = m * xs + b
-    mse = np.mean((ys - y_fit)**2)
+    mse = np.mean((ys - y_fit) ** 2)
     return m, b, mse
 
 
@@ -61,11 +57,9 @@ class ShapeMapper(Node):
             depth=10,
         )
 
-        self.map_size = 100
-        self.grid_resolution = 0.1  # meters per grid cell
+        self.map_size = 50
+        self.grid_resolution = 0.1
         self.map_center = np.array([self.map_size // 2, self.map_size // 2], dtype=int)
-
-        # occupancy codes: -1 = unknown, 0 = free, 1 = occupied, 2 = cube, 3 = cylinder
         self.occupancy_map = -1 * np.ones((self.map_size, self.map_size), dtype=int)
 
         self.create_subscription(Odometry, "/odom", self.odom_cb, qos)
@@ -75,7 +69,6 @@ class ShapeMapper(Node):
         self.scan = LaserScan()
         self.have_odom = False
 
-        # Live plotting
         plt.ion()
         self.fig, self.ax = plt.subplots(figsize=(6, 6))
         self.img = self.ax.imshow((self.occupancy_map + 1).T,
@@ -125,19 +118,16 @@ class ShapeMapper(Node):
         om = self.world_to_map(robot_xy + obs_rel)
         path = self.bresenham(rm[0], rm[1], om[0], om[1])
 
-        # free path
         for (ix, iy) in path[:-1]:
             if 0 <= ix < self.map_size and 0 <= iy < self.map_size:
                 if self.occupancy_map[ix, iy] == -1:
                     self.occupancy_map[ix, iy] = 0
 
-        # endpoint
         ox, oy = path[-1]
         if 0 <= ox < self.map_size and 0 <= oy < self.map_size:
             self.occupancy_map[ox, oy] = 1
 
     def merge_blobs(self, labeled, num):
-        """Merge neighboring / overlapping blobs into bigger clusters."""
         blobs = []
         for i in range(1, num + 1):
             coords = np.argwhere(labeled == i)
@@ -162,7 +152,6 @@ class ShapeMapper(Node):
                 if used[j]:
                     continue
                 (u0, u1, v0, v1) = bbox(b2)
-                # if bounding boxes overlap or are within margin
                 margin = 2
                 if not (u0 > x1 + margin or u1 < x0 - margin or v0 > y1 + margin or v1 < y0 - margin):
                     group.append(b2)
@@ -171,53 +160,146 @@ class ShapeMapper(Node):
             merged.append(merged_coords)
         return merged
 
+    def estimate_perimeter(self, blob):
+        """Estimate perimeter of a blob using boundary pixels"""
+        # Create a binary image of just this blob
+        min_x, max_x = blob[:, 0].min(), blob[:, 0].max()
+        min_y, max_y = blob[:, 1].min(), blob[:, 1].max()
+        
+        # Add padding
+        width = max_x - min_x + 3
+        height = max_y - min_y + 3
+        binary = np.zeros((width, height), dtype=bool)
+        
+        for x, y in blob:
+            binary[x - min_x + 1, y - min_y + 1] = True
+        
+        # Count boundary pixels (those with at least one empty neighbor)
+        kernel = np.ones((3, 3))
+        neighbor_count = convolve2d(binary.astype(int), kernel, mode='same')
+        boundary = binary & (neighbor_count < 9)
+        
+        return np.sum(boundary)
+
+    def detect_corners(self, xs, ys, angle_threshold=120):
+        """Detect corners by analyzing angles between consecutive points"""
+        if len(xs) < 5:
+            return False
+        
+        # Sort points by angle from centroid to get ordered boundary
+        cx, cy = np.mean(xs), np.mean(ys)
+        angles = np.arctan2(ys - cy, xs - cx)
+        sorted_idx = np.argsort(angles)
+        xs_sorted = xs[sorted_idx]
+        ys_sorted = ys[sorted_idx]
+        
+        corners = 0
+        for i in range(len(xs_sorted)):
+            # Get three consecutive points
+            p1 = np.array([xs_sorted[i-2], ys_sorted[i-2]])
+            p2 = np.array([xs_sorted[i-1], ys_sorted[i-1]])
+            p3 = np.array([xs_sorted[i], ys_sorted[i]])
+            
+            # Calculate angle
+            v1 = p1 - p2
+            v2 = p3 - p2
+            
+            norm1 = np.linalg.norm(v1)
+            norm2 = np.linalg.norm(v2)
+            
+            if norm1 > 0 and norm2 > 0:
+                cos_angle = np.dot(v1, v2) / (norm1 * norm2)
+                cos_angle = np.clip(cos_angle, -1, 1)
+                angle_deg = np.degrees(np.arccos(cos_angle))
+                
+                # Sharp angle indicates corner
+                if angle_deg < angle_threshold:
+                    corners += 1
+        
+        # Cubes should have ~4 corners
+        return corners >= 3
+
     def detect_and_classify(self):
-        occ = (self.occupancy_map == 1).astype(np.uint8)
-        if np.sum(occ) == 0:
-            return
-
-        edges = canny(occ, sigma=1.0)
-        lines = probabilistic_hough_line(edges, threshold=10, line_length=5, line_gap=3)
-
+        """Improved shape classification using multiple features"""
+        occ = (self.occupancy_map == 1).astype(np.float32)
+        
+        # Label connected components
         labeled, n = label(occ)
         merged_blobs = self.merge_blobs(labeled, n)
         self.get_logger().info(f"Merged into {len(merged_blobs)} objects")
-
-        # Reset prior shape labels (2,3) back to 1 (occupied) to reclassify
+        
+        # Clear previous classifications
         mask = (self.occupancy_map == 2) | (self.occupancy_map == 3)
         self.occupancy_map[mask] = 1
-
+        
         for blob in merged_blobs:
-            if blob.shape[0] < 10:
-                # skip very small blobs
+            if blob.shape[0] < 8:  # Minimum points for classification
                 continue
-
+            
             xs = blob[:, 0].astype(float)
             ys = blob[:, 1].astype(float)
-
-            m, b, mse_line = fit_line(xs, ys)
+            
+            # Feature 1: Fit circle and line
             xc, yc, r, mse_circ = fit_circle(xs, ys)
-
+            m, b, mse_line = fit_line(xs, ys)
+            
+            # Feature 2: Compute compactness (circularity)
+            area = len(blob)
+            perimeter = self.estimate_perimeter(blob)
+            compactness = (4 * np.pi * area) / (perimeter**2 + 1e-8)
+            # Circle ≈ 1.0, Square ≈ 0.785, Rectangle < 0.785
+            
+            # Feature 3: Compute eccentricity (aspect ratio)
+            cov = np.cov(xs, ys)
+            eigvals = np.linalg.eigvalsh(cov)
+            eccentricity = np.sqrt(1 - eigvals[0] / (eigvals[1] + 1e-8))
+            # Circle ≈ 0, Elongated shapes > 0.5
+            
+            # Feature 4: Angular consistency (check for corners)
+            has_corners = self.detect_corners(xs, ys)
+            
+            # Feature 5: Radius variance for cylinders
+            distances = np.sqrt((xs - xc)**2 + (ys - yc)**2)
+            radius_std = np.std(distances)
+            radius_mean = np.mean(distances)
+            radius_cv = radius_std / (radius_mean + 1e-8)  # Coefficient of variation
+            
+            # Decision logic
+            shape_label = 1  # Default: ambiguous
+            
+            # Calculate fit ratio for additional insight
+            fit_ratio = mse_line / (mse_circ + 1e-8)
+            
+            # Strong cylinder indicators:
+            # - Circle fits much better than line (high ratio)
+            # - Low radius variation
+            # - Good compactness
+            if (fit_ratio > 2.0 and radius_cv < 0.25 and compactness > 0.6):
+                shape_label = 3  # Cylinder
+                
+            # Alternative cylinder check: very low circle MSE
+            elif (mse_circ < 2.0 and radius_cv < 0.2):
+                shape_label = 3  # Cylinder
+                
+            # Strong cube indicators:
+            # - Line fits better than or similar to circle (low ratio)
+            # - Has detected corners OR low compactness
+            elif (fit_ratio < 1.2 or has_corners or compactness < 0.65):
+                shape_label = 2  # Cube
+                
+            # Medium confidence cylinder (prefer cylinder if circle fits reasonably)
+            elif (mse_circ < 4.0 and fit_ratio > 1.3 and radius_cv < 0.3):
+                shape_label = 3  # Cylinder
+                
+            # Log classification details for debugging
+            fit_ratio = mse_line / (mse_circ + 1e-8)
             self.get_logger().info(
-                f"Blob size={blob.shape[0]} line_mse={mse_line:.3f}, circ_mse={mse_circ:.3f}"
+                f"Blob: pts={len(blob)}, mse_c={mse_circ:.2f}, mse_l={mse_line:.2f}, "
+                f"ratio={fit_ratio:.2f}, comp={compactness:.2f}, ecc={eccentricity:.2f}, "
+                f"rcv={radius_cv:.2f}, corners={has_corners} -> {['?', '?', 'CUBE', 'CYL'][shape_label]}"
             )
-
-            # compute ratio: how much better circle is vs line
-            ratio = mse_line / (mse_circ + 1e-8)
-
-            # classification thresholds (tunable)
-            LINE_MSE_THRESHOLD = 5.0     # Lower = better fit to a line
-            CIRC_MSE_THRESHOLD = 5.0     # Lower = better fit to a circle
-            RATIO_THRESHOLD_CYL = 1.5    # Circle must be this much better to be cylinder
-            RATIO_THRESHOLD_CUBE = 0.7   # Line must be this much better to be cube
-
-            if mse_circ < CIRC_MSE_THRESHOLD and ratio > RATIO_THRESHOLD_CYL:
-                shape_label = 3  # cylinder
-            elif mse_line < LINE_MSE_THRESHOLD and ratio < RATIO_THRESHOLD_CUBE:
-                shape_label = 2  # cube
-            else:
-                shape_label = 1  # ambiguous, leave as occupied
-
+            
+            # Assign label
             for (xi, yi) in blob:
                 self.occupancy_map[xi, yi] = shape_label
 
@@ -246,7 +328,6 @@ class ShapeMapper(Node):
                     wx = cy * lx - sy * ly
                     wy = sy * lx + cy * ly
                     obs_rel = np.array([wx, wy])
-
                     self.update_map_from_scan(robot_xy, obs_rel)
         except Exception as e:
             self.get_logger().warn(f"Scan error: {e}")
@@ -293,8 +374,8 @@ def main(args=None):
     finally:
         try:
             node.save_and_shutdown()
-        except Exception:
-            pass
+        except Exception as e:
+            node.get_logger().warn(f"Error during shutdown: {e}")
         if rclpy.ok():
             rclpy.shutdown()
         node.destroy_node()
