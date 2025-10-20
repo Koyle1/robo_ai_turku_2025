@@ -223,42 +223,32 @@ class ShapeMapper(Node):
         """Improved shape classification using multiple features"""
         occ = (self.occupancy_map == 1).astype(np.float32)
         
-        # Label connected components
         labeled, n = label(occ)
         merged_blobs = self.merge_blobs(labeled, n)
         self.get_logger().info(f"Merged into {len(merged_blobs)} objects")
         
-        # Clear previous classifications
         mask = (self.occupancy_map == 2) | (self.occupancy_map == 3)
         self.occupancy_map[mask] = 1
         
         for blob in merged_blobs:
-            if blob.shape[0] < 8:  # Minimum points for classification
+            if blob.shape[0] < 8:  
                 continue
             
             xs = blob[:, 0].astype(float)
             ys = blob[:, 1].astype(float)
             
-            # Feature 1: Fit circle and line
             xc, yc, r, mse_circ = fit_circle(xs, ys)
             m, b, mse_line = fit_line(xs, ys)
             
-            # Feature 2: Compute compactness (circularity)
             area = len(blob)
             perimeter = self.estimate_perimeter(blob)
             compactness = (4 * np.pi * area) / (perimeter**2 + 1e-8)
-            # Circle ≈ 1.0, Square ≈ 0.785, Rectangle < 0.785
             
-            # Feature 3: Compute eccentricity (aspect ratio)
             cov = np.cov(xs, ys)
             eigvals = np.linalg.eigvalsh(cov)
             eccentricity = np.sqrt(1 - eigvals[0] / (eigvals[1] + 1e-8))
-            # Circle ≈ 0, Elongated shapes > 0.5
-            
-            # Feature 4: Angular consistency (check for corners)
             has_corners = self.detect_corners(xs, ys)
             
-            # Feature 5: Radius variance for cylinders
             distances = np.sqrt((xs - xc)**2 + (ys - yc)**2)
             radius_std = np.std(distances)
             radius_mean = np.mean(distances)
@@ -267,31 +257,20 @@ class ShapeMapper(Node):
             # Decision logic
             shape_label = 1  # Default: ambiguous
             
-            # Calculate fit ratio for additional insight
             fit_ratio = mse_line / (mse_circ + 1e-8)
-            
-            # Strong cylinder indicators:
-            # - Circle fits much better than line (high ratio)
-            # - Low radius variation
-            # - Good compactness
+
             if (fit_ratio > 2.0 and radius_cv < 0.25 and compactness > 0.6):
                 shape_label = 3  # Cylinder
                 
-            # Alternative cylinder check: very low circle MSE
             elif (mse_circ < 2.0 and radius_cv < 0.2):
                 shape_label = 3  # Cylinder
                 
-            # Strong cube indicators:
-            # - Line fits better than or similar to circle (low ratio)
-            # - Has detected corners OR low compactness
             elif (fit_ratio < 1.2 or has_corners or compactness < 0.65):
                 shape_label = 2  # Cube
                 
-            # Medium confidence cylinder (prefer cylinder if circle fits reasonably)
             elif (mse_circ < 4.0 and fit_ratio > 1.3 and radius_cv < 0.3):
                 shape_label = 3  # Cylinder
                 
-            # Log classification details for debugging
             fit_ratio = mse_line / (mse_circ + 1e-8)
             self.get_logger().info(
                 f"Blob: pts={len(blob)}, mse_c={mse_circ:.2f}, mse_l={mse_line:.2f}, "
