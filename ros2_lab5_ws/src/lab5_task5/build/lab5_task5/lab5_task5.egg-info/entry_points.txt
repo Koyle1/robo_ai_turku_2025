@@ -1,0 +1,3 @@
+[console_scripts]
+pfc = lab5_task5.pfc:main
+
