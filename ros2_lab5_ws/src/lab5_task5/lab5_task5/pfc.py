@@ -37,17 +37,12 @@ def quat_to_yaw(q):
 
 
 class CornerDetector:
-    """Helper class to detect corner features from LiDAR scans"""
     
     def __init__(self, distance_threshold=0.15, angle_threshold=np.deg2rad(60)):
         self.distance_threshold = distance_threshold
         self.angle_threshold = angle_threshold
     
     def detect_corner(self, scan_msg):
-        """
-        Detect a corner in the LiDAR scan by finding two perpendicular walls.
-        Returns the corner position in robot frame (x, y) or None if not detected.
-        """
         ranges_np = np.array(scan_msg.ranges, dtype=float)
         n = len(ranges_np)
         angles = scan_msg.angle_min + np.arange(n) * scan_msg.angle_increment
@@ -71,10 +66,6 @@ class CornerDetector:
         return corners
     
     def _find_corner_from_lines(self, points, angles, ranges):
-        """
-        Simplified corner detection using angle-based clustering.
-        Assumes corner is formed by two walls roughly perpendicular.
-        """
         if len(points) < 10:
             return None
         
@@ -109,10 +100,6 @@ class CornerDetector:
 
 
 class CornerParticleFilter(Node):
-    '''
-    ROS Node that estimates absolute position of robot using odometry and 
-    corner detection from LiDAR, given a known corner position in the world.
-    '''
     def __init__(self):
         # Init node
         super().__init__('corner_position_pf')
@@ -230,42 +217,22 @@ class CornerParticleFilter(Node):
         self.corner_detected = self.corner_detector.detect_corner(scan)
     
     def calc_hypothesis(self, x):
-        '''
-        Given (Nx2) matrix of robot positions,
-        create N arrays of observations (what each particle would see).
-        
-        Observation is the vector from particle position to corner in WORLD coordinates.
-        '''
         y = self.corner_world - x  # world vector from particle to corner
         return y
     
     def velocity(self, x):
-        '''
-        Use odometry to update robot position.
-        Apply odom translation delta (world frame) to every particle.
-        '''
         xp = x + self.particle_odom
         return xp
     
     def add_noise(self, x):
-        '''
-        Add process noise to particle positions.
-        '''
         xp = x + np.random.normal(0, self.measurement_noise, x.shape)
         return xp
     
     def calc_weights(self, hypotheses, observations):
-        '''
-        Calculate particle weights based on observation error.
-        '''
         w = squared_error(hypotheses, observations, sigma=self.weights_sigma)
         return w
     
     def update_filter(self):
-        '''
-        Update particle filter with odometry and corner observations.
-        '''
-        # --- 1) Compute odometry delta (WORLD frame) ---
         robot_pos = np.array([
             self.odometry.pose.pose.position.x,
             self.odometry.pose.pose.position.y
@@ -279,20 +246,13 @@ class CornerParticleFilter(Node):
             self.particle_odom = robot_pos - self._last_odom_xy
             self._last_odom_xy = robot_pos.copy()
         
-        # --- 2) Build observation from corner detection ---
         corner_observation = None
         
         if self.corner_detected is not None:
-            # Convert corner from robot frame to world frame
             q = self.odometry.pose.pose.orientation
             yaw = quat_to_yaw(q)
             cy, sy = np.cos(yaw), np.sin(yaw)
-            
-            # Corner position in robot frame
             cx_r, cy_r = self.corner_detected[0], self.corner_detected[1]
-            
-            # Transform to world frame and get observation vector
-            # (vector from robot to corner in world frame)
             wx = cy * cx_r - sy * cy_r
             wy = sy * cx_r + cy * cy_r
             corner_observation = np.array([wx, wy], dtype=float)
@@ -300,29 +260,23 @@ class CornerParticleFilter(Node):
             self.get_logger().info('Corner detected at [%.2f, %.2f] in robot frame' % 
                                   (cx_r, cy_r))
         else:
-            # Fallback: use known corner with added noise
             corner_observation = self.corner_world - robot_pos + \
                                np.random.normal(0, 0.1, 2)
         
-        # --- 3) PF update with observation ---
         self.pf.update(observed=corner_observation)
         
-        # PF estimate (mean of particles)
         est = np.array(self.pf.mean_state).reshape(-1)
         est_xy = est[:2] if est.size >= 2 else np.array([np.nan, np.nan])
         
         self.get_logger().info('Robot position (PF): [%.2f, %.2f]' % 
                               (est_xy[0], est_xy[1]))
         
-        # --- True orientation from odom ---
         q = self.odometry.pose.pose.orientation
         yaw_true = quat_to_yaw(q)
-        
-        # --- Append positions for plotting ---
+
         self.odom_hist.append(robot_pos.tolist())
         self.pf_hist.append(est_xy.tolist())
         
-        # --- Estimated orientation from PF displacement ---
         if len(self.pf_hist) >= 2:
             dx = self.pf_hist[-1][0] - self.pf_hist[-2][0]
             dy = self.pf_hist[-1][1] - self.pf_hist[-2][1]
@@ -332,16 +286,13 @@ class CornerParticleFilter(Node):
         self.odom_yaw_hist.append(yaw_true)
         self.pf_yaw_hist.append(self.pf_yaw_est if self.pf_yaw_est is not None else yaw_true)
         
-        # --- Live plot update ---
         if self.live_plot and len(self.odom_hist) >= 2:
             odom_np = np.array(self.odom_hist)
             pf_np = np.array(self.pf_hist)
             
-            # Update trajectories
             self.odom_line.set_data(odom_np[:, 0], odom_np[:, 1])
             self.pf_line.set_data(pf_np[:, 0], pf_np[:, 1])
             
-            # Update heading arrows
             x_o, y_o = odom_np[-1, 0], odom_np[-1, 1]
             x_p, y_p = pf_np[-1, 0], pf_np[-1, 1]
             
@@ -357,7 +308,6 @@ class CornerParticleFilter(Node):
             self.pf_heading.set_offsets([x_p, y_p])
             self.pf_heading.set_UVC(u_p, v_p)
             
-            # Autoscale and redraw
             self.ax.relim()
             self.ax.autoscale_view()
             try:
