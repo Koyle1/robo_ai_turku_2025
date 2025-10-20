@@ -1,4 +1,0 @@
-[console_scripts]
-client = lab01_task03.client:main
-server = lab01_task03.server:main
-

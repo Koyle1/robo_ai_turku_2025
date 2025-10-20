@@ -1,3 +1,0 @@
-[console_scripts]
-lidar_position = lab5_task4.Task4_pfilter:main
-

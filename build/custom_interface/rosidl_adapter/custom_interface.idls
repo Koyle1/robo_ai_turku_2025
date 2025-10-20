@@ -1,7 +1,0 @@
-/home/michael/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:msg/TaskMsg.idl
-/home/michael/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:msg/RequestDistanceMsg.idl
-/home/michael/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:msg/ResponseDistanceMsg.idl
-/home/michael/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:srv/CalculateDistance.idl
-/home/michael/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:srv/CancelRequest.idl
-/home/michael/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:action/Countdown.idl
-/home/michael/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:msg/Count.idl

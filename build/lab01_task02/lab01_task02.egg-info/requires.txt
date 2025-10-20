@@ -1,3 +1,0 @@
-custom_interface
-rclpy
-setuptools

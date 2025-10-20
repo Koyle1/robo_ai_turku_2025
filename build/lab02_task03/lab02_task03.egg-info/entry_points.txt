@@ -1,3 +1,0 @@
-[console_scripts]
-static_broadcaster = lab02_task03.static_broadcaster:main
-

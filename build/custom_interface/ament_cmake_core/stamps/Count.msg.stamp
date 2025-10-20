@@ -1,2 +1,0 @@
-int32 end_count
-int32 current_count
