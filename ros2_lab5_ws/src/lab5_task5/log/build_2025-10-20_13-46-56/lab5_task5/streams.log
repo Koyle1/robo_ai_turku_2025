@@ -1,0 +1,22 @@
+[1.216s] Invoking command in '/home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5': PYTHONPATH=/home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5/build/lab5_task5/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5/install/lab5_task5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/lab5_task5 build --build-base /home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5/build/lab5_task5/build install --record /home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5/build/lab5_task5/install.log --single-version-externally-managed install_data
+[1.663s] running egg_info
+[1.665s] writing build/lab5_task5/lab5_task5.egg-info/PKG-INFO
+[1.665s] writing dependency_links to build/lab5_task5/lab5_task5.egg-info/dependency_links.txt
+[1.665s] writing entry points to build/lab5_task5/lab5_task5.egg-info/entry_points.txt
+[1.666s] writing requirements to build/lab5_task5/lab5_task5.egg-info/requires.txt
+[1.666s] writing top-level names to build/lab5_task5/lab5_task5.egg-info/top_level.txt
+[1.672s] reading manifest file 'build/lab5_task5/lab5_task5.egg-info/SOURCES.txt'
+[1.673s] adding license file 'LICENSE'
+[1.675s] writing manifest file 'build/lab5_task5/lab5_task5.egg-info/SOURCES.txt'
+[1.675s] running build
+[1.675s] running build_py
+[1.675s] running install
+[1.676s] running install_lib
+[1.679s] running install_data
+[1.679s] running install_egg_info
+[1.683s] removing '/home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5/install/lab5_task5/lib/python3.10/site-packages/lab5_task5-0.0.0-py3.10.egg-info' (and everything under it)
+[1.684s] Copying build/lab5_task5/lab5_task5.egg-info to /home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5/install/lab5_task5/lib/python3.10/site-packages/lab5_task5-0.0.0-py3.10.egg-info
+[1.686s] running install_scripts
+[1.722s] Installing pfc script to /home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5/install/lab5_task5/lib/lab5_task5
+[1.722s] writing list of installed files to '/home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5/build/lab5_task5/install.log'
+[1.770s] Invoked command in '/home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5' returned '0': PYTHONPATH=/home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5/build/lab5_task5/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5/install/lab5_task5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/lab5_task5 build --build-base /home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5/build/lab5_task5/build install --record /home/bot/lab/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5/build/lab5_task5/install.log --single-version-externally-managed install_data
