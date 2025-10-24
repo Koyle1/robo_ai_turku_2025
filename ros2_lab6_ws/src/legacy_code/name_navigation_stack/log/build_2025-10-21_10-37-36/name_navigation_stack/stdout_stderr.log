@@ -1,0 +1,38 @@
+running egg_info
+creating build/name_navigation_stack/name_navigation_stack.egg-info
+writing build/name_navigation_stack/name_navigation_stack.egg-info/PKG-INFO
+writing dependency_links to build/name_navigation_stack/name_navigation_stack.egg-info/dependency_links.txt
+writing entry points to build/name_navigation_stack/name_navigation_stack.egg-info/entry_points.txt
+writing requirements to build/name_navigation_stack/name_navigation_stack.egg-info/requires.txt
+writing top-level names to build/name_navigation_stack/name_navigation_stack.egg-info/top_level.txt
+writing manifest file 'build/name_navigation_stack/name_navigation_stack.egg-info/SOURCES.txt'
+reading manifest file 'build/name_navigation_stack/name_navigation_stack.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/name_navigation_stack/name_navigation_stack.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/build/name_navigation_stack/build
+creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/build/name_navigation_stack/build/lib
+creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/build/name_navigation_stack/build/lib/name_navigation_stack
+copying name_navigation_stack/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/build/name_navigation_stack/build/lib/name_navigation_stack
+copying name_navigation_stack/mapper.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/build/name_navigation_stack/build/lib/name_navigation_stack
+running install
+running install_lib
+creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack
+copying /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/build/name_navigation_stack/build/lib/name_navigation_stack/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack
+copying /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/build/name_navigation_stack/build/lib/name_navigation_stack/mapper.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack
+byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack/mapper.py to mapper.cpython-310.pyc
+running install_data
+creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/share/ament_index
+creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/share/ament_index/resource_index
+creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/share/ament_index/resource_index/packages
+copying resource/name_navigation_stack -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/share/ament_index/resource_index/packages
+copying package.xml -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/share/name_navigation_stack
+creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/share/name_navigation_stack/launch
+copying launch/world.launch.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/share/name_navigation_stack/launch
+running install_egg_info
+Copying build/name_navigation_stack/name_navigation_stack.egg-info to /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack-0.0.0-py3.10.egg-info
+running install_scripts
+Installing mapper script to /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/install/name_navigation_stack/lib/name_navigation_stack
+writing list of installed files to '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack/build/name_navigation_stack/install.log'

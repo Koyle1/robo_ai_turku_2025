@@ -1,0 +1,28 @@
+[0.623s] Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/group_13_navigation_stack': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/group_13_navigation_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/group_13_navigation_stack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/group_13_navigation_stack build --build-base /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/group_13_navigation_stack/build install --record /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/group_13_navigation_stack/install.log --single-version-externally-managed install_data
+[0.788s] running egg_info
+[0.789s] writing ../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/PKG-INFO
+[0.789s] writing dependency_links to ../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/dependency_links.txt
+[0.789s] writing entry points to ../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/entry_points.txt
+[0.789s] writing requirements to ../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/requires.txt
+[0.789s] writing top-level names to ../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/top_level.txt
+[0.792s] reading manifest file '../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/SOURCES.txt'
+[0.792s] adding license file 'LICENSE'
+[0.793s] writing manifest file '../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/SOURCES.txt'
+[0.793s] running build
+[0.793s] running build_py
+[0.793s] running install
+[0.793s] running install_lib
+[0.794s] running install_data
+[0.795s] copying launch/task3.launch.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/group_13_navigation_stack/share/group_13_navigation_stack/launch
+[0.795s] running install_egg_info
+[0.796s] removing '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack-0.0.0-py3.10.egg-info' (and everything under it)
+[0.796s] Copying ../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info to /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack-0.0.0-py3.10.egg-info
+[0.797s] running install_scripts
+[0.811s] Installing mapper script to /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[0.812s] Installing pathfinder script to /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[0.812s] Installing pathfinderA script to /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[0.812s] Installing pathfollower script to /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[0.812s] Installing visualize script to /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[0.812s] Installing wp_follower script to /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[0.812s] writing list of installed files to '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/group_13_navigation_stack/install.log'
+[0.843s] Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/group_13_navigation_stack' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/group_13_navigation_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/group_13_navigation_stack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/group_13_navigation_stack build --build-base /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/group_13_navigation_stack/build install --record /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/group_13_navigation_stack/install.log --single-version-externally-managed install_data

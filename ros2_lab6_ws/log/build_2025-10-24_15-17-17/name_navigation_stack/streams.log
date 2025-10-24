@@ -1,0 +1,47 @@
+[0.721s] Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/legacy_code/name_navigation_stack': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/name_navigation_stack build --build-base /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build install --record /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/install.log --single-version-externally-managed install_data
+[0.915s] running egg_info
+[0.916s] creating ../../../build/name_navigation_stack/name_navigation_stack.egg-info
+[0.916s] writing ../../../build/name_navigation_stack/name_navigation_stack.egg-info/PKG-INFO
+[0.916s] writing dependency_links to ../../../build/name_navigation_stack/name_navigation_stack.egg-info/dependency_links.txt
+[0.916s] writing entry points to ../../../build/name_navigation_stack/name_navigation_stack.egg-info/entry_points.txt
+[0.916s] writing requirements to ../../../build/name_navigation_stack/name_navigation_stack.egg-info/requires.txt
+[0.916s] writing top-level names to ../../../build/name_navigation_stack/name_navigation_stack.egg-info/top_level.txt
+[0.916s] writing manifest file '../../../build/name_navigation_stack/name_navigation_stack.egg-info/SOURCES.txt'
+[0.918s] reading manifest file '../../../build/name_navigation_stack/name_navigation_stack.egg-info/SOURCES.txt'
+[0.918s] adding license file 'LICENSE'
+[0.919s] writing manifest file '../../../build/name_navigation_stack/name_navigation_stack.egg-info/SOURCES.txt'
+[0.919s] running build
+[0.919s] running build_py
+[0.919s] creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build
+[0.919s] creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build/lib
+[0.919s] creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build/lib/name_navigation_stack
+[0.919s] copying name_navigation_stack/trajectory_visualization.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build/lib/name_navigation_stack
+[0.919s] copying name_navigation_stack/waypoint_follower.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build/lib/name_navigation_stack
+[0.919s] copying name_navigation_stack/task2_graph.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build/lib/name_navigation_stack
+[0.919s] copying name_navigation_stack/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build/lib/name_navigation_stack
+[0.919s] copying name_navigation_stack/mapper.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build/lib/name_navigation_stack
+[0.919s] running install
+[0.920s] running install_lib
+[0.920s] creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack
+[0.921s] copying /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build/lib/name_navigation_stack/trajectory_visualization.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack
+[0.921s] copying /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build/lib/name_navigation_stack/waypoint_follower.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack
+[0.921s] copying /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build/lib/name_navigation_stack/task2_graph.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack
+[0.921s] copying /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build/lib/name_navigation_stack/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack
+[0.921s] copying /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build/lib/name_navigation_stack/mapper.py -> /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack
+[0.921s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack/trajectory_visualization.py to trajectory_visualization.cpython-310.pyc
+[0.922s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack/waypoint_follower.py to waypoint_follower.cpython-310.pyc
+[0.923s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack/task2_graph.py to task2_graph.cpython-310.pyc
+[0.923s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack/__init__.py to __init__.cpython-310.pyc
+[0.923s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack/mapper.py to mapper.cpython-310.pyc
+[0.924s] running install_data
+[0.924s] creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/share/name_navigation_stack/lab6_task1_world
+[0.924s] creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/share/name_navigation_stack/launch
+[0.925s] creating /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/share/name_navigation_stack/resource
+[0.925s] running install_egg_info
+[0.927s] Copying ../../../build/name_navigation_stack/name_navigation_stack.egg-info to /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages/name_navigation_stack-0.0.1-py3.10.egg-info
+[0.927s] running install_scripts
+[0.946s] Installing mapper script to /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/name_navigation_stack
+[0.946s] Installing visualize script to /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/name_navigation_stack
+[0.946s] Installing wp_follower script to /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/name_navigation_stack
+[0.947s] writing list of installed files to '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/install.log'
+[0.975s] Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/legacy_code/name_navigation_stack' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/name_navigation_stack build --build-base /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/build install --record /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/build/name_navigation_stack/install.log --single-version-externally-managed install_data

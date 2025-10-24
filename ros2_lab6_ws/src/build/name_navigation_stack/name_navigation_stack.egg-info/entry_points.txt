@@ -1,0 +1,5 @@
+[console_scripts]
+mapper = name_navigation_stack.mapper:main
+visualize = name_navigation_stack.trajectory_visualization:main
+wp_follower = name_navigation_stack.waypoint_follower:main
+

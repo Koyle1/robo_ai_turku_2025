@@ -29,6 +29,9 @@ setup(
         	'mapper = group_13_navigation_stack.mapper:main',  # Adjust these based on your actual nodes
         	'visualize = group_13_navigation_stack.trajectory_visualization:main',
         	'wp_follower = group_13_navigation_stack.waypoint_follower:main',
+            'pathfinder = group_13_navigation_stack.Lab6_Task2:main',
+            'pathfinderA = group_13_navigation_stack.Lab6_Task3:main',
+            'pathfollower = group_13_navigation_stack.pathfollower:main'
         ],
     },
 )
