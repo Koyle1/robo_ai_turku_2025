@@ -1,0 +1,453 @@
+[0.036s] Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface': CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/install/name_navigation_stack:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack:/opt/ros/humble /usr/bin/cmake /home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/custom_interface -DCMAKE_INSTALL_PREFIX=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface
+[1.164s] -- The C compiler identification is GNU 11.4.0
+[1.164s] -- The CXX compiler identification is GNU 11.4.0
+[1.164s] -- Detecting C compiler ABI info
+[1.164s] -- Detecting C compiler ABI info - done
+[1.164s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.164s] -- Detecting C compile features
+[1.164s] -- Detecting C compile features - done
+[1.164s] -- Detecting CXX compiler ABI info
+[1.164s] -- Detecting CXX compiler ABI info - done
+[1.164s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.165s] -- Detecting CXX compile features
+[1.165s] -- Detecting CXX compile features - done
+[1.165s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.165s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.165s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[1.165s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.165s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.165s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.165s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.165s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.165s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.165s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.165s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.165s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.165s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.166s] -- Looking for pthread.h
+[1.166s] -- Looking for pthread.h - found
+[1.166s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.166s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.166s] -- Found Threads: TRUE  
+[1.166s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.166s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.229s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.700s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.994s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.025s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.028s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.065s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.066s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.067s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.067s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.094s] -- Found PythonExtra: .so  
+[2.190s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.222s] -- Added test 'lint_cmake' to check CMake code style
+[2.227s] -- Added test 'xmllint' to check XML markup files
+[2.228s] -- Configuring done
+[2.301s] -- Generating done
+[2.333s] -- Build files have been written to: /home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface
+[2.422s] Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/install/name_navigation_stack:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack:/opt/ros/humble /usr/bin/cmake /home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/custom_interface -DCMAKE_INSTALL_PREFIX=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface
+[2.425s] Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface': CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/install/name_navigation_stack:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack:/opt/ros/humble /usr/bin/cmake --build /home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface -- -j8 -l8
+[2.460s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.468s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.474s] [  2%] Built target ament_cmake_python_copy_custom_interface
+[2.660s] running egg_info
+[2.661s] creating custom_interface.egg-info
+[2.661s] writing custom_interface.egg-info/PKG-INFO
+[2.661s] writing dependency_links to custom_interface.egg-info/dependency_links.txt
+[2.661s] writing top-level names to custom_interface.egg-info/top_level.txt
+[2.661s] writing manifest file 'custom_interface.egg-info/SOURCES.txt'
+[2.663s] reading manifest file 'custom_interface.egg-info/SOURCES.txt'
+[2.664s] writing manifest file 'custom_interface.egg-info/SOURCES.txt'
+[2.689s] [  2%] Built target ament_cmake_python_build_custom_interface_egg
+[3.176s] [  2%] Built target custom_interface__cpp
+[3.182s] [  6%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/msg/detail/response_distance_msg__functions.c.o[0m
+[3.182s] [  6%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/msg/detail/request_distance_msg__functions.c.o[0m
+[3.182s] [  6%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/srv/detail/cancel_request__functions.c.o[0m
+[3.182s] [  7%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/srv/detail/calculate_distance__functions.c.o[0m
+[3.183s] [  8%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/msg/detail/task_msg__functions.c.o[0m
+[3.187s] [ 10%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/action/detail/countdown__functions.c.o[0m
+[3.189s] [ 11%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/msg/detail/count__functions.c.o[0m
+[3.193s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.260s] [ 13%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.267s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.352s] [ 16%] [32m[1mLinking C shared library libcustom_interface__rosidl_generator_c.so[0m
+[3.396s] [ 16%] Built target custom_interface__rosidl_generator_c
+[3.409s] [ 17%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.416s] [ 20%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.416s] [ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.844s] [ 21%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/msg/task_msg__type_support.cpp.o[0m
+[3.848s] [ 22%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/msg/response_distance_msg__type_support.cpp.o[0m
+[3.850s] [ 24%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/msg/request_distance_msg__type_support.cpp.o[0m
+[4.270s] [ 25%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/msg/detail/task_msg__type_support.cpp.o[0m
+[4.285s] [ 26%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/msg/task_msg__type_support.cpp.o[0m
+[4.376s] [ 27%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/msg/request_distance_msg__type_support.cpp.o[0m
+[4.440s] [ 29%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/msg/response_distance_msg__type_support.cpp.o[0m
+[4.478s] [ 30%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/msg/detail/request_distance_msg__type_support.cpp.o[0m
+[4.481s] [ 31%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/srv/calculate_distance__type_support.cpp.o[0m
+[4.531s] [ 32%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/srv/calculate_distance__type_support.cpp.o[0m
+[4.540s] [ 34%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/msg/detail/response_distance_msg__type_support.cpp.o[0m
+[4.619s] [ 35%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/task_msg__type_support.cpp.o[0m
+[4.620s] [ 36%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/srv/cancel_request__type_support.cpp.o[0m
+[4.720s] [ 37%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/action/countdown__type_support.cpp.o[0m
+[4.854s] [ 39%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/msg/count__type_support.cpp.o[0m
+[4.922s] [ 40%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_c.so[0m
+[4.924s] [ 41%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/task_msg__type_support.c.o[0m
+[4.928s] [ 43%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/msg/detail/task_msg__type_support_c.cpp.o[0m
+[4.942s] [ 44%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/msg/detail/request_distance_msg__type_support_c.cpp.o[0m
+[4.959s] [ 45%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/srv/cancel_request__type_support.cpp.o[0m
+[4.993s] [ 46%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/request_distance_msg__type_support.c.o[0m
+[5.006s] [ 46%] Built target custom_interface__rosidl_typesupport_c
+[5.018s] [ 48%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/response_distance_msg__type_support.c.o[0m
+[5.055s] [ 49%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/request_distance_msg__type_support.cpp.o[0m
+[5.109s] [ 50%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/calculate_distance__type_support.c.o[0m
+[5.151s] [ 51%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/msg/detail/response_distance_msg__type_support_c.cpp.o[0m
+[5.208s] [ 53%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/srv/detail/calculate_distance__type_support.cpp.o[0m
+[5.214s] [ 54%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/cancel_request__type_support.c.o[0m
+[5.301s] [ 55%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/action/detail/countdown__type_support.c.o[0m
+[5.396s] [ 56%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/response_distance_msg__type_support.cpp.o[0m
+[5.445s] [ 58%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/msg/detail/count__type_support.c.o[0m
+[5.464s] [ 59%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/action/countdown__type_support.cpp.o[0m
+[5.500s] [ 60%] [32m[1mLinking C shared library libcustom_interface__rosidl_typesupport_introspection_c.so[0m
+[5.507s] [ 62%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/srv/detail/cancel_request__type_support.cpp.o[0m
+[5.543s] [ 62%] Built target custom_interface__rosidl_typesupport_introspection_c
+[5.556s] [ 63%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/calculate_distance__type_support.cpp.o[0m
+[5.562s] [ 64%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/msg/count__type_support.cpp.o[0m
+[5.615s] [ 65%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/srv/detail/calculate_distance__type_support_c.cpp.o[0m
+[5.672s] [ 67%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/srv/detail/cancel_request__type_support_c.cpp.o[0m
+[5.819s] [ 68%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/action/detail/countdown__type_support_c.cpp.o[0m
+[5.886s] [ 70%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/action/detail/countdown__type_support.cpp.o[0m
+[5.886s] [ 70%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/msg/detail/count__type_support.cpp.o[0m
+[5.999s] [ 72%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/cancel_request__type_support.cpp.o[0m
+[6.047s] [ 73%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_cpp.so[0m
+[6.061s] [ 74%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/action/detail/dds_fastrtps/countdown__type_support.cpp.o[0m
+[6.082s] [ 75%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/msg/detail/dds_fastrtps/count__type_support.cpp.o[0m
+[6.106s] [ 75%] Built target custom_interface__rosidl_typesupport_cpp
+[6.117s] [ 77%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/msg/detail/count__type_support_c.cpp.o[0m
+[6.453s] [ 78%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_fastrtps_c.so[0m
+[6.528s] [ 78%] Built target custom_interface__rosidl_typesupport_fastrtps_c
+[6.529s] [ 79%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.580s] [ 81%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_introspection_cpp.so[0m
+[6.594s] [ 81%] Built target custom_interface__rosidl_typesupport_fastrtps_cpp
+[6.637s] [ 81%] Built target custom_interface__rosidl_typesupport_introspection_cpp
+[6.651s] [ 81%] Built target custom_interface
+[6.666s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.613s] [ 82%] Built target custom_interface__py
+[7.628s] [ 83%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/msg/_request_distance_msg_s.c.o[0m
+[7.629s] [ 88%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/srv/_cancel_request_s.c.o[0m
+[7.629s] [ 88%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/msg/_response_distance_msg_s.c.o[0m
+[7.630s] [ 88%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/msg/_task_msg_s.c.o[0m
+[7.630s] [ 88%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/srv/_calculate_distance_s.c.o[0m
+[7.630s] [ 91%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/action/_countdown_s.c.o[0m
+[7.630s] [ 91%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_py.dir/rosidl_generator_py/custom_interface/msg/_count_s.c.o[0m
+[7.784s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/custom_interface/libcustom_interface__rosidl_generator_py.so[0m
+[7.818s] [ 92%] Built target custom_interface__rosidl_generator_py
+[7.833s] [ 96%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.834s] [ 96%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.834s] [ 96%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[7.941s] [100%] [32m[1mLinking C shared library rosidl_generator_py/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.942s] [100%] [32m[1mLinking C shared library rosidl_generator_py/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.942s] [100%] [32m[1mLinking C shared library rosidl_generator_py/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.976s] [100%] Built target custom_interface__rosidl_typesupport_introspection_c__pyext
+[7.976s] [100%] Built target custom_interface__rosidl_typesupport_fastrtps_c__pyext
+[7.976s] [100%] Built target custom_interface__rosidl_typesupport_c__pyext
+[7.985s] Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/install/name_navigation_stack:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack:/opt/ros/humble /usr/bin/cmake --build /home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface -- -j8 -l8
+[7.992s] Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface': CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/install/name_navigation_stack:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack:/opt/ros/humble /usr/bin/cmake --install /home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface
+[7.997s] -- Install configuration: ""
+[7.997s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/ament_index/resource_index/rosidl_interfaces/custom_interface
+[7.997s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface
+[7.997s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action
+[7.997s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/countdown.h
+[7.997s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail
+[7.997s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__type_support.h
+[7.997s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__functions.c
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__struct.h
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__functions.h
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/calculate_distance.h
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/cancel_request.h
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__type_support.h
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__functions.c
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__functions.h
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__functions.c
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__struct.h
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__type_support.h
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__functions.h
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__struct.h
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/task_msg.h
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_generator_c__visibility_control.h
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/request_distance_msg.h
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[7.998s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__functions.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__struct.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__functions.c
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__type_support.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__functions.c
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__functions.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__struct.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__struct.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__type_support.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__functions.c
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__functions.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__functions.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__functions.c
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__struct.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__type_support.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__type_support.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/count.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/response_distance_msg.h
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/library_path.sh
+[7.999s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/library_path.dsv
+[8.000s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_generator_c.so
+[8.000s] -- Set runtime path of "/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_generator_c.so" to ""
+[8.000s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface
+[8.000s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action
+[8.000s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail
+[8.000s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__rosidl_typesupport_fastrtps_c.h
+[8.000s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv
+[8.000s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[8.000s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__rosidl_typesupport_fastrtps_c.h
+[8.000s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_fastrtps_c.h
+[8.000s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg
+[8.000s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.000s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[8.000s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__rosidl_typesupport_fastrtps_c.h
+[8.000s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__rosidl_typesupport_fastrtps_c.h
+[8.000s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__rosidl_typesupport_fastrtps_c.h
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__rosidl_typesupport_fastrtps_c.h
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_c.so
+[8.001s] -- Set runtime path of "/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[8.001s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface
+[8.001s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/countdown.hpp
+[8.001s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__struct.hpp
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__traits.hpp
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__builder.hpp
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__type_support.hpp
+[8.001s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/cancel_request.hpp
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/calculate_distance.hpp
+[8.001s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__traits.hpp
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__type_support.hpp
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__type_support.hpp
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__builder.hpp
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__builder.hpp
+[8.001s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__traits.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__struct.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__struct.hpp
+[8.002s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/task_msg.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/request_distance_msg.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/count.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/response_distance_msg.hpp
+[8.002s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__builder.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__builder.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__struct.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__struct.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__type_support.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__builder.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__traits.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__traits.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__builder.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__type_support.hpp
+[8.002s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__struct.hpp
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__traits.hpp
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__type_support.hpp
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__struct.hpp
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__type_support.hpp
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__traits.hpp
+[8.003s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface
+[8.003s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action
+[8.003s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__rosidl_typesupport_fastrtps_cpp.hpp
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/dds_fastrtps
+[8.003s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv
+[8.003s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/dds_fastrtps
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_fastrtps_cpp.hpp
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__rosidl_typesupport_fastrtps_cpp.hpp
+[8.003s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.003s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__rosidl_typesupport_fastrtps_cpp.hpp
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[8.003s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/dds_fastrtps
+[8.004s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[8.004s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[8.004s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_cpp.so
+[8.004s] -- Set runtime path of "/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.004s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface
+[8.004s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action
+[8.004s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail
+[8.004s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__rosidl_typesupport_introspection_c.h
+[8.004s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__type_support.c
+[8.004s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv
+[8.004s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[8.004s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__rosidl_typesupport_introspection_c.h
+[8.004s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_introspection_c.h
+[8.004s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__type_support.c
+[8.004s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__type_support.c
+[8.004s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg
+[8.004s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[8.005s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__type_support.c
+[8.005s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__rosidl_typesupport_introspection_c.h
+[8.005s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__type_support.c
+[8.005s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__rosidl_typesupport_introspection_c.h
+[8.005s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__type_support.c
+[8.005s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_c.h
+[8.005s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__type_support.c
+[8.005s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__rosidl_typesupport_introspection_c.h
+[8.005s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.005s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_c.so
+[8.005s] -- Set runtime path of "/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_c.so" to ""
+[8.005s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_c.so
+[8.005s] -- Set runtime path of "/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_c.so" to ""
+[8.005s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface
+[8.005s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action
+[8.006s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__rosidl_typesupport_introspection_cpp.hpp
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/action/detail/countdown__type_support.cpp
+[8.006s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv
+[8.006s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__rosidl_typesupport_introspection_cpp.hpp
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/cancel_request__type_support.cpp
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__rosidl_typesupport_introspection_cpp.hpp
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/srv/detail/calculate_distance__type_support.cpp
+[8.006s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg
+[8.006s] -- Up-to-date: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__type_support.cpp
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__type_support.cpp
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__type_support.cpp
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/request_distance_msg__rosidl_typesupport_introspection_cpp.hpp
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/task_msg__rosidl_typesupport_introspection_cpp.hpp
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__type_support.cpp
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/count__rosidl_typesupport_introspection_cpp.hpp
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/include/custom_interface/custom_interface/msg/detail/response_distance_msg__rosidl_typesupport_introspection_cpp.hpp
+[8.006s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_cpp.so
+[8.007s] -- Set runtime path of "/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[8.007s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_cpp.so
+[8.007s] -- Set runtime path of "/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_cpp.so" to ""
+[8.007s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/pythonpath.sh
+[8.007s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/pythonpath.dsv
+[8.007s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface-0.0.0-py3.10.egg-info
+[8.007s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[8.007s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.007s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.007s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface-0.0.0-py3.10.egg-info/top_level.txt
+[8.007s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface
+[8.007s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/libcustom_interface__rosidl_generator_py.so
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/__init__.py
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/_custom_interface_s.ep.rosidl_typesupport_c.c
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action/_countdown.py
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action/_countdown_s.c
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action/__init__.py
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_cancel_request_s.c
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/__init__.py
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_calculate_distance_s.c
+[8.008s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_cancel_request.py
+[8.009s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_calculate_distance.py
+[8.009s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg
+[8.009s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_task_msg.py
+[8.009s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/__init__.py
+[8.009s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_request_distance_msg.py
+[8.009s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_response_distance_msg.py
+[8.009s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_count_s.c
+[8.009s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_request_distance_msg_s.c
+[8.009s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_response_distance_msg_s.c
+[8.009s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_task_msg_s.c
+[8.009s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_count.py
+[8.009s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/_custom_interface_s.ep.rosidl_typesupport_introspection_c.c
+[8.043s] Listing '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface'...
+[8.043s] Compiling '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/__init__.py'...
+[8.043s] Listing '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action'...
+[8.043s] Compiling '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action/__init__.py'...
+[8.043s] Compiling '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/action/_countdown.py'...
+[8.043s] Listing '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg'...
+[8.043s] Compiling '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/__init__.py'...
+[8.043s] Compiling '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_count.py'...
+[8.043s] Compiling '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_request_distance_msg.py'...
+[8.043s] Compiling '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_response_distance_msg.py'...
+[8.043s] Compiling '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/msg/_task_msg.py'...
+[8.043s] Listing '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv'...
+[8.043s] Compiling '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/__init__.py'...
+[8.044s] Compiling '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_calculate_distance.py'...
+[8.044s] Compiling '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/srv/_cancel_request.py'...
+[8.047s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.047s] -- Set runtime path of "/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.047s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.047s] -- Set runtime path of "/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.047s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.047s] -- Set runtime path of "/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.047s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_generator_py.so
+[8.048s] -- Set runtime path of "/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/libcustom_interface__rosidl_generator_py.so" to ""
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/TaskMsg.idl
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/RequestDistanceMsg.idl
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/ResponseDistanceMsg.idl
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CalculateDistance.idl
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CancelRequest.idl
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/action/Countdown.idl
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/Count.idl
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/TaskMsg.msg
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/RequestDistanceMsg.msg
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/ResponseDistanceMsg.msg
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CalculateDistance.srv
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CalculateDistance_Request.msg
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CalculateDistance_Response.msg
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CancelRequest.srv
+[8.048s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CancelRequest_Request.msg
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/srv/CancelRequest_Response.msg
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/action/Countdown.action
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/msg/Count.msg
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/ament_index/resource_index/package_run_dependencies/custom_interface
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/ament_index/resource_index/parent_prefix_path/custom_interface
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/ament_prefix_path.sh
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/ament_prefix_path.dsv
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/path.sh
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/environment/path.dsv
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/local_setup.bash
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/local_setup.sh
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/local_setup.zsh
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/local_setup.dsv
+[8.049s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.dsv
+[8.050s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/ament_index/resource_index/packages/custom_interface
+[8.050s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_cExport.cmake
+[8.050s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_cExport-noconfig.cmake
+[8.050s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[8.050s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.050s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_cppExport.cmake
+[8.050s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.050s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.050s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cExport.cmake
+[8.050s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.050s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cExport.cmake
+[8.050s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cExport-noconfig.cmake
+[8.050s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cppExport.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cppExport.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_pyExport.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/export_custom_interface__rosidl_generator_pyExport-noconfig.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/rosidl_cmake-extras.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_targets-extras.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interfaceConfig.cmake
+[8.051s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/cmake/custom_interfaceConfig-version.cmake
+[8.052s] -- Installing: /home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.xml
+[8.053s] Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/install/name_navigation_stack:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack:/opt/ros/humble /usr/bin/cmake --install /home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface

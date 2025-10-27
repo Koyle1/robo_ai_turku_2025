@@ -1,0 +1,40 @@
+[1.336s] Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task4': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task4 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/install.log --single-version-externally-managed install_data
+[1.793s] running egg_info
+[1.794s] creating ../../../build/lab5_task4/lab5_task4.egg-info
+[1.797s] writing ../../../build/lab5_task4/lab5_task4.egg-info/PKG-INFO
+[1.798s] writing dependency_links to ../../../build/lab5_task4/lab5_task4.egg-info/dependency_links.txt
+[1.798s] writing entry points to ../../../build/lab5_task4/lab5_task4.egg-info/entry_points.txt
+[1.799s] writing requirements to ../../../build/lab5_task4/lab5_task4.egg-info/requires.txt
+[1.799s] writing top-level names to ../../../build/lab5_task4/lab5_task4.egg-info/top_level.txt
+[1.799s] writing manifest file '../../../build/lab5_task4/lab5_task4.egg-info/SOURCES.txt'
+[1.804s] reading manifest file '../../../build/lab5_task4/lab5_task4.egg-info/SOURCES.txt'
+[1.809s] writing manifest file '../../../build/lab5_task4/lab5_task4.egg-info/SOURCES.txt'
+[1.810s] running build
+[1.810s] running build_py
+[1.810s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/build
+[1.810s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/build/lib
+[1.810s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/build/lib/lab5_task4
+[1.810s] copying lab5_task4/Task4_pfilter.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/build/lib/lab5_task4
+[1.810s] copying lab5_task4/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/build/lib/lab5_task4
+[1.811s] copying lab5_task4/LidarParticleFilter.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/build/lib/lab5_task4
+[1.811s] running install
+[1.815s] running install_lib
+[1.816s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/python3.10/site-packages/lab5_task4
+[1.816s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/build/lib/lab5_task4/Task4_pfilter.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/python3.10/site-packages/lab5_task4
+[1.816s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/build/lib/lab5_task4/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/python3.10/site-packages/lab5_task4
+[1.816s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/build/lib/lab5_task4/LidarParticleFilter.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/python3.10/site-packages/lab5_task4
+[1.816s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/python3.10/site-packages/lab5_task4/Task4_pfilter.py to Task4_pfilter.cpython-310.pyc
+[1.820s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/python3.10/site-packages/lab5_task4/__init__.py to __init__.cpython-310.pyc
+[1.825s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/python3.10/site-packages/lab5_task4/LidarParticleFilter.py to LidarParticleFilter.cpython-310.pyc
+[1.830s] running install_data
+[1.833s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/ament_index
+[1.833s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/ament_index/resource_index
+[1.834s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/ament_index/resource_index/packages
+[1.834s] copying resource/lab5_task4 -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/ament_index/resource_index/packages
+[1.834s] copying package.xml -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/lab5_task4
+[1.834s] running install_egg_info
+[1.834s] Copying ../../../build/lab5_task4/lab5_task4.egg-info to /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/python3.10/site-packages/lab5_task4-0.0.0-py3.10.egg-info
+[1.835s] running install_scripts
+[1.864s] Installing lidar_position script to /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/lab5_task4
+[1.865s] writing list of installed files to '/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/install.log'
+[1.946s] Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task4' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task4 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/install.log --single-version-externally-managed install_data

@@ -14,11 +14,11 @@ def generate_launch_description():
 
     # Launch configuration variables
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
-    x_pose = LaunchConfiguration('x_pose', default='0.0')
-    y_pose = LaunchConfiguration('y_pose', default='0.0')
+    x_pose = LaunchConfiguration('x_pose', default='1.5')
+    y_pose = LaunchConfiguration('y_pose', default='3.0')
     
     # World file path
-    world = os.path.join(pkg_my_world, 'worlds', 'custom_world.world')
+    world = os.path.join(pkg_my_world, 'worlds', 'lab6_world.world')
     
     # Gazebo server
     gzserver_cmd = IncludeLaunchDescription(
@@ -100,8 +100,8 @@ def generate_launch_description():
     # --------------------------
     ld = LaunchDescription()
     ld.add_action(DeclareLaunchArgument('use_sim_time', default_value='true', description='Use sim time if true'))
-    ld.add_action(DeclareLaunchArgument('x_pose', default_value='0.0', description='Initial x position of the robot'))
-    ld.add_action(DeclareLaunchArgument('y_pose', default_value='0.0', description='Initial y position of the robot'))
+    ld.add_action(DeclareLaunchArgument('x_pose', default_value='1.5', description='Initial x position of the robot'))
+    ld.add_action(DeclareLaunchArgument('y_pose', default_value='3.0', description='Initial y position of the robot'))
 
     ld.add_action(gzserver_cmd)
     ld.add_action(gzclient_cmd)

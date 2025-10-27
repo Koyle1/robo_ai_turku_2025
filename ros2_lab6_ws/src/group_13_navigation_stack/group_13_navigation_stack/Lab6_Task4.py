@@ -1,180 +1,126 @@
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import Point
+from rclpy.qos import QoSProfile, QoSDurabilityPolicy, QoSHistoryPolicy
 import numpy as np
-import matplotlib.pyplot as plt
-import networkx as nx
-from queue import PriorityQueue
+import heapq
+import math
 
-grid_size = 100  
+class FullGraphExplorer(Node):
+    def __init__(self):
+        super().__init__('full_graph_explorer')
 
-# Define waypoints in ROS coordinates
-waypoints = [
-    (-1.5, 1.8), (-1.8, 0.5), (-1.8, -0.8), (-1.5, -1.8),
-    (0.0, 2.0), (0.8, 1.8), (1.8, 0.8), (1.8, -0.8),
-    (1.5, -1.8), (0.0, -2.0)
-]
+        # --- ROS publisher ---
+        qos_profile = QoSProfile(
+            history=QoSHistoryPolicy.KEEP_LAST,
+            depth=25,
+            durability=QoSDurabilityPolicy.TRANSIENT_LOCAL
+        )
+        self.path_pub = self.create_publisher(Point, '/path', qos_profile)
 
-# Load grid from CSV file
-grid_matrix = np.loadtxt('grid_map.csv', delimiter=',', dtype=int)
-grid_size = grid_matrix.shape[0]
-print(f"Loaded grid size: {grid_size}x{grid_size}")
+        # --- Graph Definition (ensure 2+ loops) ---
+        self.adj_matrix = np.array([
+        # 0  1  2  3  4  5  6  7  8  9 10
+        [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0],  # 0
+        [1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0],  # 1
+        [0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0],  # 2
+        [0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],  # 3
+        [1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0],  # 4
+        [0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0],  # 5
+        [0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],  # 6
+        [0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0],  # 7
+        [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0],  # 8
+        [0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1],  # 9
+        [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0]   # 10
+        ])
 
-# Treat -1 (unknown) as blocked (1)
-grid_matrix[grid_matrix == -1] = 1
+        self.waypoints = [
+            (0.0, 0.0),     # 0
+            (1.5, -1.5),    # 1
+            (1.5, 3.0),     # 2
+            (-0.8, 3.0),    # 3
+            (-0.5, 0.5),    # 4
+            (-2.2, 0.0),    # 5
+            (-3.0, -2.0),   # 6
+            (-4.2, -2.2),   # 7
+            (-4.2, -0.15),  # 8
+            (-2.8, 0.5),    # 9
+            (-2.8, 3.0)     # 10
+        ]
 
-# Convert ROS coordinates to grid indices
-def ros_to_grid_coordinates(x, y, grid_size=100, map_resolution=0.1, origin_offset=50):
-    j = round((x / map_resolution) + origin_offset)
-    i = round(origin_offset - (y / map_resolution))
-    # Ensure within grid bounds
-    i = max(0, min(grid_size-1, i))
-    j = max(0, min(grid_size-1, j))
-    return i * grid_size + j
+        # --- State ---
+        self.visited = set([0])
+        self.order = [0]
+        self.current_node = 0
 
-# Convert waypoints to node IDs
-waypoint_nodes = [ros_to_grid_coordinates(x, y, grid_size) for x, y in waypoints]
+        # --- ROS timer ---
+        self.publish_waypoint(0)
+        self.create_timer(0.5, self.explore_next_node)
+        self.get_logger().info("Starting continuous exploration (revisiting allowed)")
 
-# Start and end nodes from waypoints
-start_waypoint_index = 0
-start_node = waypoint_nodes[start_waypoint_index]
+    def dijkstra(self, start):
+        n = len(self.adj_matrix)
+        dist = {i: float('inf') for i in range(n)}
+        prev = {i: None for i in range(n)}
+        dist[start] = 0
+        queue = [(0, start)]
+        while queue:
+            d, node = heapq.heappop(queue)
+            if d > dist[node]:
+                continue
+            for nb in range(n):
+                if self.adj_matrix[node][nb] == 1:
+                    edge = math.dist(self.waypoints[node], self.waypoints[nb])
+                    new_d = d + edge
+                    if new_d < dist[nb]:
+                        dist[nb] = new_d
+                        prev[nb] = node
+                        heapq.heappush(queue, (new_d, nb))
+        return dist, prev
 
-print(f"Start node: {start_node}")
+    def shortest_path_to_nearest_unvisited(self):
+        dist, prev = self.dijkstra(self.current_node)
+        unvisited = [n for n in range(len(self.waypoints)) if n not in self.visited and dist[n] < float('inf')]
+        if not unvisited:
+            return None
+        nearest = min(unvisited, key=lambda n: dist[n])
+        # reconstruct path
+        path = []
+        node = nearest
+        while node is not None:
+            path.insert(0, node)
+            node = prev[node]
+        return path
 
-adjacency_matrix = np.array([
-    [0, 1, 1, 1, 1, 1, 0, 0, 0, 0],  # Waypoint 0
-    [1, 0, 1, 1, 0, 1, 1, 0, 0, 1],  # Waypoint 1
-    [1, 1, 0, 1, 1, 0, 0, 1, 0, 1],  # Waypoint 2
-    [1, 1, 1, 0, 0, 0, 0, 0, 1, 1],  # Waypoint 3
-    [1, 0, 1, 0, 0, 1, 1, 1, 0, 0],  # Waypoint 4
-    [1, 1, 0, 0, 1, 0, 1, 1, 0, 1],  # Waypoint 5
-    [0, 1, 0, 0, 1, 1, 0, 1, 1, 1],  # Waypoint 6
-    [0, 0, 1, 0, 1, 1, 1, 0, 1, 1],  # Waypoint 7
-    [0, 0, 0, 1, 0, 0, 1, 1, 0, 1],  # Waypoint 8
-    [0, 1, 1, 1, 0, 1, 1, 1, 1, 0],  # Waypoint 9
-], dtype=int)
+    def publish_waypoint(self, idx):
+        p = Point()
+        p.x, p.y = self.waypoints[idx]
+        p.z = 0.0
+        self.path_pub.publish(p)
+        self.get_logger().info(f"Published waypoint {idx}: {self.waypoints[idx]}")
 
-# Pre-defined weight matrix (Euclidean distances between connected waypoints)
-weights = np.full((len(waypoints), len(waypoints)), np.inf)
-for i in range(len(waypoints)):
-    for j in range(len(waypoints)):
-        if adjacency_matrix[i, j] == 1:
-            x1, y1 = waypoints[i]
-            x2, y2 = waypoints[j]
-            distance = np.sqrt((x2 - x1)**2 + (y2 - y1)**2)
-            weights[i, j] = distance
+    def explore_next_node(self):
+        path = self.shortest_path_to_nearest_unvisited()
+        if path is None:
+            self.get_logger().info(f"Exploration complete! Order: {self.order}")
+            rclpy.shutdown()
+            return
 
-# Get diagonal line points between two points (simple version)
-def get_diagonal_line_points(x0, y0, x1, y1):
-    points = []
-    # Simple interpolation for diagonal lines
-    steps = max(abs(x1 - x0), abs(y1 - y0))
-    if steps == 0:
-        return [(x0, y0)]
-    
-    for t in range(steps + 1):
-        x = int(x0 + (x1 - x0) * t / steps)
-        y = int(y0 + (y1 - y0) * t / steps)
-        points.append((x, y))
-    return points
+        for node in path[1:]:  # skip current node
+            self.publish_waypoint(node)
+            if node not in self.visited:
+                self.visited.add(node)
+            self.order.append(node)
+            self.current_node = node
 
-# Dijkstra algorithm to visit all nodes (TSP-style)
-visited = set()
-q = PriorityQueue()
-q.put((0, start_waypoint_index, [start_waypoint_index], set([start_waypoint_index]))) # (distance, current_waypoint, path, visited_set)
+        self.get_logger().info(f"Visited order so far: {self.order}")
 
-while not q.empty():
-    current_cost, current_waypoint, current_path, current_visited = q.get()
+def main(args=None):
+    rclpy.init(args=args)
+    node = FullGraphExplorer()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
 
-    # Check if all nodes visited
-    if len(current_visited) == len(waypoints):
-        print("We have finished! Visited all nodes!")
-        print("The waypoint path is: {}".format(current_path))
-        print("The total cost is: {}".format(current_cost))
-        
-        # Convert waypoint indices to ROS coordinates
-        ros_path = [waypoints[i] for i in current_path]
-        print("ROS2 Path Coordinates:")
-        print(f"ros_path = {ros_path}")
-        
-        # Visualize the found path
-        path_grid = grid_matrix.copy()
-
-        # Mark all waypoints
-        for i, node in enumerate(waypoint_nodes):
-            waypoint_i = node // grid_size
-            waypoint_j = node % grid_size
-            if i == start_waypoint_index:
-                path_grid[waypoint_i, waypoint_j] = 3  # Start
-            elif i == current_path[-1]:  # Letzter besuchter Waypoint
-                path_grid[waypoint_i, waypoint_j] = 4  # End
-            else:
-                path_grid[waypoint_i, waypoint_j] = 5  # Other waypoints
-
-        # Mark paths between waypoints
-        for k in range(len(current_path) - 1):
-            node1 = waypoint_nodes[current_path[k]]
-            node2 = waypoint_nodes[current_path[k + 1]]
-            line_points = get_diagonal_line_points(node1 // grid_size, node1 % grid_size, 
-                                                 node2 // grid_size, node2 % grid_size)
-            for i, j in line_points:
-                if 0 <= i < grid_size and 0 <= j < grid_size:
-                    if path_grid[i, j] == 0:
-                        path_grid[i, j] = 2  # Use 2 to represent the path
-
-        # Plot
-        plt.figure(figsize=(10, 10))
-        colors = ['grey', 'white', 'blue', 'green', 'red', 'orange']  # Free, Blocked, Path, Start, End, Waypoints
-        cmap = plt.cm.colors.ListedColormap(colors)
-
-        # Create custom tick labels for ROS coordinates
-        x_ticks = np.arange(0, grid_size, 10)
-        y_ticks = np.arange(0, grid_size, 10)
-        x_labels = [f"{(j-50)*0.1:.1f}" for j in x_ticks]
-        y_labels = [f"{(50-i)*0.1:.1f}" for i in y_ticks]
-
-        plt.imshow(path_grid, cmap=cmap, vmin=0, vmax=5)
-        plt.xticks(x_ticks, x_labels)
-        plt.yticks(y_ticks, y_labels)
-        plt.xlabel('X Position (m)')
-        plt.ylabel('Y Position (m)')
-        plt.title('Waypoint Dijkstra Path Finding Result - ROS Coordinates\nGrey=Free, White=Blocked, Green=Start, Red=End, Orange=Waypoints')
-        plt.grid(True, alpha=0.3)
-                # Create and plot NetworkX graph
-        plt.figure(figsize=(10, 8))
-        G = nx.Graph()
-        
-        # Add nodes with positions
-        for i, (x, y) in enumerate(waypoints):
-            G.add_node(i, pos=(x, y))
-        
-        # Add edges from adjacency matrix
-        for i in range(len(waypoints)):
-            for j in range(i + 1, len(waypoints)):
-                if adjacency_matrix[i, j] == 1:
-                    G.add_edge(i, j, weight=weights[i, j])
-        
-        # Get positions for plotting
-        pos = nx.get_node_attributes(G, 'pos')
-        
-        # Plot graph
-        nx.draw(G, pos, with_labels=True, node_color='lightblue', 
-                node_size=500, font_size=10, font_weight='bold')
-        
-        # Add edge labels (distances)
-        edge_labels = {(i, j): f'{weights[i, j]:.1f}' for i, j in G.edges()}
-        nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=8)
-        
-        plt.title('Waypoint Graph Visualization')
-        plt.axis('equal')
-        plt.grid(True, alpha=0.3)
-        plt.show()
-        
-        break
-
-    for neighbor_id, is_a_neighbor in enumerate(adjacency_matrix[current_waypoint]):
-        if is_a_neighbor == 1:
-            if neighbor_id not in current_visited:
-                new_visited = current_visited.copy()
-                new_visited.add(neighbor_id)
-                q.put((current_cost + weights[current_waypoint][neighbor_id], 
-                      neighbor_id, 
-                      current_path + [neighbor_id], 
-                      new_visited))
+if __name__ == '__main__':
+    main()

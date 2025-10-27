@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "custom_interface__py",
+		"source" : "/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface/custom_interface__py"
+	}
+}

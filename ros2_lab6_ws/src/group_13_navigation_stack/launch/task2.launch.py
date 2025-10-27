@@ -14,11 +14,11 @@ def generate_launch_description():
 
     # Launch configuration variables
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
-    x_pose = LaunchConfiguration('x_pose', default='0.0')
-    y_pose = LaunchConfiguration('y_pose', default='0.0')
+    x_pose = LaunchConfiguration('x_pose', default='1.5')
+    y_pose = LaunchConfiguration('y_pose', default='3.0')
     
     # World file path
-    world = os.path.join(pkg_my_world, 'worlds', 'custom_world.world')
+    world = os.path.join(pkg_my_world, 'worlds', 'lab6_world.world')
     
     # Gazebo server
     gzserver_cmd = IncludeLaunchDescription(
@@ -85,14 +85,6 @@ def generate_launch_description():
         emulate_tty=True
     )
 
-    wp_follower_node = Node(
-        package='group_13_navigation_stack',
-        executable='wp_follower',
-        name='wp_follower',
-        output='screen',
-        emulate_tty=True
-    )
-
     pathfinder_node = Node(
         package='group_13_navigation_stack',
         executable='pathfinder',
@@ -101,15 +93,15 @@ def generate_launch_description():
         emulate_tty = True
     )
 
-    start_wp_follower = TimerAction(period=10.0, actions=[wp_follower_node])
+    # start_wp_follower = TimerAction(period=10.0, actions=[pathfollower_node])
 
     # --------------------------
     # Launch Description
     # --------------------------
     ld = LaunchDescription()
     ld.add_action(DeclareLaunchArgument('use_sim_time', default_value='true', description='Use sim time if true'))
-    ld.add_action(DeclareLaunchArgument('x_pose', default_value='0.0', description='Initial x position of the robot'))
-    ld.add_action(DeclareLaunchArgument('y_pose', default_value='0.0', description='Initial y position of the robot'))
+    ld.add_action(DeclareLaunchArgument('x_pose', default_value='1.5', description='Initial x position of the robot'))
+    ld.add_action(DeclareLaunchArgument('y_pose', default_value='3.0', description='Initial y position of the robot'))
 
     ld.add_action(gzserver_cmd)
     ld.add_action(gzclient_cmd)
@@ -118,7 +110,10 @@ def generate_launch_description():
     
 
     # Add custom nodes
-    ld.add_action(pathfinder_node)
     ld.add_action(pathfollower_node)
+    ld.add_action(pathfinder_node)
+
+
+
 
     return ld

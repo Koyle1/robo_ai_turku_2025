@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Define waypoints manually (example coordinates, adjust to your map)
 waypoints = np.array([
-    [1, 1],  # Node 0grid_snapshot
+    [1, 1],  # Node 0
     [4, 1],  # Node 1
     [4, 4],  # Node 2
     [1, 4],  # Node 3

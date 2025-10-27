@@ -26,12 +26,14 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        	'mapper = group_13_navigation_stack.mapper:main',  # Adjust these based on your actual nodes
-        	'visualize = group_13_navigation_stack.trajectory_visualization:main',
-        	'wp_follower = group_13_navigation_stack.waypoint_follower:main',
+        	'mapper = group_13_navigation_stack.Lab6_Task1_mapper:main',
+        	'one_visualize = group_13_navigation_stack.Lab6_Task1_visualization:main',
+        	'one_pathfollower = group_13_navigation_stack.Lab6_Task1_pathfollower:main',
             'pathfinder = group_13_navigation_stack.Lab6_Task2:main',
             'pathfinderA = group_13_navigation_stack.Lab6_Task3:main',
-            'pathfollower = group_13_navigation_stack.pathfollower:main'
+            'greedy_explore = group_13_navigation_stack.Lab6_Task4:main',
+            'pathfollower = group_13_navigation_stack.pathfollower:main',
+            'four_visualize = group_13_navigation_stack.Lap6_Task4_visualization:main',
         ],
     },
 )

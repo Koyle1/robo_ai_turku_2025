@@ -1,0 +1,1080 @@
+[0.069s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.069s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7e5d96211570>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7e5d96210fa0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7e5d96210fa0>>)
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.179s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/bot/Algo2025/robo_ai_turku_2025'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extension 'ros'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extensions ['cmake', 'python']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extension 'cmake'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extension 'python'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extensions ['python_setup_py']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1) by extension 'python_setup_py'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extension 'ros'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extensions ['cmake', 'python']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extension 'cmake'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extension 'python'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extensions ['python_setup_py']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(lab_1/code) by extension 'python_setup_py'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extension 'ros'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extensions ['cmake', 'python']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extension 'cmake'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extension 'python'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extensions ['python_setup_py']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2) by extension 'python_setup_py'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extension 'ros'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extensions ['cmake', 'python']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extension 'cmake'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extension 'python'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extensions ['python_setup_py']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/codes) by extension 'python_setup_py'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extension 'ros'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extensions ['cmake', 'python']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extension 'cmake'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extension 'python'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extensions ['python_setup_py']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(lab_2/documentation) by extension 'python_setup_py'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extension 'ros'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extensions ['cmake', 'python']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extension 'cmake'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extension 'python'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extensions ['python_setup_py']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws) by extension 'python_setup_py'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extension 'ros'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extensions ['cmake', 'python']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extension 'cmake'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extension 'python'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extensions ['python_setup_py']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags) by extension 'python_setup_py'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extension 'ros'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extensions ['cmake', 'python']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extension 'cmake'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extension 'python'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extensions ['python_setup_py']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag10) by extension 'python_setup_py'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extension 'ros'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extensions ['cmake', 'python']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extension 'cmake'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extension 'python'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extensions ['python_setup_py']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/13_rosbags/group13_rosbag30) by extension 'python_setup_py'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extension 'ignore_ament_install'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extensions ['colcon_pkg']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extension 'colcon_pkg'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extension 'ros'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extensions ['cmake', 'python']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extension 'cmake'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extension 'python'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extensions ['python_setup_py']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src) by extension 'python_setup_py'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/custom_world) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/custom_world) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/custom_world) by extension 'ignore_ament_install'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/custom_world) by extensions ['colcon_pkg']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/custom_world) by extension 'colcon_pkg'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/custom_world) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/custom_world) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/custom_world) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/custom_world) by extension 'ros'
+[0.199s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_lab2_ws/src/custom_world' with type 'ros.ament_python' and name 'custom_world'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/lab02_task03) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/lab02_task03) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/lab02_task03) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/lab02_task03) by extensions ['colcon_pkg']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/lab02_task03) by extension 'colcon_pkg'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/lab02_task03) by extensions ['colcon_meta']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/lab02_task03) by extension 'colcon_meta'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/lab02_task03) by extensions ['ros']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab2_ws/src/lab02_task03) by extension 'ros'
+[0.200s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_lab2_ws/src/lab02_task03' with type 'ros.ament_python' and name 'lab02_task03'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extensions ['colcon_pkg']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extension 'colcon_pkg'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extensions ['colcon_meta']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extension 'colcon_meta'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extensions ['ros']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extension 'python'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extensions ['python_setup_py']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws) by extension 'python_setup_py'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extension 'python'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extensions ['python_setup_py']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src) by extension 'python_setup_py'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task1) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task1) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task1) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task1) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task1) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task1) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task1) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task1) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task1) by extension 'ros'
+[0.202s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_lab5_ws/src/lab5_task1' with type 'ros.ament_python' and name 'lab5_task1'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task3) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task3) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task3) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task3) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task3) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task3) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task3) by extension 'colcon_meta'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task3) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task3) by extension 'ros'
+[0.203s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_lab5_ws/src/lab5_task3' with type 'ros.ament_python' and name 'lab5_task3'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task4) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task4) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task4) by extension 'ignore_ament_install'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task4) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task4) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task4) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task4) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task4) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task4) by extension 'ros'
+[0.203s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_lab5_ws/src/lab5_task4' with type 'ros.ament_python' and name 'lab5_task4'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task5) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task5) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task5) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task5) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task5) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task5) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task5) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task5) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task5) by extension 'ros'
+[0.204s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_lab5_ws/src/lab5_task5' with type 'ros.ament_python' and name 'lab5_task5'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task6) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task6) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task6) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task6) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task6) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task6) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task6) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task6) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab5_ws/src/lab5_task6) by extension 'ros'
+[0.205s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_lab5_ws/src/lab5_task6' with type 'ros.ament_python' and name 'lab5_task6'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/build) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/build) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/install) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/install) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/log) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/log) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extension 'ros'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extensions ['cmake', 'python']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extension 'cmake'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extension 'python'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extensions ['python_setup_py']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src) by extension 'python_setup_py'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/build) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/build) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/install) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/install) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/log) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/log) ignored
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/name_navigation_stack) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/name_navigation_stack) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/name_navigation_stack) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/name_navigation_stack) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/name_navigation_stack) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/name_navigation_stack) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/name_navigation_stack) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/name_navigation_stack) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_lab6_ws/src/name_navigation_stack) by extension 'ros'
+[0.207s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_lab6_ws/src/name_navigation_stack' with type 'ros.ament_python' and name 'name_navigation_stack'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ros'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['cmake', 'python']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'cmake'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['python_setup_py']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python_setup_py'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ros'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['cmake', 'python']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'cmake'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['python_setup_py']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python_setup_py'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_interface) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_interface) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_interface) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_interface) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_interface) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_interface) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_interface) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/custom_interface) by extension 'ros'
+[0.209s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/custom_interface' with type 'ros.ament_cmake' and name 'custom_interface'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task01) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task01) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task01) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task01) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task01) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task01) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task01) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task01) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task01) by extension 'ros'
+[0.210s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/lab01_task01' with type 'ros.ament_python' and name 'lab01_task01'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task02) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task02) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task02) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task02) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task02) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task02) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task02) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task02) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task02) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/lab01_task02' with type 'ros.ament_python' and name 'lab01_task02'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task03) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task03) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task03) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task03) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task03) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task03) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task03) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task03) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task03) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/lab01_task03' with type 'ros.ament_python' and name 'lab01_task03'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task05) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task05) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task05) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task05) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task05) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task05) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task05) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task05) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab01_task05) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/lab01_task05' with type 'ros.ament_python' and name 'lab01_task05'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab1_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab1_bringup) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab1_bringup) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab1_bringup) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab1_bringup) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab1_bringup) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab1_bringup) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab1_bringup) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/lab1_bringup) by extension 'ros'
+[0.213s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/lab1_bringup' with type 'ros.ament_python' and name 'lab1_bringup'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/task1) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/task1) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/task1) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/task1) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/task1) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/task1) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/task1) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/task1) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/task1) by extension 'ros'
+[0.214s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/task1' with type 'ros.ament_python' and name 'task1'
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.240s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install
+[0.240s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/install
+[0.242s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 454 installed packages in /opt/ros/humble
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_target' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.279s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/custom_interface', 'symlink_install': False, 'test_result_base': None}
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_world' build argument 'cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_world' build argument 'cmake_target' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_world' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_world' build argument 'cmake_clean_cache' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_world' build argument 'cmake_clean_first' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_world' build argument 'cmake_force_configure' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_world' build argument 'ament_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_world' build argument 'catkin_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'custom_world' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.279s] DEBUG:colcon.colcon_core.verb:Building package 'custom_world' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_world', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/custom_world', 'symlink_install': False, 'test_result_base': None}
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'cmake_target' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'cmake_clean_cache' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'cmake_clean_first' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'cmake_force_configure' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'ament_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'catkin_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task01' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.280s] DEBUG:colcon.colcon_core.verb:Building package 'lab01_task01' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task01', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task01', 'symlink_install': False, 'test_result_base': None}
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'cmake_target' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'cmake_clean_cache' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'cmake_clean_first' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'cmake_force_configure' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'ament_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'catkin_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab01_task02' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.280s] DEBUG:colcon.colcon_core.verb:Building package 'lab01_task02' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task02', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task02', 'symlink_install': False, 'test_result_base': None}
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab02_task03' build argument 'cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab02_task03' build argument 'cmake_target' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab02_task03' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab02_task03' build argument 'cmake_clean_cache' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab02_task03' build argument 'cmake_clean_first' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab02_task03' build argument 'cmake_force_configure' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab02_task03' build argument 'ament_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab02_task03' build argument 'catkin_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'lab02_task03' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.280s] DEBUG:colcon.colcon_core.verb:Building package 'lab02_task03' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/lab02_task03', 'symlink_install': False, 'test_result_base': None}
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'cmake_target' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab1_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.281s] DEBUG:colcon.colcon_core.verb:Building package 'lab1_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/lab1_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab1_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task1' build argument 'cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task1' build argument 'cmake_target' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task1' build argument 'cmake_clean_first' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task1' build argument 'cmake_force_configure' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task1' build argument 'ament_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.281s] DEBUG:colcon.colcon_core.verb:Building package 'lab5_task1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task1', 'symlink_install': False, 'test_result_base': None}
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task3' build argument 'cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task3' build argument 'cmake_target' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task3' build argument 'cmake_clean_cache' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task3' build argument 'cmake_clean_first' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task3' build argument 'cmake_force_configure' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task3' build argument 'ament_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task3' build argument 'catkin_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'lab5_task3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.281s] DEBUG:colcon.colcon_core.verb:Building package 'lab5_task3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task3', 'symlink_install': False, 'test_result_base': None}
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task4' build argument 'cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task4' build argument 'cmake_target' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task4' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task4' build argument 'cmake_clean_cache' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task4' build argument 'cmake_clean_first' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task4' build argument 'cmake_force_configure' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task4' build argument 'ament_cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task4' build argument 'catkin_cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task4' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.282s] DEBUG:colcon.colcon_core.verb:Building package 'lab5_task4' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task4', 'symlink_install': False, 'test_result_base': None}
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task5' build argument 'cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task5' build argument 'cmake_target' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task5' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task5' build argument 'cmake_clean_cache' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task5' build argument 'cmake_clean_first' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task5' build argument 'cmake_force_configure' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task5' build argument 'ament_cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task5' build argument 'catkin_cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task5' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.282s] DEBUG:colcon.colcon_core.verb:Building package 'lab5_task5' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task5', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5', 'symlink_install': False, 'test_result_base': None}
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task6' build argument 'cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task6' build argument 'cmake_target' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task6' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task6' build argument 'cmake_clean_cache' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task6' build argument 'cmake_clean_first' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task6' build argument 'cmake_force_configure' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task6' build argument 'ament_cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task6' build argument 'catkin_cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'lab5_task6' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.282s] DEBUG:colcon.colcon_core.verb:Building package 'lab5_task6' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task6', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task6', 'symlink_install': False, 'test_result_base': None}
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'name_navigation_stack' build argument 'cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'name_navigation_stack' build argument 'cmake_target' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'name_navigation_stack' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'name_navigation_stack' build argument 'cmake_clean_cache' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'name_navigation_stack' build argument 'cmake_clean_first' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'name_navigation_stack' build argument 'cmake_force_configure' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'name_navigation_stack' build argument 'ament_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'name_navigation_stack' build argument 'catkin_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'name_navigation_stack' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.283s] DEBUG:colcon.colcon_core.verb:Building package 'name_navigation_stack' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/name_navigation_stack', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack', 'symlink_install': False, 'test_result_base': None}
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_target' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_clean_first' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_force_configure' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'ament_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.283s] DEBUG:colcon.colcon_core.verb:Building package 'task1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/task1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/task1', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/task1', 'symlink_install': False, 'test_result_base': None}
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'cmake_target' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'cmake_clean_cache' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'cmake_clean_first' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'cmake_force_configure' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'ament_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'catkin_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'lab01_task03' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.283s] DEBUG:colcon.colcon_core.verb:Building package 'lab01_task03' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task03', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task03', 'symlink_install': False, 'test_result_base': None}
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'cmake_target' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'cmake_clean_cache' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'cmake_clean_first' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'cmake_force_configure' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'ament_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'catkin_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'lab01_task05' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.284s] DEBUG:colcon.colcon_core.verb:Building package 'lab01_task05' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task05', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05', 'merge_install': False, 'path': '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task05', 'symlink_install': False, 'test_result_base': None}
+[0.284s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.285s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.285s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/custom_interface' with build type 'ament_cmake'
+[0.285s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/custom_interface'
+[0.286s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.286s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.286s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.289s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/custom_world' with build type 'ament_python'
+[0.289s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_world', 'ament_prefix_path')
+[0.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/hook/ament_prefix_path.ps1'
+[0.290s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/hook/ament_prefix_path.dsv'
+[0.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/hook/ament_prefix_path.sh'
+[0.291s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.291s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.293s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task01' with build type 'ament_python'
+[0.293s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task01', 'ament_prefix_path')
+[0.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/share/lab01_task01/hook/ament_prefix_path.ps1'
+[0.294s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/share/lab01_task01/hook/ament_prefix_path.dsv'
+[0.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/share/lab01_task01/hook/ament_prefix_path.sh'
+[0.295s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.295s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.297s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task02' with build type 'ament_python'
+[0.297s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task02', 'ament_prefix_path')
+[0.297s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/share/lab01_task02/hook/ament_prefix_path.ps1'
+[0.298s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/share/lab01_task02/hook/ament_prefix_path.dsv'
+[0.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/share/lab01_task02/hook/ament_prefix_path.sh'
+[0.299s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.299s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.301s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/lab02_task03' with build type 'ament_python'
+[0.301s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab02_task03', 'ament_prefix_path')
+[0.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/lab02_task03/hook/ament_prefix_path.ps1'
+[0.302s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/lab02_task03/hook/ament_prefix_path.dsv'
+[0.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/lab02_task03/hook/ament_prefix_path.sh'
+[0.303s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.303s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.305s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab1_bringup' with build type 'ament_python'
+[0.306s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_bringup', 'ament_prefix_path')
+[0.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/share/lab1_bringup/hook/ament_prefix_path.ps1'
+[0.306s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/share/lab1_bringup/hook/ament_prefix_path.dsv'
+[0.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/share/lab1_bringup/hook/ament_prefix_path.sh'
+[0.307s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.307s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.309s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task1' with build type 'ament_python'
+[0.309s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab5_task1', 'ament_prefix_path')
+[0.309s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/share/lab5_task1/hook/ament_prefix_path.ps1'
+[0.310s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/share/lab5_task1/hook/ament_prefix_path.dsv'
+[0.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/share/lab5_task1/hook/ament_prefix_path.sh'
+[0.310s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.310s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.313s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task3' with build type 'ament_python'
+[0.313s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab5_task3', 'ament_prefix_path')
+[0.313s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/lab5_task3/hook/ament_prefix_path.ps1'
+[0.314s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/lab5_task3/hook/ament_prefix_path.dsv'
+[0.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/lab5_task3/hook/ament_prefix_path.sh'
+[0.314s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.315s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.321s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface': CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/install/name_navigation_stack:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack:/opt/ros/humble /usr/bin/cmake /home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/custom_interface -DCMAKE_INSTALL_PREFIX=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface
+[0.506s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/custom_world'
+[0.506s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.506s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.696s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task01'
+[0.696s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.696s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.881s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task02'
+[0.881s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.881s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.066s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/lab02_task03'
+[1.066s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.066s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.257s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab1_bringup'
+[1.257s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.257s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.444s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task1'
+[1.445s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.445s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.633s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task3'
+[1.634s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.634s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab1_bringup': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab1_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab1_bringup build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab1_bringup/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab1_bringup/install.log --single-version-externally-managed install_data
+[2.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/custom_world': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/custom_world build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/install.log --single-version-externally-managed install_data
+[2.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task01': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task01/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab01_task01 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task01/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task01/install.log --single-version-externally-managed install_data
+[2.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task1': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task1 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task1/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task1/install.log --single-version-externally-managed install_data
+[2.231s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/lab02_task03': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab02_task03 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/install.log --single-version-externally-managed install_data
+[2.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task3': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task3 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/install.log --single-version-externally-managed install_data
+[2.242s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task02': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task02/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab01_task02 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task02/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task02/install.log --single-version-externally-managed install_data
+[2.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab1_bringup' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab1_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab1_bringup build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab1_bringup/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab1_bringup/install.log --single-version-externally-managed install_data
+[2.685s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup' for CMake module files
+[2.686s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup' for CMake config files
+[2.687s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/lib'
+[2.687s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/bin'
+[2.687s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/lib/pkgconfig/lab1_bringup.pc'
+[2.687s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/lib/python3.10/site-packages'
+[2.687s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_bringup', 'pythonpath')
+[2.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/share/lab1_bringup/hook/pythonpath.ps1'
+[2.688s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/share/lab1_bringup/hook/pythonpath.dsv'
+[2.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/share/lab1_bringup/hook/pythonpath.sh'
+[2.689s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/bin'
+[2.689s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab1_bringup)
+[2.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/share/lab1_bringup/package.ps1'
+[2.690s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/share/lab1_bringup/package.dsv'
+[2.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/share/lab1_bringup/package.sh'
+[2.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/share/lab1_bringup/package.bash'
+[2.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/share/lab1_bringup/package.zsh'
+[2.693s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/lab1_bringup/share/colcon-core/packages/lab1_bringup)
+[2.694s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task4' with build type 'ament_python'
+[2.694s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab5_task4', 'ament_prefix_path')
+[2.695s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/lab5_task4/hook/ament_prefix_path.ps1'
+[2.696s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/lab5_task4/hook/ament_prefix_path.dsv'
+[2.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/lab5_task4/hook/ament_prefix_path.sh'
+[2.697s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.697s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/install/name_navigation_stack:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack:/opt/ros/humble /usr/bin/cmake /home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/custom_interface -DCMAKE_INSTALL_PREFIX=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface
+[2.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface': CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/install/name_navigation_stack:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack:/opt/ros/humble /usr/bin/cmake --build /home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface -- -j8 -l8
+[2.711s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world' for CMake module files
+[2.712s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/custom_world' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/custom_world build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/install.log --single-version-externally-managed install_data
+[2.712s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world' for CMake config files
+[2.713s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/lib'
+[2.713s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/bin'
+[2.713s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/lib/pkgconfig/custom_world.pc'
+[2.713s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/lib/python3.10/site-packages'
+[2.713s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_world', 'pythonpath')
+[2.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/hook/pythonpath.ps1'
+[2.714s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/hook/pythonpath.dsv'
+[2.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/hook/pythonpath.sh'
+[2.715s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/bin'
+[2.715s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_world)
+[2.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/package.ps1'
+[2.715s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/package.dsv'
+[2.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/package.sh'
+[2.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/package.bash'
+[2.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/package.zsh'
+[2.716s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/colcon-core/packages/custom_world)
+[2.718s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01' for CMake module files
+[2.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task01' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task01/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab01_task01 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task01/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task01/install.log --single-version-externally-managed install_data
+[2.718s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01' for CMake config files
+[2.719s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/lib'
+[2.719s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/bin'
+[2.719s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/lib/pkgconfig/lab01_task01.pc'
+[2.719s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/lib/python3.10/site-packages'
+[2.719s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task01', 'pythonpath')
+[2.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/share/lab01_task01/hook/pythonpath.ps1'
+[2.719s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/share/lab01_task01/hook/pythonpath.dsv'
+[2.720s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/share/lab01_task01/hook/pythonpath.sh'
+[2.720s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/bin'
+[2.720s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab01_task01)
+[2.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/share/lab01_task01/package.ps1'
+[2.721s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/share/lab01_task01/package.dsv'
+[2.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/share/lab01_task01/package.sh'
+[2.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/share/lab01_task01/package.bash'
+[2.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/share/lab01_task01/package.zsh'
+[2.722s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task01/share/colcon-core/packages/lab01_task01)
+[2.722s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5' with build type 'ament_python'
+[2.723s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab5_task5', 'ament_prefix_path')
+[2.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/share/lab5_task5/hook/ament_prefix_path.ps1'
+[2.724s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/share/lab5_task5/hook/ament_prefix_path.dsv'
+[2.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/share/lab5_task5/hook/ament_prefix_path.sh'
+[2.725s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.725s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.729s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task6' with build type 'ament_python'
+[2.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab5_task6', 'ament_prefix_path')
+[2.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/share/lab5_task6/hook/ament_prefix_path.ps1'
+[2.730s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/share/lab5_task6/hook/ament_prefix_path.dsv'
+[2.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/share/lab5_task6/hook/ament_prefix_path.sh'
+[2.731s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.731s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.735s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1' for CMake module files
+[2.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task1' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task1 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task1/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task1/install.log --single-version-externally-managed install_data
+[2.735s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1' for CMake config files
+[2.736s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/lib'
+[2.736s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/bin'
+[2.736s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/lib/pkgconfig/lab5_task1.pc'
+[2.736s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/lib/python3.10/site-packages'
+[2.736s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab5_task1', 'pythonpath')
+[2.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/share/lab5_task1/hook/pythonpath.ps1'
+[2.736s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/share/lab5_task1/hook/pythonpath.dsv'
+[2.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/share/lab5_task1/hook/pythonpath.sh'
+[2.737s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/bin'
+[2.737s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab5_task1)
+[2.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/share/lab5_task1/package.ps1'
+[2.738s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/share/lab5_task1/package.dsv'
+[2.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/share/lab5_task1/package.sh'
+[2.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/share/lab5_task1/package.bash'
+[2.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/share/lab5_task1/package.zsh'
+[2.739s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task1/share/colcon-core/packages/lab5_task1)
+[2.940s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task4'
+[2.941s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.941s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.944s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3' for CMake module files
+[2.945s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task3' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task3 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/install.log --single-version-externally-managed install_data
+[2.945s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3' for CMake config files
+[2.946s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/lib'
+[2.946s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/bin'
+[2.946s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/lib/pkgconfig/lab5_task3.pc'
+[2.946s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/lib/python3.10/site-packages'
+[2.947s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab5_task3', 'pythonpath')
+[2.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/lab5_task3/hook/pythonpath.ps1'
+[2.947s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/lab5_task3/hook/pythonpath.dsv'
+[2.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/lab5_task3/hook/pythonpath.sh'
+[2.948s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/bin'
+[2.948s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab5_task3)
+[2.949s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/lab5_task3/package.ps1'
+[2.950s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/lab5_task3/package.dsv'
+[2.950s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/lab5_task3/package.sh'
+[2.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/lab5_task3/package.bash'
+[2.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/lab5_task3/package.zsh'
+[2.951s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/colcon-core/packages/lab5_task3)
+[2.952s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03' for CMake module files
+[2.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/lab02_task03' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab02_task03 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/install.log --single-version-externally-managed install_data
+[2.953s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03' for CMake config files
+[2.954s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib'
+[2.954s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/bin'
+[2.954s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/pkgconfig/lab02_task03.pc'
+[2.954s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages'
+[2.954s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab02_task03', 'pythonpath')
+[2.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/lab02_task03/hook/pythonpath.ps1'
+[2.955s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/lab02_task03/hook/pythonpath.dsv'
+[2.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/lab02_task03/hook/pythonpath.sh'
+[2.956s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/bin'
+[2.957s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab02_task03)
+[2.957s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/lab02_task03/package.ps1'
+[2.958s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/lab02_task03/package.dsv'
+[2.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/lab02_task03/package.sh'
+[2.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/lab02_task03/package.bash'
+[2.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/lab02_task03/package.zsh'
+[2.959s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/colcon-core/packages/lab02_task03)
+[2.960s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack' with build type 'ament_python'
+[2.960s] Level 1:colcon.colcon_core.shell:create_environment_hook('name_navigation_stack', 'ament_prefix_path')
+[2.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/share/name_navigation_stack/hook/ament_prefix_path.ps1'
+[2.962s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/share/name_navigation_stack/hook/ament_prefix_path.dsv'
+[2.962s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/share/name_navigation_stack/hook/ament_prefix_path.sh'
+[2.963s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.963s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.969s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02' for CMake module files
+[2.969s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task02' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task02/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab01_task02 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task02/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task02/install.log --single-version-externally-managed install_data
+[2.970s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02' for CMake config files
+[2.970s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/lib'
+[2.970s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/bin'
+[2.970s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/lib/pkgconfig/lab01_task02.pc'
+[2.971s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/lib/python3.10/site-packages'
+[2.971s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task02', 'pythonpath')
+[2.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/share/lab01_task02/hook/pythonpath.ps1'
+[2.971s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/share/lab01_task02/hook/pythonpath.dsv'
+[2.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/share/lab01_task02/hook/pythonpath.sh'
+[2.972s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/bin'
+[2.972s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab01_task02)
+[2.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/share/lab01_task02/package.ps1'
+[2.973s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/share/lab01_task02/package.dsv'
+[2.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/share/lab01_task02/package.sh'
+[2.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/share/lab01_task02/package.bash'
+[2.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/share/lab01_task02/package.zsh'
+[2.975s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task02/share/colcon-core/packages/lab01_task02)
+[2.976s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/task1' with build type 'ament_python'
+[2.976s] Level 1:colcon.colcon_core.shell:create_environment_hook('task1', 'ament_prefix_path')
+[2.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/share/task1/hook/ament_prefix_path.ps1'
+[2.977s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/share/task1/hook/ament_prefix_path.dsv'
+[2.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/share/task1/hook/ament_prefix_path.sh'
+[2.978s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.978s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.172s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5'
+[3.173s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.173s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.393s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task6'
+[3.394s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.394s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.758s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack'
+[3.759s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.759s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.009s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/task1'
+[4.009s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.010s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task4': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task4 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/install.log --single-version-externally-managed install_data
+[4.641s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4' for CMake module files
+[4.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task4' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task4 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task4/install.log --single-version-externally-managed install_data
+[4.642s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4' for CMake config files
+[4.643s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib'
+[4.643s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/bin'
+[4.643s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/pkgconfig/lab5_task4.pc'
+[4.644s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/lib/python3.10/site-packages'
+[4.644s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab5_task4', 'pythonpath')
+[4.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/lab5_task4/hook/pythonpath.ps1'
+[4.645s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/lab5_task4/hook/pythonpath.dsv'
+[4.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/lab5_task4/hook/pythonpath.sh'
+[4.651s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/bin'
+[4.651s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab5_task4)
+[4.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/lab5_task4/package.ps1'
+[4.653s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/lab5_task4/package.dsv'
+[4.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/lab5_task4/package.sh'
+[4.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/lab5_task4/package.bash'
+[4.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/lab5_task4/package.zsh'
+[4.660s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task4/share/colcon-core/packages/lab5_task4)
+[4.713s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/task1': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/task1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/task1 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/task1/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/task1/install.log --single-version-externally-managed install_data
+[4.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task6': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task6 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task6/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task6/install.log --single-version-externally-managed install_data
+[5.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/name_navigation_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/name_navigation_stack build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/name_navigation_stack/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/name_navigation_stack/install.log --single-version-externally-managed install_data
+[5.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task5/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task5 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task5/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task5/install.log --single-version-externally-managed install_data
+[5.409s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/task1' for CMake module files
+[5.410s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/task1' for CMake config files
+[5.410s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/lib'
+[5.410s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/bin'
+[5.411s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/lib/pkgconfig/task1.pc'
+[5.411s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/lib/python3.10/site-packages'
+[5.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/task1' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/task1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/task1 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/task1/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/task1/install.log --single-version-externally-managed install_data
+[5.416s] Level 1:colcon.colcon_core.shell:create_environment_hook('task1', 'pythonpath')
+[5.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/share/task1/hook/pythonpath.ps1'
+[5.417s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/share/task1/hook/pythonpath.dsv'
+[5.418s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/share/task1/hook/pythonpath.sh'
+[5.419s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/bin'
+[5.419s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task1)
+[5.419s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/share/task1/package.ps1'
+[5.425s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/share/task1/package.dsv'
+[5.426s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/share/task1/package.sh'
+[5.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/share/task1/package.bash'
+[5.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/task1/share/task1/package.zsh'
+[5.427s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/task1/share/colcon-core/packages/task1)
+[5.545s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6' for CMake module files
+[5.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task6' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task6 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task6/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task6/install.log --single-version-externally-managed install_data
+[5.549s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6' for CMake config files
+[5.549s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/lib'
+[5.549s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/bin'
+[5.550s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/lib/pkgconfig/lab5_task6.pc'
+[5.550s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/lib/python3.10/site-packages'
+[5.550s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab5_task6', 'pythonpath')
+[5.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/share/lab5_task6/hook/pythonpath.ps1'
+[5.555s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/share/lab5_task6/hook/pythonpath.dsv'
+[5.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/share/lab5_task6/hook/pythonpath.sh'
+[5.556s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/bin'
+[5.558s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab5_task6)
+[5.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/share/lab5_task6/package.ps1'
+[5.560s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/share/lab5_task6/package.dsv'
+[5.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/share/lab5_task6/package.sh'
+[5.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/share/lab5_task6/package.bash'
+[5.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/share/lab5_task6/package.zsh'
+[5.562s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task6/share/colcon-core/packages/lab5_task6)
+[5.697s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack' for CMake module files
+[5.698s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack' for CMake config files
+[5.698s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/lib'
+[5.698s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/bin'
+[5.699s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/lib/pkgconfig/name_navigation_stack.pc'
+[5.699s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/lib/python3.10/site-packages'
+[5.699s] Level 1:colcon.colcon_core.shell:create_environment_hook('name_navigation_stack', 'pythonpath')
+[5.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/share/name_navigation_stack/hook/pythonpath.ps1'
+[5.700s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/share/name_navigation_stack/hook/pythonpath.dsv'
+[5.705s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/name_navigation_stack' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/name_navigation_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/name_navigation_stack build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/name_navigation_stack/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/name_navigation_stack/install.log --single-version-externally-managed install_data
+[5.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/share/name_navigation_stack/hook/pythonpath.sh'
+[5.707s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/bin'
+[5.707s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(name_navigation_stack)
+[5.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/share/name_navigation_stack/package.ps1'
+[5.712s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/share/name_navigation_stack/package.dsv'
+[5.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/share/name_navigation_stack/package.sh'
+[5.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/share/name_navigation_stack/package.bash'
+[5.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/share/name_navigation_stack/package.zsh'
+[5.714s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/name_navigation_stack/share/colcon-core/packages/name_navigation_stack)
+[5.758s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5' for CMake module files
+[5.760s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5' for CMake config files
+[5.760s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/lib'
+[5.761s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/bin'
+[5.761s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/lib/pkgconfig/lab5_task5.pc'
+[5.761s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/lib/python3.10/site-packages'
+[5.761s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab5_task5', 'pythonpath')
+[5.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/share/lab5_task5/hook/pythonpath.ps1'
+[5.762s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/share/lab5_task5/hook/pythonpath.dsv'
+[5.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/share/lab5_task5/hook/pythonpath.sh'
+[5.763s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/bin'
+[5.763s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab5_task5)
+[5.758s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task5' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task5/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task5 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task5/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task5/install.log --single-version-externally-managed install_data
+[5.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/share/lab5_task5/package.ps1'
+[5.769s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/share/lab5_task5/package.dsv'
+[5.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/share/lab5_task5/package.sh'
+[5.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/share/lab5_task5/package.bash'
+[5.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/share/lab5_task5/package.zsh'
+[5.771s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task5/share/colcon-core/packages/lab5_task5)
+[8.270s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/install/name_navigation_stack:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack:/opt/ros/humble /usr/bin/cmake --build /home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface -- -j8 -l8
+[8.277s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface': CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/install/name_navigation_stack:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack:/opt/ros/humble /usr/bin/cmake --install /home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface
+[8.339s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interface)
+[8.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/install/name_navigation_stack:/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/install/name_navigation_stack:/opt/ros/humble /usr/bin/cmake --install /home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface
+[8.339s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface' for CMake module files
+[8.340s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface' for CMake config files
+[8.340s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'cmake_prefix_path')
+[8.340s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.ps1'
+[8.341s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.dsv'
+[8.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.sh'
+[8.341s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib'
+[8.341s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'ld_library_path_lib')
+[8.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.ps1'
+[8.342s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.dsv'
+[8.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.sh'
+[8.342s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/bin'
+[8.342s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/pkgconfig/custom_interface.pc'
+[8.342s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/python3.10/site-packages'
+[8.342s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/bin'
+[8.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.ps1'
+[8.343s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.dsv'
+[8.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.sh'
+[8.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.bash'
+[8.344s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.zsh'
+[8.344s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/colcon-core/packages/custom_interface)
+[8.344s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interface)
+[8.344s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface' for CMake module files
+[8.345s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface' for CMake config files
+[8.345s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'cmake_prefix_path')
+[8.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.ps1'
+[8.346s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.dsv'
+[8.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/hook/cmake_prefix_path.sh'
+[8.346s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib'
+[8.346s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interface', 'ld_library_path_lib')
+[8.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.ps1'
+[8.347s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.dsv'
+[8.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/hook/ld_library_path_lib.sh'
+[8.347s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/bin'
+[8.347s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/pkgconfig/custom_interface.pc'
+[8.347s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib/python3.10/site-packages'
+[8.347s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/bin'
+[8.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.ps1'
+[8.348s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.dsv'
+[8.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.sh'
+[8.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.bash'
+[8.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/custom_interface/package.zsh'
+[8.349s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/share/colcon-core/packages/custom_interface)
+[8.350s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task03' with build type 'ament_python'
+[8.350s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task03', 'ament_prefix_path')
+[8.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/share/lab01_task03/hook/ament_prefix_path.ps1'
+[8.351s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/share/lab01_task03/hook/ament_prefix_path.dsv'
+[8.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/share/lab01_task03/hook/ament_prefix_path.sh'
+[8.351s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.351s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.354s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task05' with build type 'ament_python'
+[8.354s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task05', 'ament_prefix_path')
+[8.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05/hook/ament_prefix_path.ps1'
+[8.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05/hook/ament_prefix_path.dsv'
+[8.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05/hook/ament_prefix_path.sh'
+[8.356s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.356s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.539s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task03'
+[8.539s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.539s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.716s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task05'
+[8.716s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.716s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.988s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task05': AMENT_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface LD_LIBRARY_PATH=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task05/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages:/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab01_task05 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task05/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task05/install.log --single-version-externally-managed install_data
+[8.989s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task03': AMENT_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface LD_LIBRARY_PATH=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task03/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/lib/python3.10/site-packages:/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab01_task03 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task03/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task03/install.log --single-version-externally-managed install_data
+[9.218s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05' for CMake module files
+[9.219s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task05' returned '0': AMENT_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface LD_LIBRARY_PATH=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task05/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages:/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab01_task05 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task05/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task05/install.log --single-version-externally-managed install_data
+[9.219s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05' for CMake config files
+[9.219s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/lib'
+[9.219s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/bin'
+[9.219s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/lib/pkgconfig/lab01_task05.pc'
+[9.219s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/lib/python3.10/site-packages'
+[9.219s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task05', 'pythonpath')
+[9.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05/hook/pythonpath.ps1'
+[9.220s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05/hook/pythonpath.dsv'
+[9.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05/hook/pythonpath.sh'
+[9.220s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/bin'
+[9.221s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab01_task05)
+[9.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05/package.ps1'
+[9.221s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05/package.dsv'
+[9.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05/package.sh'
+[9.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05/package.bash'
+[9.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/share/lab01_task05/package.zsh'
+[9.222s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task05/share/colcon-core/packages/lab01_task05)
+[9.222s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03' for CMake module files
+[9.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_ws/src/lab01_task03' returned '0': AMENT_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface LD_LIBRARY_PATH=/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task03/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/lib/python3.10/site-packages:/home/bot/Algo2025/robo_ai_turku_2025/install/custom_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab01_task03 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task03/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab01_task03/install.log --single-version-externally-managed install_data
+[9.223s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03' for CMake config files
+[9.223s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/lib'
+[9.223s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/bin'
+[9.223s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/lib/pkgconfig/lab01_task03.pc'
+[9.224s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/lib/python3.10/site-packages'
+[9.224s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab01_task03', 'pythonpath')
+[9.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/share/lab01_task03/hook/pythonpath.ps1'
+[9.224s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/share/lab01_task03/hook/pythonpath.dsv'
+[9.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/share/lab01_task03/hook/pythonpath.sh'
+[9.225s] Level 1:colcon.colcon_core.environment:checking '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/bin'
+[9.225s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab01_task03)
+[9.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/share/lab01_task03/package.ps1'
+[9.225s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/share/lab01_task03/package.dsv'
+[9.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/share/lab01_task03/package.sh'
+[9.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/share/lab01_task03/package.bash'
+[9.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/share/lab01_task03/package.zsh'
+[9.226s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/Algo2025/robo_ai_turku_2025/install/lab01_task03/share/colcon-core/packages/lab01_task03)
+[9.226s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.226s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.226s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.226s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.230s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.230s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.230s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.239s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.239s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bot/Algo2025/robo_ai_turku_2025/install/local_setup.ps1'
+[9.240s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bot/Algo2025/robo_ai_turku_2025/install/_local_setup_util_ps1.py'
+[9.241s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bot/Algo2025/robo_ai_turku_2025/install/setup.ps1'
+[9.241s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bot/Algo2025/robo_ai_turku_2025/install/local_setup.sh'
+[9.242s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bot/Algo2025/robo_ai_turku_2025/install/_local_setup_util_sh.py'
+[9.242s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bot/Algo2025/robo_ai_turku_2025/install/setup.sh'
+[9.243s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bot/Algo2025/robo_ai_turku_2025/install/local_setup.bash'
+[9.243s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bot/Algo2025/robo_ai_turku_2025/install/setup.bash'
+[9.244s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bot/Algo2025/robo_ai_turku_2025/install/local_setup.zsh'
+[9.244s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bot/Algo2025/robo_ai_turku_2025/install/setup.zsh'

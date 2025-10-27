@@ -1,0 +1,37 @@
+[1.923s] Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task3': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task3 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/install.log --single-version-externally-managed install_data
+[2.367s] running egg_info
+[2.367s] creating ../../../build/lab5_task3/lab5_task3.egg-info
+[2.367s] writing ../../../build/lab5_task3/lab5_task3.egg-info/PKG-INFO
+[2.367s] writing dependency_links to ../../../build/lab5_task3/lab5_task3.egg-info/dependency_links.txt
+[2.367s] writing entry points to ../../../build/lab5_task3/lab5_task3.egg-info/entry_points.txt
+[2.367s] writing requirements to ../../../build/lab5_task3/lab5_task3.egg-info/requires.txt
+[2.367s] writing top-level names to ../../../build/lab5_task3/lab5_task3.egg-info/top_level.txt
+[2.367s] writing manifest file '../../../build/lab5_task3/lab5_task3.egg-info/SOURCES.txt'
+[2.367s] reading manifest file '../../../build/lab5_task3/lab5_task3.egg-info/SOURCES.txt'
+[2.367s] adding license file 'LICENSE'
+[2.368s] writing manifest file '../../../build/lab5_task3/lab5_task3.egg-info/SOURCES.txt'
+[2.368s] running build
+[2.368s] running build_py
+[2.368s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/build
+[2.368s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/build/lib
+[2.368s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/build/lib/lab5_task3
+[2.368s] copying lab5_task3/subscriber.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/build/lib/lab5_task3
+[2.368s] copying lab5_task3/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/build/lib/lab5_task3
+[2.368s] running install
+[2.368s] running install_lib
+[2.368s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/lib/python3.10/site-packages/lab5_task3
+[2.368s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/build/lib/lab5_task3/subscriber.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/lib/python3.10/site-packages/lab5_task3
+[2.368s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/build/lib/lab5_task3/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/lib/python3.10/site-packages/lab5_task3
+[2.368s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/lib/python3.10/site-packages/lab5_task3/subscriber.py to subscriber.cpython-310.pyc
+[2.368s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/lib/python3.10/site-packages/lab5_task3/__init__.py to __init__.cpython-310.pyc
+[2.368s] running install_data
+[2.368s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/ament_index
+[2.369s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/ament_index/resource_index
+[2.369s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/ament_index/resource_index/packages
+[2.369s] copying resource/lab5_task3 -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/ament_index/resource_index/packages
+[2.369s] copying package.xml -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/share/lab5_task3
+[2.369s] running install_egg_info
+[2.369s] Copying ../../../build/lab5_task3/lab5_task3.egg-info to /home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/lib/python3.10/site-packages/lab5_task3-0.0.0-py3.10.egg-info
+[2.369s] running install_scripts
+[2.369s] writing list of installed files to '/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/install.log'
+[2.631s] Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab5_ws/src/lab5_task3' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab5_task3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab5_task3 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab5_task3/install.log --single-version-externally-managed install_data

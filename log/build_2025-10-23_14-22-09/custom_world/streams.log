@@ -1,0 +1,38 @@
+[1.925s] Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/custom_world': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/custom_world build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/install.log --single-version-externally-managed install_data
+[2.244s] running egg_info
+[2.244s] creating ../../../build/custom_world/custom_world.egg-info
+[2.244s] writing ../../../build/custom_world/custom_world.egg-info/PKG-INFO
+[2.244s] writing dependency_links to ../../../build/custom_world/custom_world.egg-info/dependency_links.txt
+[2.245s] writing entry points to ../../../build/custom_world/custom_world.egg-info/entry_points.txt
+[2.245s] writing requirements to ../../../build/custom_world/custom_world.egg-info/requires.txt
+[2.245s] writing top-level names to ../../../build/custom_world/custom_world.egg-info/top_level.txt
+[2.245s] writing manifest file '../../../build/custom_world/custom_world.egg-info/SOURCES.txt'
+[2.248s] reading manifest file '../../../build/custom_world/custom_world.egg-info/SOURCES.txt'
+[2.248s] adding license file 'LICENSE'
+[2.252s] writing manifest file '../../../build/custom_world/custom_world.egg-info/SOURCES.txt'
+[2.252s] running build
+[2.252s] running build_py
+[2.252s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/build
+[2.252s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/build/lib
+[2.252s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/build/lib/custom_world
+[2.252s] copying custom_world/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/build/lib/custom_world
+[2.252s] running install
+[2.252s] running install_lib
+[2.253s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/lib/python3.10/site-packages/custom_world
+[2.254s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/build/lib/custom_world/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/lib/python3.10/site-packages/custom_world
+[2.254s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/lib/python3.10/site-packages/custom_world/__init__.py to __init__.cpython-310.pyc
+[2.254s] running install_data
+[2.254s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/ament_index
+[2.254s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/ament_index/resource_index
+[2.255s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/ament_index/resource_index/packages
+[2.255s] copying resource/custom_world -> /home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/ament_index/resource_index/packages
+[2.255s] copying package.xml -> /home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world
+[2.255s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/launch
+[2.255s] copying launch/gazebo_task4_5.launch.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/launch
+[2.256s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/worlds
+[2.256s] copying worlds/custom_world.world -> /home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/share/custom_world/worlds
+[2.256s] running install_egg_info
+[2.260s] Copying ../../../build/custom_world/custom_world.egg-info to /home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/lib/python3.10/site-packages/custom_world-0.0.0-py3.10.egg-info
+[2.260s] running install_scripts
+[2.287s] writing list of installed files to '/home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/install.log'
+[2.422s] Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/custom_world' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/custom_world/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/custom_world build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/custom_world/install.log --single-version-externally-managed install_data

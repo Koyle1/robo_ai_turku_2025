@@ -3,6 +3,7 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist, Point
 from nav_msgs.msg import Odometry
 from tf_transformations import euler_from_quaternion
+from rclpy.qos import QoSProfile, QoSDurabilityPolicy, QoSHistoryPolicy
 import math
 
 
@@ -10,10 +11,16 @@ class PathFollower(Node):
     def __init__(self):
         super().__init__('path_follower')
 
+        qos_profile = QoSProfile(
+            history=QoSHistoryPolicy.KEEP_LAST,
+            depth=25,
+            durability=QoSDurabilityPolicy.TRANSIENT_LOCAL
+        )
+
         # Publisher and subscriber
         self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 10)
         self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
-        self.create_subscription(Point, '/path', self.path_callback, 10)
+        self.create_subscription(Point, '/path', self.path_callback, qos_profile)
         self.create_timer(0.1, self.loop)  # 10 Hz
 
         # Initialize state variables
@@ -29,8 +36,8 @@ class PathFollower(Node):
         # Parameters
         self.linear_speed = 0.15
         self.angular_speed = 0.4
-        self.angle_tolerance = 0.05     # radians (~3°)
-        self.distance_tolerance = 0.1   # meters
+        self.angle_tolerance = 0.1     # radians (~1.5°)
+        self.distance_tolerance = 0.15   # meters
 
     def odom_callback(self, msg):
         # Get the robot's current position and orientation from Odometry
@@ -46,6 +53,10 @@ class PathFollower(Node):
 
     def loop(self):
         # Only proceed if we have waypoints in the path
+        if not self.path:
+            self.get_logger().info('Waiting for path...')
+            return
+        
         if self.current_wp >= len(self.path):
             self.cmd_pub.publish(Twist())  # Stop the robot when all waypoints are completed
             self.get_logger().info('Reached final waypoint, shutting down.')

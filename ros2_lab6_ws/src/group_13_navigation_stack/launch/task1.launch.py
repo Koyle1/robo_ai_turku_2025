@@ -18,7 +18,7 @@ def generate_launch_description():
     y_pose = LaunchConfiguration('y_pose', default='0.0')
     
     # World file path
-    world = os.path.join(pkg_my_world, 'worlds', 'custom_world.world')
+    world = os.path.join(pkg_my_world, 'worlds', 'lab6_world.world')
     
     # Gazebo server
     gzserver_cmd = IncludeLaunchDescription(
@@ -86,16 +86,16 @@ def generate_launch_description():
 
     visualize_node = Node(
         package='group_13_navigation_stack',
-        executable='visualize',
-        name='visualize',
+        executable='one_visualize',
+        name='one_visualize',
         output='screen',
         emulate_tty=True
     )
 
-    wp_follower_node = Node(
+    pathfollower = Node(
         package='group_13_navigation_stack',
-        executable='wp_follower',
-        name='wp_follower',
+        executable='one_pathfollower',
+        name='one_pathfollower',
         output='screen',
         emulate_tty=True
     )
@@ -103,7 +103,7 @@ def generate_launch_description():
     # Launch them in sequence: mapper → visualize → wp_follower
     start_mapper = mapper_node
     start_visualize = TimerAction(period=5.0, actions=[visualize_node])
-    start_wp_follower = TimerAction(period=10.0, actions=[wp_follower_node])
+    start_pathfollower = TimerAction(period=10.0, actions=[pathfollower])
 
     # --------------------------
     # Launch Description
@@ -121,6 +121,6 @@ def generate_launch_description():
     # Add custom nodes
     ld.add_action(start_mapper)
     ld.add_action(start_visualize)
-    ld.add_action(start_wp_follower)
+    ld.add_action(start_pathfollower)
 
     return ld

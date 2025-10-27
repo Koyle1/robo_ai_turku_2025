@@ -1,0 +1,53 @@
+[1.929s] Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/lab02_task03': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab02_task03 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/install.log --single-version-externally-managed install_data
+[2.248s] running egg_info
+[2.251s] creating ../../../build/lab02_task03/lab02_task03.egg-info
+[2.251s] writing ../../../build/lab02_task03/lab02_task03.egg-info/PKG-INFO
+[2.251s] writing dependency_links to ../../../build/lab02_task03/lab02_task03.egg-info/dependency_links.txt
+[2.251s] writing entry points to ../../../build/lab02_task03/lab02_task03.egg-info/entry_points.txt
+[2.251s] writing requirements to ../../../build/lab02_task03/lab02_task03.egg-info/requires.txt
+[2.251s] writing top-level names to ../../../build/lab02_task03/lab02_task03.egg-info/top_level.txt
+[2.251s] writing manifest file '../../../build/lab02_task03/lab02_task03.egg-info/SOURCES.txt'
+[2.256s] reading manifest file '../../../build/lab02_task03/lab02_task03.egg-info/SOURCES.txt'
+[2.260s] writing manifest file '../../../build/lab02_task03/lab02_task03.egg-info/SOURCES.txt'
+[2.260s] running build
+[2.260s] running build_py
+[2.260s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build
+[2.260s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib
+[2.260s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib/lab02_task03
+[2.261s] copying lab02_task03/tf_listener_rev.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib/lab02_task03
+[2.261s] copying lab02_task03/tf_broadcaster.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib/lab02_task03
+[2.261s] copying lab02_task03/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib/lab02_task03
+[2.261s] copying lab02_task03/tf_scanner.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib/lab02_task03
+[2.261s] copying lab02_task03/tf_static_broadcaster.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib/lab02_task03
+[2.261s] copying lab02_task03/tf_listener.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib/lab02_task03
+[2.263s] running install
+[2.263s] running install_lib
+[2.263s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03
+[2.263s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib/lab02_task03/tf_listener_rev.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03
+[2.263s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib/lab02_task03/tf_broadcaster.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03
+[2.263s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib/lab02_task03/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03
+[2.263s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib/lab02_task03/tf_scanner.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03
+[2.263s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib/lab02_task03/tf_static_broadcaster.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03
+[2.263s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build/lib/lab02_task03/tf_listener.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03
+[2.263s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03/tf_listener_rev.py to tf_listener_rev.cpython-310.pyc
+[2.263s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03/tf_broadcaster.py to tf_broadcaster.cpython-310.pyc
+[2.264s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03/__init__.py to __init__.cpython-310.pyc
+[2.264s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03/tf_scanner.py to tf_scanner.cpython-310.pyc
+[2.264s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03/tf_static_broadcaster.py to tf_static_broadcaster.cpython-310.pyc
+[2.264s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03/tf_listener.py to tf_listener.cpython-310.pyc
+[2.264s] running install_data
+[2.264s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/ament_index
+[2.264s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/ament_index/resource_index
+[2.264s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/ament_index/resource_index/packages
+[2.264s] copying resource/lab02_task03 -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/ament_index/resource_index/packages
+[2.264s] copying package.xml -> /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/share/lab02_task03
+[2.264s] running install_egg_info
+[2.265s] Copying ../../../build/lab02_task03/lab02_task03.egg-info to /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages/lab02_task03-0.0.0-py3.10.egg-info
+[2.266s] running install_scripts
+[2.302s] Installing tf_broadcaster script to /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/lab02_task03
+[2.302s] Installing tf_listener script to /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/lab02_task03
+[2.302s] Installing tf_listener_rev script to /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/lab02_task03
+[2.302s] Installing tf_scanner script to /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/lab02_task03
+[2.302s] Installing tf_static_broadcaster script to /home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/lab02_task03
+[2.303s] writing list of installed files to '/home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/install.log'
+[2.651s] Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab2_ws/src/lab02_task03' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/lab02_task03/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lab02_task03 build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/lab02_task03/install.log --single-version-externally-managed install_data

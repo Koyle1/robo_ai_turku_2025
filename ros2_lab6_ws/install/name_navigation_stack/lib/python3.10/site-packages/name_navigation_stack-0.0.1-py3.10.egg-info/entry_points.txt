@@ -1,5 +1,0 @@
-[console_scripts]
-mapper = name_navigation_stack.mapper:main
-visualize = name_navigation_stack.visualize:main
-wp_follower = name_navigation_stack.wp_follower:main
-

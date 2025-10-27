@@ -1,0 +1,7 @@
+/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:msg/TaskMsg.idl
+/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:msg/RequestDistanceMsg.idl
+/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:msg/ResponseDistanceMsg.idl
+/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:srv/CalculateDistance.idl
+/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:srv/CancelRequest.idl
+/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:action/Countdown.idl
+/home/bot/Algo2025/robo_ai_turku_2025/build/custom_interface/rosidl_adapter/custom_interface:msg/Count.idl
