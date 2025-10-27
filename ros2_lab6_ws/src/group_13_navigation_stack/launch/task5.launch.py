@@ -76,34 +76,29 @@ def generate_launch_description():
     # --------------------------
     # 🧩 Custom Nodes
     # --------------------------
-    mapper_node = Node(
+    pathplaner = Node(
         package='group_13_navigation_stack',
-        executable='mapper',
-        name='mapper',
+        executable='six_pathplaner',
+        name='six_pathplaner',
         output='screen',
         emulate_tty=True
     )
 
-    visualize_node = Node(
+    manager = Node(
         package='group_13_navigation_stack',
-        executable='visualize',
-        name='visualize',
+        executable='manager',
+        name='manager',
         output='screen',
         emulate_tty=True
     )
 
-    wp_follower_node = Node(
+    pathfollower = Node(
         package='group_13_navigation_stack',
-        executable='wp_follower',
-        name='wp_follower',
+        executable='six_pathfollower',
+        name='six_pathfollower',
         output='screen',
         emulate_tty=True
     )
-
-    # Launch them in sequence: mapper → visualize → wp_follower
-    start_mapper = mapper_node
-    start_visualize = TimerAction(period=5.0, actions=[visualize_node])
-    start_wp_follower = TimerAction(period=10.0, actions=[wp_follower_node])
 
     # --------------------------
     # Launch Description
@@ -119,8 +114,8 @@ def generate_launch_description():
     ld.add_action(spawn_turtlebot_cmd)
 
     # Add custom nodes
-    ld.add_action(start_mapper)
-    ld.add_action(start_visualize)
-    ld.add_action(start_wp_follower)
+    ld.add_action(pathplaner)
+    ld.add_action(manager)
+    ld.add_action(pathfollower)
 
     return ld
