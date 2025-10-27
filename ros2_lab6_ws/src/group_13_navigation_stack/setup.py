@@ -33,10 +33,11 @@ setup(
             'pathfinderA = group_13_navigation_stack.Lab6_Task3:main',
             'greedy_explore = group_13_navigation_stack.Lab6_Task4:main',
             'pathfollower = group_13_navigation_stack.pathfollower:main',
-            'four_visualize = group_13_navigation_stack.Lap6_Task4_visualization:main',
+            'four_visualize = group_13_navigation_stack.Lab6_Task4_visualization:main',
             'six_pathplaning = group_13_navigation_stack.Lab6_Task5_pathplaning:main',
             'manager = group_13_navigation_stack.Lab6_Task5_manager:main',
-            'six_pathfollwer = group_13_navigation_stack.Lab6_Task4_pathfollower:main',
+            'six_pathfollower = group_13_navigation_stack.Lab6_Task5_pathfollower:main',
+            'six_visualize = group_13_navigation_stack.Lab6_Task5_visualization:main',
         ],
     },
 )

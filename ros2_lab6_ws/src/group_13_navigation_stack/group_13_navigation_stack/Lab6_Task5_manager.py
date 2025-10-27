@@ -98,8 +98,7 @@ class WaypointManagerNode(Node):
         msg.z = 0.0
         self.target_pub.publish(msg)
 
-        self.get_logger().info_throttle(
-            1.0,
+        self.get_logger().info(
             f"Current target waypoint {self.current_idx}: ({tx:.2f}, {ty:.2f})"
         )
 

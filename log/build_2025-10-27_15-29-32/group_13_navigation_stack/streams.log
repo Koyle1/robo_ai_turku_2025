@@ -1,0 +1,91 @@
+[1.967s] Invoking command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/group_13_navigation_stack': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/group_13_navigation_stack build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/install.log --single-version-externally-managed install_data
+[2.295s] running egg_info
+[2.296s] creating ../../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info
+[2.297s] writing ../../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/PKG-INFO
+[2.297s] writing dependency_links to ../../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/dependency_links.txt
+[2.297s] writing entry points to ../../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/entry_points.txt
+[2.297s] writing requirements to ../../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/requires.txt
+[2.297s] writing top-level names to ../../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/top_level.txt
+[2.297s] writing manifest file '../../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/SOURCES.txt'
+[2.302s] reading manifest file '../../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/SOURCES.txt'
+[2.303s] adding license file 'LICENSE'
+[2.304s] writing manifest file '../../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info/SOURCES.txt'
+[2.304s] running build
+[2.304s] running build_py
+[2.304s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build
+[2.305s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib
+[2.308s] creating /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.308s] copying group_13_navigation_stack/Lab6_Task5_pathplaning.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.308s] copying group_13_navigation_stack/Lab6_Task4.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.308s] copying group_13_navigation_stack/Lab6_Task2_graph.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.308s] copying group_13_navigation_stack/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.308s] copying group_13_navigation_stack/Lab6_Task1_pathfollower.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.308s] copying group_13_navigation_stack/Lap6_Task4_visualization.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.308s] copying group_13_navigation_stack/Lab6_Task1_mapper.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.309s] copying group_13_navigation_stack/Lab6_Task3.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.309s] copying group_13_navigation_stack/Lab6_Task5_manager.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.309s] copying group_13_navigation_stack/Lab6_Task1_visualization.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.309s] copying group_13_navigation_stack/Lab6_Task2.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.309s] copying group_13_navigation_stack/Lab6_Task5_pathfollwer.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.309s] copying group_13_navigation_stack/pathfollower.py -> /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack
+[2.309s] running install
+[2.309s] running install_lib
+[2.309s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.310s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack/Lab6_Task5_pathplaning.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.310s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack/Lab6_Task4.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.310s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack/Lab6_Task2_graph.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.310s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack/__init__.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.310s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack/Lab6_Task1_pathfollower.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.310s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack/Lap6_Task4_visualization.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.310s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack/Lab6_Task1_mapper.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.310s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack/Lab6_Task3.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.310s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack/Lab6_Task5_manager.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.310s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack/Lab6_Task1_visualization.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.310s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack/Lab6_Task2.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.311s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack/Lab6_Task5_pathfollwer.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.311s] copying /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build/lib/group_13_navigation_stack/pathfollower.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack
+[2.311s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack/Lab6_Task5_pathplaning.py to Lab6_Task5_pathplaning.cpython-310.pyc
+[2.315s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack/Lab6_Task4.py to Lab6_Task4.cpython-310.pyc
+[2.315s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack/Lab6_Task2_graph.py to Lab6_Task2_graph.cpython-310.pyc
+[2.316s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack/__init__.py to __init__.cpython-310.pyc
+[2.316s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack/Lab6_Task1_pathfollower.py to Lab6_Task1_pathfollower.cpython-310.pyc
+[2.317s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack/Lap6_Task4_visualization.py to Lap6_Task4_visualization.cpython-310.pyc
+[2.318s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack/Lab6_Task1_mapper.py to Lab6_Task1_mapper.cpython-310.pyc
+[2.323s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack/Lab6_Task3.py to Lab6_Task3.cpython-310.pyc
+[2.323s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack/Lab6_Task5_manager.py to Lab6_Task5_manager.cpython-310.pyc
+[2.323s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack/Lab6_Task1_visualization.py to Lab6_Task1_visualization.cpython-310.pyc
+[2.324s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack/Lab6_Task2.py to Lab6_Task2.cpython-310.pyc
+[2.324s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack/Lab6_Task5_pathfollwer.py to Lab6_Task5_pathfollwer.cpython-310.pyc
+[2.327s] byte-compiling /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack/pathfollower.py to pathfollower.cpython-310.pyc
+[2.327s] running install_data
+[2.327s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/ament_index
+[2.327s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/ament_index/resource_index
+[2.327s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/ament_index/resource_index/packages
+[2.327s] copying resource/group_13_navigation_stack -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/ament_index/resource_index/packages
+[2.327s] copying package.xml -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/group_13_navigation_stack
+[2.327s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/group_13_navigation_stack/launch
+[2.327s] copying launch/task3.launch.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/group_13_navigation_stack/launch
+[2.328s] copying launch/task5.launch.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/group_13_navigation_stack/launch
+[2.328s] copying launch/task1.launch.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/group_13_navigation_stack/launch
+[2.328s] copying launch/task2.launch.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/group_13_navigation_stack/launch
+[2.328s] copying launch/task4.launch.py -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/group_13_navigation_stack/launch
+[2.328s] creating /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/group_13_navigation_stack/worlds
+[2.328s] copying worlds/backup.world -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/group_13_navigation_stack/worlds
+[2.329s] copying worlds/custom_world.world -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/group_13_navigation_stack/worlds
+[2.329s] copying worlds/lab6_world.world -> /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/share/group_13_navigation_stack/worlds
+[2.329s] running install_egg_info
+[2.337s] Copying ../../../build/group_13_navigation_stack/group_13_navigation_stack.egg-info to /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages/group_13_navigation_stack-0.0.0-py3.10.egg-info
+[2.337s] running install_scripts
+[2.367s] Installing four_visualize script to /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[2.367s] Installing greedy_explore script to /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[2.367s] Installing manager script to /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[2.368s] Installing mapper script to /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[2.368s] Installing one_pathfollower script to /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[2.368s] Installing one_visualize script to /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[2.368s] Installing pathfinder script to /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[2.368s] Installing pathfinderA script to /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[2.368s] Installing pathfollower script to /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[2.371s] Installing six_pathfollwer script to /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[2.371s] Installing six_pathplaning script to /home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/group_13_navigation_stack
+[2.371s] writing list of installed files to '/home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/install.log'
+[2.704s] Invoked command in '/home/bot/Algo2025/robo_ai_turku_2025/ros2_lab6_ws/src/group_13_navigation_stack' returned '0': PYTHONPATH=/home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bot/Algo2025/robo_ai_turku_2025/install/group_13_navigation_stack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/group_13_navigation_stack build --build-base /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/build install --record /home/bot/Algo2025/robo_ai_turku_2025/build/group_13_navigation_stack/install.log --single-version-externally-managed install_data

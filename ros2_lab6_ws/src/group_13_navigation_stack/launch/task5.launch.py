@@ -18,7 +18,7 @@ def generate_launch_description():
     y_pose = LaunchConfiguration('y_pose', default='0.0')
     
     # World file path
-    world = os.path.join(pkg_my_world, 'worlds', 'lab6_world.world')
+    world = os.path.join(pkg_my_world, 'worlds', 'lab6_obstacle_world.world')
     
     # Gazebo server
     gzserver_cmd = IncludeLaunchDescription(
@@ -76,10 +76,10 @@ def generate_launch_description():
     # --------------------------
     # 🧩 Custom Nodes
     # --------------------------
-    pathplaner = Node(
+    pathplaning = Node(
         package='group_13_navigation_stack',
-        executable='six_pathplaner',
-        name='six_pathplaner',
+        executable='six_pathplaning',
+        name='six_pathplaning',
         output='screen',
         emulate_tty=True
     )
@@ -100,6 +100,14 @@ def generate_launch_description():
         emulate_tty=True
     )
 
+    visualization = Node(
+        package='group_13_navigation_stack',
+        executable='six_visualize',
+        name='six_visualize',
+        output='screen',
+        emulate_tty=True
+    )
+
     # --------------------------
     # Launch Description
     # --------------------------
@@ -114,8 +122,9 @@ def generate_launch_description():
     ld.add_action(spawn_turtlebot_cmd)
 
     # Add custom nodes
-    ld.add_action(pathplaner)
+    ld.add_action(pathplaning)
     ld.add_action(manager)
     ld.add_action(pathfollower)
+    ld.add_action(visualization)
 
     return ld

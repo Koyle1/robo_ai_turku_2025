@@ -55,10 +55,11 @@ class GlobalPlannerNode(Node):
         ]
 
         # pick start and goal by index in waypoints[]
-        self.start_idx = 2  # (1.5, 3.0)
-        self.goal_idx  = 7  # (-4.2, -2.2)
+        self.start_idx = 0  
+        self.goal_idx  = 7   
 
         # Plan once and publish
+        self.get_logger().info(f"Start and end: {self.start_idx, self.goal_idx}")
         path_idx_list, cost = self.dijkstra(self.start_idx, self.goal_idx)
         self.get_logger().info(f"Shortest path (by index): {path_idx_list}")
         self.get_logger().info(f"Total cost: {cost:.3f}")

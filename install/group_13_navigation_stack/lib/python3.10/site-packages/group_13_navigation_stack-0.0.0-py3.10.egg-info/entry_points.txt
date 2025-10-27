@@ -1,0 +1,13 @@
+[console_scripts]
+four_visualize = group_13_navigation_stack.Lap6_Task4_visualization:main
+greedy_explore = group_13_navigation_stack.Lab6_Task4:main
+manager = group_13_navigation_stack.Lab6_Task5_manager:main
+mapper = group_13_navigation_stack.Lab6_Task1_mapper:main
+one_pathfollower = group_13_navigation_stack.Lab6_Task1_pathfollower:main
+one_visualize = group_13_navigation_stack.Lab6_Task1_visualization:main
+pathfinder = group_13_navigation_stack.Lab6_Task2:main
+pathfinderA = group_13_navigation_stack.Lab6_Task3:main
+pathfollower = group_13_navigation_stack.pathfollower:main
+six_pathfollwer = group_13_navigation_stack.Lab6_Task4_pathfollower:main
+six_pathplaning = group_13_navigation_stack.Lab6_Task5_pathplaning:main
+
