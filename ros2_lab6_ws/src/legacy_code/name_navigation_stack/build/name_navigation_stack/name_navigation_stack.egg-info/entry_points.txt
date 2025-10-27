@@ -1,3 +1,0 @@
-[console_scripts]
-mapper = name_navigation_stack.mapper:main
-
