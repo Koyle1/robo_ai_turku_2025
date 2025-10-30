@@ -9,7 +9,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
     pkg_turtlebot3_gazebo = get_package_share_directory('turtlebot3_gazebo')
-    pkg_my_world = get_package_share_directory('group_13_navigation_stack')  # your package name
+    pkg_my_world = get_package_share_directory('group_13_navigation_stack')  
     pkg_turtlebot3_description = get_package_share_directory('turtlebot3_description')
 
     # Launch configuration variables
@@ -95,9 +95,6 @@ def generate_launch_description():
 
     start_follower = TimerAction(period=10.0, actions=[pathfollower_node])
 
-    # --------------------------
-    # Launch Description
-    # --------------------------
     ld = LaunchDescription()
     ld.add_action(DeclareLaunchArgument('use_sim_time', default_value='true', description='Use sim time if true'))
     ld.add_action(DeclareLaunchArgument('x_pose', default_value='1.5', description='Initial x position of the robot'))

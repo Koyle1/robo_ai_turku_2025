@@ -36,8 +36,8 @@ class PathFollower(Node):
         # Parameters
         self.linear_speed = 0.15
         self.angular_speed = 0.4
-        self.angle_tolerance = 0.1     # radians (~1.5°)
-        self.distance_tolerance = 0.15   # meters
+        self.angle_tolerance = 0.1     
+        self.distance_tolerance = 0.15  
 
     def odom_callback(self, msg):
         # Get the robot's current position and orientation from Odometry

@@ -23,7 +23,6 @@ class GlobalPlannerNode(Node):
         # Publisher for the full path
         self.path_pub = self.create_publisher(Path, '/nav/global_path', qos_profile)
 
-        # Graph connectivity (adjacency matrix)
         self.adjacency_matrix = np.array([
             #0 1 2 3 4 5 6 7 8 9 10
             [0,1,0,0,1,0,0,0,0,0,0],   # 0  (0.0, 0.0)
@@ -54,7 +53,6 @@ class GlobalPlannerNode(Node):
             (-2.8,  3.0)     # 10
         ]
 
-        # pick start and goal by index in waypoints[]
         self.start_idx = 0  
         self.goal_idx  = 7   
 
@@ -68,27 +66,17 @@ class GlobalPlannerNode(Node):
 
     def dijkstra(self, start, end):
         num_nodes = len(self.adjacency_matrix)
-
-        # distances dict
         distances = {node: float('inf') for node in range(num_nodes)}
         distances[start] = 0.0
-
-        # best parent tracking
         previous = {node: None for node in range(num_nodes)}
-
-        # min-heap priority queue
         queue = [(0.0, start)]
 
         while queue:
             current_dist, current_node = heapq.heappop(queue)
-
             if current_node == end:
                 break
-
-            # check neighbors
             for neighbor in range(num_nodes):
                 if self.adjacency_matrix[current_node][neighbor] == 1:
-                    # edge weight = euclidean distance between waypoints
                     edge_cost = math.dist(
                         self.waypoints[current_node],
                         self.waypoints[neighbor]
@@ -100,7 +88,6 @@ class GlobalPlannerNode(Node):
                         previous[neighbor] = current_node
                         heapq.heappush(queue, (new_dist, neighbor))
 
-        # reconstruct path
         path_nodes = []
         node = end
         while node is not None:
@@ -112,21 +99,18 @@ class GlobalPlannerNode(Node):
     def publish_path_msg(self, path_nodes):
         """Convert list of node indices into a nav_msgs/Path and publish it once."""
         path_msg = Path()
-        # stamp with current time so TF consumers are happy
         path_msg.header.stamp = self.get_clock().now().to_msg()
-        path_msg.header.frame_id = "map"  # <-- IMPORTANT: use whatever global frame you use
+        path_msg.header.frame_id = "map"  
 
         poses = []
         for idx in path_nodes:
             x, y = self.waypoints[idx]
 
             p = PoseStamped()
-            p.header = path_msg.header  # same frame/time
+            p.header = path_msg.header
             p.pose.position.x = x
             p.pose.position.y = y
             p.pose.position.z = 0.0
-
-            # orientation: we don't really care here, just zero it
             p.pose.orientation.w = 1.0
 
             poses.append(p)
